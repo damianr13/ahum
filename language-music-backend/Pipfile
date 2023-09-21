@@ -1,0 +1,21 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+fastapi = "*"
+requests = "*"
+pydantic-settings = "*"
+authomatic = "*"
+beautifulsoup4 = "*"
+uvicorn = "*"
+pydantic = "*"
+functions-framework = "*"
+firebase-admin = "*"
+spotipy = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"
