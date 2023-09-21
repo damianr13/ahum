@@ -29,7 +29,7 @@ def populate_spotify_song(event: CloudEvent, context=None):
     genius_url = genius.get_song_url(extended_title)
     lyrics = genius.get_lyrics(genius_url)
 
-    doc_ref = db.collection("songs").document(song_id)
+    doc_ref = db.collection("songs").document(f"spotify-{song_id}")
     result = doc_ref.set(
         {
             "spotify_id": song_id,

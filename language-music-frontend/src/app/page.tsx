@@ -1,16 +1,29 @@
 "use client";
 
-import Image from 'next/image'
 import {useEffect, useMemo, useState} from "react";
+import backend from "@/services/backend";
+import {Song} from "@/models/song";
 
 export default function Home() {
   const [embedController, setEmbedController] = useState<any>(undefined);
 
-  const [songName, setSongName] = useState<string>("")
+  const [song, setSong] = useState<Song | undefined>(undefined)
 
-  const songId = useMemo(() => "1twCDBPDERLBAYFhGjmNfI", [])
+  const songId = useMemo(() => {
+    if (!song) return undefined;
+    return song.spotify_id
+  }, [song]);
+
 
   useEffect(() => {
+    backend.getSong("de").then((song) => {
+      setSong(song)
+    })
+  }, [])
+
+  useEffect(() => {
+    if (!songId) return;
+
     const script = document.createElement('script');
     script.src = "https://open.spotify.com/embed-podcast/iframe-api/v1";
     script.async = true;
@@ -42,6 +55,12 @@ export default function Home() {
           embedController?.togglePlay();
         }}>Pause
         </button>
+        {song && (
+          <>
+                  <div dangerouslySetInnerHTML={{ __html: song.lyrics }} />
+
+          </>
+        )}
       </div>
     </>
   )

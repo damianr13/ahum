@@ -1,4 +1,5 @@
 import axios from 'axios';
+import {Song} from "@/models/song";
 
 class BackendService {
 
@@ -11,6 +12,16 @@ class BackendService {
       },
 
     })
+    return response.data;
+  }
+
+  public getSong = async (language: string): Promise<Song> => {
+    const response = await axios.get(`${this.baseUrl}/song`, {
+        params: {
+            language
+        },
+    })
+
     return response.data;
   }
 }
