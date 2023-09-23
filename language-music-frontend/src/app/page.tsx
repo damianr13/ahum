@@ -51,14 +51,11 @@ export default function Home() {
         <div className="main-wrapper" id={"embed-iframe"}>
         </div>
         <br/>
-        <button onClick={() => {
-          embedController?.togglePlay();
-        }}>Pause
-        </button>
         {song && (
           <>
-                  <div dangerouslySetInnerHTML={{ __html: song.lyrics }} />
-
+            <p className="lyrics">
+                {song.processed_lyrics}
+            </p>
           </>
         )}
       </div>

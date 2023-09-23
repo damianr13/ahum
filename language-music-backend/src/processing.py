@@ -184,7 +184,8 @@ class SongProcessor:
                 task.original_line, f"__lrt{task.task_id}__"
             )
 
-        self.processed_lyrics = processed_lyrics
+        self.processed_lyrics = processed_lyrics.strip()
+        self.processed_lyrics = re.sub(r"\n{3,}", "\n\n", self.processed_lyrics)
         return self
 
     def get_processed_song(self) -> ProcessedSong:
