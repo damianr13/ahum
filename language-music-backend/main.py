@@ -40,7 +40,6 @@ def populate_spotify_song(event: CloudEvent, context=None):
         }
     )
 
-    # TODO: does not write property to firestore
     print("Result: ", result)
 
     return "OK"

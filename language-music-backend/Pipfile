@@ -16,6 +16,8 @@ firebase-admin = "*"
 spotipy = "*"
 async-timeout = "*"
 starlette = "*"
+typer = {extras = ["all"], version = "*"}
+levenshtein = "*"
 
 [dev-packages]
 
