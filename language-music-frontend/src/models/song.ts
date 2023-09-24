@@ -12,6 +12,7 @@ export interface WordSelectionTask {
 
 export interface Song {
     spotify_id: string;
+    youtube_id: string;
     lyrics: string;
     processed_lyrics: string;
 

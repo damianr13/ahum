@@ -48,7 +48,15 @@ export default function Home() {
   return (
     <>
       <div className="container">
-        <div className="main-wrapper" id={"embed-iframe"}>
+        <div className="embed-container">
+          <iframe src={`https://www.youtube.com/embed/${song?.youtube_id}`}
+                  style={{marginRight: "1%", marginLeft: "1%"}}
+                  width="98%"
+                  height="400px"
+                  frameBorder='0'
+                  allow='autoplay; encrypted-media'
+                  title='video'
+          />
         </div>
         <br/>
         {song && (

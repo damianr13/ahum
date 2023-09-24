@@ -34,4 +34,11 @@ body {
 .lyrics {
   white-space: pre-wrap;
   font-family: 'Roboto Mono', monospace;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.embed-container {
+  width: 100%;
+  margin: 0 16px;
 }
