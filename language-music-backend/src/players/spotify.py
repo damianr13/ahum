@@ -25,4 +25,5 @@ class SpotifyClient(AbstractPlayer):
         return spotify_track["artists"][0]["name"] + " - " + spotify_track["name"]
 
     def search_for_song(self, query: str) -> str:
-        raise NotImplementedError("Spotify search is not implemented yet")
+        results = self.spotify.search(q=query, type="track", limit=1)
+        return results["tracks"]["items"][0]["id"]

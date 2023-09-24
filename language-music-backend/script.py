@@ -1,6 +1,9 @@
+import json
+
 import typer
 
 from src import firestore
+from src.genius import get_song_url, get_lyrics
 from src.players import spotify, youtube
 from src.players.utils import convert_id
 from src.processing import SongProcessor
@@ -65,6 +68,43 @@ def update_with_youtube_id(firestore_id: str):
     )
 
     db.collection("songs").document(firestore_id).update({"youtube_id": youtube_id})
+
+
+@app.command()
+def insert_song(title: str, language: str):
+    print(title)
+    print(language)
+
+    spotify_client = spotify.SpotifyClient()
+    youtube_client = youtube.YoutubeClient()
+
+    spotify_id = spotify_client.search_for_song(title)
+    youtube_id = youtube_client.search_for_song(title)
+
+    genius_url = get_song_url(title)
+    lyrics = get_lyrics(genius_url)
+
+    song = SongWithLanguage(
+        spotify_id=spotify_id, youtube_id=youtube_id, lyrics=lyrics, language=language,
+    )
+    json.dump(song.model_dump(), open(f"data/last_song.json", "w", encoding="utf-8"))
+
+    processor = SongProcessor(song)
+
+    processed_song = (
+        processor.create_line_reordering_task()
+        .create_word_selection_task()
+        .create_word_selection_task()
+        .create_word_selection_task()
+        .mask_words_according_to_tasks()
+        .get_processed_song()
+    )
+
+    db = firestore.init_firestore()
+
+    db.collection("songs").document(f"spotify-{spotify_id}").set(
+        processed_song.model_dump()
+    )
 
 
 if __name__ == "__main__":

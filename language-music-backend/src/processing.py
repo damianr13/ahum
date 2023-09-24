@@ -133,33 +133,47 @@ class SongProcessor:
 
         return self
 
+    @staticmethod
+    def _select_one_unique(line_pool: list[str]) -> str:
+        # Select a pure line that appears only once
+        lines_count_dict = {}
+        for line in line_pool:
+            if line in lines_count_dict:
+                lines_count_dict[line] += 1
+            else:
+                lines_count_dict[line] = 1
+
+        unique_pure_lines = [
+            line for line in lines_count_dict if lines_count_dict[line] == 1
+        ]
+        lines_pool = unique_pure_lines
+
+        line_to_scramble = random.choice(lines_pool)
+        return re.sub(r"\s+", " ", line_to_scramble)
+
     @requires_words_from_lyrics
     @requires_dictionary
     @requires_oov_words
     def create_line_reordering_task(self) -> "SongProcessor":
-        all_lines = self.curated_lyrics.splitlines()
+        all_lines = [line.strip() for line in self.curated_lyrics.splitlines()]
 
         # extract the lines containing no oov words
         pure_lines = [
             line
             for line in all_lines
-            if not any(oov_word in line for oov_word in self.oov_words)
+            if not any(
+                # Especially for french, after removing punctuation we are left of with 'j' and 'l'
+                (len(oov_word) >= 2) and (oov_word in line)
+                for oov_word in self.oov_words
+            )
         ]
 
-        # Select a pure line that appears only once
-        pure_lines_dict = {}
-        for line in pure_lines:
-            if line in pure_lines_dict:
-                pure_lines_dict[line] += 1
-            else:
-                pure_lines_dict[line] = 1
-
-        unique_pure_lines = [
-            line for line in pure_lines_dict if pure_lines_dict[line] == 1
-        ]
-
-        line_to_scramble = random.choice(unique_pure_lines)
-        line_to_scramble = re.sub(r"\s+", " ", line_to_scramble)
+        try:
+            line_to_scramble = self._select_one_unique(pure_lines)
+        except IndexError:
+            print("WARNING: No pure lines found")
+            # If there are no pure lines, we select one that contains at least one oov word
+            line_to_scramble = self._select_one_unique(all_lines)
 
         # scramble the line
         line_words = line_to_scramble.strip().split(" ")
