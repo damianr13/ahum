@@ -10,14 +10,13 @@ export interface WordSelectionTaskProps {
 
 interface WordSelectionButtonProps {
   selectedWord: string | undefined;
-  setSelectedWord: (value: string | undefined) => void;
-  index: number;
+  onSelect: () => void;
   alternative: string;
   targetWord: string;
 }
 
 const WordSelectionButton = (props: WordSelectionButtonProps) => {
-  const { selectedWord, setSelectedWord, index, alternative, targetWord } =
+  const { selectedWord, onSelect, alternative, targetWord } =
     props;
   const isDisabled = useMemo(() => {
     return selectedWord !== undefined;
@@ -34,14 +33,13 @@ const WordSelectionButton = (props: WordSelectionButtonProps) => {
   }, [selectedWord, targetWord, alternative, isDisabled]);
   return (
     <Button
-      key={index}
       variant="outlined"
-      sx={{
+      style={{
         color: "white",
         borderColor: "white",
-        backgroundColor: { backgroundColor },
+        backgroundColor: backgroundColor,
       }}
-      onClick={() => setSelectedWord(alternative)}
+      onClick={onSelect}
       disabled={isDisabled}
     >
       {alternative}
@@ -77,8 +75,7 @@ const WordSelectionTaskView = (props: WordSelectionTaskProps) => {
         <WordSelectionButton
           key={index}
           selectedWord={selectedWord}
-          setSelectedWord={setSelectedWord}
-          index={index}
+          onSelect={() => setSelectedWord(alternative)}
           alternative={alternative}
           targetWord={props.task.target_word}
         />

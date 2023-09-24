@@ -9,41 +9,37 @@ export interface LineReorderingTaskProps {
 }
 
 interface LineOrderButtonProps {
-  currentSelection: number[];
-  setCurrentSelection: (value: number[]) => void;
-  index: number;
+  onSelected: () => void;
+  isSelected: boolean;
+  isCorrect: boolean | undefined;
+  selectionIndex: number | undefined;
   word: string;
-  selectionValidity: boolean[];
 }
 
 const LineOrderButton = (props: LineOrderButtonProps) => {
   const {
-    currentSelection,
-    setCurrentSelection,
-    index,
+    onSelected,
     word,
-    selectionValidity,
+    isSelected,
+    isCorrect,
+    selectionIndex
   } = props;
-
-  const selectionIndex = useMemo(
-    () => currentSelection.indexOf(index),
-    [currentSelection, index],
-  );
   const backgroundColor = useMemo(() => {
-    if (selectionIndex === -1) return "transparent";
-    if (selectionValidity[selectionIndex]) return "green";
-    return "red";
-  }, [selectionIndex, selectionValidity]);
+    if (!isSelected) return "transparent";
+
+    return isCorrect ? "green" : "red";
+  }, [isSelected, isCorrect]);
+
+  console.log(word, props)
   return (
     <Button
-      key={index}
       variant="outlined"
-      sx={{
+      style={{
         color: "white",
         borderColor: "white",
-        backgroundColor: { backgroundColor },
+        backgroundColor: backgroundColor,
       }}
-      onClick={() => setCurrentSelection([...currentSelection, index])}
+      onClick={onSelected}
     >
       {word}
       <sub>{selectionIndex !== -1 ? selectionIndex : ""}</sub>
@@ -95,16 +91,18 @@ const LineReorderingTaskView = (props: LineReorderingTaskProps) => {
         gap: "8px",
         justifyContent: "center",
         margin: "16px",
+        maxWidth: "100%",
+        flexWrap: "wrap",
       }}
     >
       {props.task.scrambled_line.map((word, index) => (
         <LineOrderButton
           key={index}
-          currentSelection={currentSelection}
-          setCurrentSelection={setCurrentSelection}
-          index={index}
+          isSelected={currentSelection.includes(index)}
+          isCorrect={selectionValidity[currentSelection.indexOf(index)]}
+          selectionIndex={currentSelection.indexOf(index)}
+          onSelected={() => setCurrentSelection([...currentSelection, index])}
           word={word}
-          selectionValidity={selectionValidity}
         />
       ))}
     </div>
