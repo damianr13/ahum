@@ -1,6 +1,5 @@
 import {useCallback, useEffect, useMemo, useState} from "react";
 import {Song} from "@/models/song";
-import {useRouter} from "next/router";
 import backend from "@/services/backend";
 import WordSelectionTaskView from "@/components/word-selection-task-view";
 import LineReorderingTaskView from "@/components/line-reordering-task-view";
@@ -9,17 +8,18 @@ import {useSearchParams} from "next/navigation";
 import WelcomePage from "@/components/welcome-page";
 
 const MainComponent = () => {
-
   const [song, setSong] = useState<Song | undefined>(undefined);
   const [updatedLyrics, setUpdatedLyrics] = useState<string | undefined>();
   const query = useSearchParams();
 
-  const [selectedLanguage, setSelectedLanguage] = useState<string | undefined>();
+  const [selectedLanguage, setSelectedLanguage] = useState<
+    string | undefined
+  >();
 
   useEffect(() => {
-      if (!query?.has("language")) return;
-      setSelectedLanguage(query.get("language") as string);
-  }, [query])
+    if (!query?.has("language")) return;
+    setSelectedLanguage(query.get("language") as string);
+  }, [query]);
 
   useEffect(() => {
     setUpdatedLyrics(song?.processed_lyrics);
@@ -48,29 +48,30 @@ const MainComponent = () => {
     [],
   );
 
-  const indexesOfLineReplacementTaskLines = useMemo(() => {
-      if (!song) return [];
+  const indexesOfLineReplacementTaskLines: number[] = useMemo(() => {
+    if (!song) return [];
 
-      const taskIndexPairs = song.processed_lyrics.split("\n")
-          .map((line, index) => ([line, index]))
-          .filter((pair: (string | number)[]) => {
-              const line = pair[0] as string;
-              return line.indexOf("_lp") !== -1;
-          })
-          .map((pair: (string | number)[]) => {
-              const lineIndex = pair[1] as number;
-              const line = pair[0] as string;
-              const taskIndex = extractIndex(line, "lp");
-              return [taskIndex, lineIndex] as [number, number];
-          });
-
-      return Object.fromEntries(taskIndexPairs);
-  }, [song]);
+    return song.processed_lyrics
+      .split("\n")
+      .map((line, index) => [line, index])
+      .filter((pair: (string | number)[]) => {
+        const line = pair[0] as string;
+        return line.indexOf("_lp") !== -1;
+      })
+      .map((pair: (string | number)[]) => {
+        const lineIndex = pair[1] as number;
+        const line = pair[0] as string;
+        const taskIndex = extractIndex(line, "lp");
+        return [taskIndex, lineIndex] as [number, number];
+      })
+      .sort((a, b) => a[0] - b[0])
+      .map((pair) => pair[1]);
+  }, [song, extractIndex]);
 
   return (
     <>
       <div className="container">
-        {!selectedLanguage && (<WelcomePage/>)}
+        {!selectedLanguage && <WelcomePage />}
         {song && updatedLyrics && (
           <>
             <div className="embed-container">
@@ -97,6 +98,7 @@ const MainComponent = () => {
                     return task.task_id === extractIndex(line, "wst");
                   },
                 );
+                if (!wordSelectionTask) return null;
                 return (
                   <WordSelectionTaskView
                     key={index}
@@ -123,27 +125,36 @@ const MainComponent = () => {
                     return task.task_id === extractIndex(line, "lrt");
                   },
                 );
+                if (!lineReorderingTask) return null;
                 return (
                   <LineReorderingTaskView
                     key={index}
                     task={lineReorderingTask}
                     onInput={(response: TaskResponse) => {
-                      console.log("lines", indexesOfLineReplacementTaskLines)
-                      console.log("response", response)
+                      console.log("lines", indexesOfLineReplacementTaskLines);
+                      console.log("response", response);
                       if (!updatedLyrics) return;
-                      const replacement = response.done ? lineReorderingTask.original_line :
-                        response.response +
-                        "_".repeat(
-                          lineReorderingTask.original_line.split(" ").length -
-                            response.response.split(" ").length,
-                        );
-                      const newUpdatedLyrics = updatedLyrics.split("\n").map((line, index) => {
-                        if (indexesOfLineReplacementTaskLines[lineReorderingTask.task_id] !== index) {
-                          return line;
-                        }
-                        return replacement;
-                      }).join("\n");
-                      console.log(replacement)
+                      const replacement = response.done
+                        ? lineReorderingTask.original_line
+                        : response.response +
+                          "_".repeat(
+                            lineReorderingTask.original_line.split(" ").length -
+                              response.response.split(" ").length,
+                          );
+                      const newUpdatedLyrics = updatedLyrics
+                        .split("\n")
+                        .map((line, index) => {
+                          if (
+                            indexesOfLineReplacementTaskLines[
+                              lineReorderingTask.task_id
+                            ] !== index
+                          ) {
+                            return line;
+                          }
+                          return replacement;
+                        })
+                        .join("\n");
+                      console.log(replacement);
                       setUpdatedLyrics(newUpdatedLyrics);
                     }}
                   />
@@ -161,6 +172,6 @@ const MainComponent = () => {
       </div>
     </>
   );
-}
+};
 
-export default MainComponent
+export default MainComponent;
