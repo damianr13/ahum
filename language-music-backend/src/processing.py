@@ -174,18 +174,45 @@ class SongProcessor:
     def mask_words_according_to_tasks(self) -> "SongProcessor":
         processed_lyrics = self.curated_lyrics
 
-        for task in self.word_selection_tasks:
-            processed_lyrics = processed_lyrics.replace(
-                task.target_word, f"__wst{task.task_id}__"
-            )
-
-        for task in self.line_reordering_tasks:
-            processed_lyrics = processed_lyrics.replace(
-                task.original_line, f"__lrt{task.task_id}__"
-            )
-
         self.processed_lyrics = processed_lyrics.strip()
         self.processed_lyrics = re.sub(r"\n{3,}", "\n\n", self.processed_lyrics)
+
+        processed_lines = self.processed_lyrics.splitlines()
+        processed_lines_original = processed_lines.copy()
+
+        inserted_lines_count = 0
+        word_tasks_handled = []
+        for index, line in enumerate(processed_lines_original):
+            for task in self.line_reordering_tasks:
+                if task.original_line == line:
+                    processed_lines[index + inserted_lines_count] = (
+                        "_" * (len(line) // 2)
+                        + f"lp{task.task_id}"
+                        + "_" * (len(line) // 2)
+                    )
+                    processed_lines.insert(
+                        index + inserted_lines_count + 1,
+                        "__lrt{task_id}__".format(task_id=task.task_id),
+                    )
+                    inserted_lines_count += 1
+
+            for task in self.word_selection_tasks:
+                if task.target_word in line:
+                    processed_lines[index + inserted_lines_count] = line.replace(
+                        task.target_word,
+                        "_" * (len(task.target_word) // 2)
+                        + f"wp{task.task_id}"
+                        + "_" * (len(task.target_word) // 2),
+                    )
+                    if task.task_id not in word_tasks_handled:
+                        processed_lines.insert(
+                            index + inserted_lines_count + 1, f"__wst{task.task_id}__",
+                        )
+                        word_tasks_handled.append(task.task_id)
+                        inserted_lines_count += 1
+
+        self.processed_lyrics = "\n".join(processed_lines)
+
         return self
 
     def get_processed_song(self) -> ProcessedSong:
