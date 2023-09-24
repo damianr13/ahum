@@ -1,72 +1,153 @@
 "use client";
 
-import {useEffect, useMemo, useState} from "react";
+import {useCallback, useEffect, useMemo, useState} from "react";
 import backend from "@/services/backend";
 import {Song} from "@/models/song";
+import WordSelectionTaskView from "@/components/word-selection-task-view";
+import LineReorderingTaskView from "@/components/line-reordering-task-view";
+import {TaskResponse} from "@/models/task-response";
 
 export default function Home() {
-  const [embedController, setEmbedController] = useState<any>(undefined);
+  const [song, setSong] = useState<Song | undefined>(undefined);
+  const [updatedLyrics, setUpdatedLyrics] = useState<string | undefined>();
 
-  const [song, setSong] = useState<Song | undefined>(undefined)
-
-  const songId = useMemo(() => {
-    if (!song) return undefined;
-    return song.spotify_id
+  useEffect(() => {
+    setUpdatedLyrics(song?.processed_lyrics);
   }, [song]);
-
 
   useEffect(() => {
     backend.getSong("de").then((song) => {
-      setSong(song)
-    })
-  }, [])
+      setSong(song);
+    });
+  }, []);
 
-  useEffect(() => {
-    if (!songId) return;
+  const extractIndex = useCallback(
+    (line: string, identifier: string): number | undefined => {
+      const startOfIndexNumber = line.indexOf(identifier) + identifier.length;
+      const endOfIndexNumber = line.indexOf("_", startOfIndexNumber);
+      if (startOfIndexNumber === -1 || endOfIndexNumber === -1)
+        return undefined;
 
-    const script = document.createElement('script');
-    script.src = "https://open.spotify.com/embed-podcast/iframe-api/v1";
-    script.async = true;
+      const indexAsString = line.substring(
+        startOfIndexNumber,
+        endOfIndexNumber,
+      );
+      return parseInt(indexAsString);
+    },
+    [],
+  );
 
-    document.body.appendChild(script);
+  const indexesOfLineReplacementTaskLines = useMemo(() => {
+      if (!song) return [];
 
-    window.onSpotifyIframeApiReady = (iFrameAPI: any) => {
-      console.log("iFrameAPI", iFrameAPI)
-      let element = document.getElementById('embed-iframe');
-      let options = {
-          uri: `spotify:track:${songId}`
-        };
-      let callback = (EmbedController: any) => {
-        console.log("EmbedController", EmbedController);
-        setEmbedController(EmbedController)
-      };
-      iFrameAPI.createController(element, options, callback);
-    };
+      const taskIndexPairs = song.processed_lyrics.split("\n")
+          .map((line, index) => ([line, index]))
+          .filter((pair: (string | number)[]) => {
+              const line = pair[0] as string;
+              return line.indexOf("_lp") !== -1;
+          })
+          .map((pair: (string | number)[]) => {
+              const lineIndex = pair[1] as number;
+              const line = pair[0] as string;
+              const taskIndex = extractIndex(line, "lp");
+              return [taskIndex, lineIndex] as [number, number];
+          });
 
-  }, [songId]);
+      return Object.fromEntries(taskIndexPairs);
+  }, [song]);
 
   return (
     <>
       <div className="container">
         <div className="embed-container">
-          <iframe src={`https://www.youtube.com/embed/${song?.youtube_id}`}
-                  style={{marginRight: "1%", marginLeft: "1%"}}
-                  width="98%"
-                  height="400px"
-                  frameBorder='0'
-                  allow='autoplay; encrypted-media'
-                  title='video'
+          <iframe
+            src={`https://www.youtube.com/embed/${song?.youtube_id}`}
+            style={{ marginRight: "1%", marginLeft: "1%" }}
+            width="98%"
+            height="400px"
+            frameBorder="0"
+            allow="autoplay; encrypted-media"
+            title="video"
           />
         </div>
-        <br/>
-        {song && (
+        <br />
+        {song && updatedLyrics && (
           <>
-            <p className="lyrics">
-                {song.processed_lyrics}
-            </p>
+            {updatedLyrics.split("\n").map((line, index) => {
+              if (line.indexOf("lp") !== -1) {
+                line = line.replace(/lp\d+/g, "");
+              }
+              if (line.indexOf("wp") !== -1) {
+                line = line.replace(/wp\d+/g, "");
+              }
+              if (line.indexOf("wst") !== -1 && song?.word_selection_tasks) {
+                const wordSelectionTask = song.word_selection_tasks.find(
+                  (task) => {
+                    return task.task_id === extractIndex(line, "wst");
+                  },
+                );
+                return (
+                  <WordSelectionTaskView
+                    key={index}
+                    task={wordSelectionTask}
+                    onInput={() => {
+                      if (!updatedLyrics) return;
+                      const regexp = new RegExp(
+                        `_*wp${wordSelectionTask.task_id}_*`,
+                        "g",
+                      );
+                      const newUpdatedLyrics = updatedLyrics.replace(
+                        regexp,
+                        wordSelectionTask.target_word,
+                      );
+                      setUpdatedLyrics(newUpdatedLyrics);
+                    }}
+                  />
+                );
+              }
+
+              if (line.indexOf("lrt") !== -1 && song?.line_reordering_tasks) {
+                const lineReorderingTask = song.line_reordering_tasks.find(
+                  (task) => {
+                    return task.task_id === extractIndex(line, "lrt");
+                  },
+                );
+                return (
+                  <LineReorderingTaskView
+                    key={index}
+                    task={lineReorderingTask}
+                    onInput={(response: TaskResponse) => {
+                      console.log("lines", indexesOfLineReplacementTaskLines)
+                      console.log("response", response)
+                      if (!updatedLyrics) return;
+                      const replacement = response.done ? lineReorderingTask.original_line :
+                        response.response +
+                        "_".repeat(
+                          lineReorderingTask.original_line.split(" ").length -
+                            response.response.split(" ").length,
+                        );
+                      const newUpdatedLyrics = updatedLyrics.split("\n").map((line, index) => {
+                        if (indexesOfLineReplacementTaskLines[lineReorderingTask.task_id] !== index) {
+                          return line;
+                        }
+                        return replacement;
+                      }).join("\n");
+                      console.log(replacement)
+                      setUpdatedLyrics(newUpdatedLyrics);
+                    }}
+                  />
+                );
+              }
+
+              return (
+                <p key={index} className="lyrics">
+                  {line}
+                </p>
+              );
+            })}
           </>
         )}
       </div>
     </>
-  )
+  );
 }

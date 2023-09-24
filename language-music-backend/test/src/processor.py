@@ -21,3 +21,8 @@ class ProcessorTest(unittest.TestCase):
 
         self.assertTrue("Stoff" not in processed_song.processed_lyrics)
         self.assertTrue("verkauft" not in processed_song.processed_lyrics)
+
+        self.assertEqual(
+            processed_song.line_reordering_tasks[0].original_line.strip(),
+            processed_song.line_reordering_tasks[0].original_line,
+        )
