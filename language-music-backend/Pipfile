@@ -18,6 +18,7 @@ async-timeout = "*"
 starlette = "*"
 typer = {extras = ["all"], version = "*"}
 levenshtein = "*"
+google-api-python-client = "*"
 
 [dev-packages]
 

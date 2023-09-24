@@ -1,10 +1,11 @@
 import spotipy
 from spotipy import SpotifyClientCredentials
 
+from src.players.abstract import AbstractPlayer
 from src.settings import get_settings
 
 
-class SpotifyClient:
+class SpotifyClient(AbstractPlayer):
     spotify = None
 
     def __init__(self):
@@ -22,3 +23,6 @@ class SpotifyClient:
 
         spotify_track = self.spotify.track(uri)
         return spotify_track["artists"][0]["name"] + " - " + spotify_track["name"]
+
+    def search_for_song(self, query: str) -> str:
+        raise NotImplementedError("Spotify search is not implemented yet")

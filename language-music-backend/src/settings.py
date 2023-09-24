@@ -9,6 +9,8 @@ class Settings(BaseSettings):
     spotify_client_id: str
     spotify_client_secret: str
 
+    youtube_api_key: str
+
 
 @lru_cache()
 def get_settings() -> Settings:

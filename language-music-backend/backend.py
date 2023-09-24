@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 
-from src import spotify, firestore
+from src import firestore
 from src.genius import get_song_url, get_lyrics
 from src.schemas.song import Song
 from starlette.middleware.cors import CORSMiddleware
@@ -9,10 +9,7 @@ db = firestore.init_firestore()
 
 app = FastAPI()
 app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],
-    allow_methods=["*"],
-    allow_headers=["*"],
+    CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"],
 )
 
 

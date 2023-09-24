@@ -9,7 +9,8 @@ import json
 import functions_framework
 from cloudevents.http import CloudEvent
 
-from src import spotify, genius, firestore
+from src import genius, firestore
+from src.players import spotify
 import firebase_admin.firestore
 
 db = firestore.init_firestore()
