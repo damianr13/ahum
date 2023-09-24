@@ -85,7 +85,7 @@ class SongProcessor:
 
     @requires_dictionary
     @requires_words_from_lyrics
-    def create_word_selection_task(self) -> "SongProcessor":
+    def create_word_selection_task(self, forced_word: str = None) -> "SongProcessor":
         exclusion_list = (
             self.oov_words
             + [task.target_word for task in self.word_selection_tasks]
@@ -103,6 +103,8 @@ class SongProcessor:
                 if word not in exclusion_list and len(word) >= 5
             ]
         )
+        if forced_word:
+            word_to_replace = forced_word
 
         print("Word to replace")
         print(word_to_replace)
@@ -111,6 +113,9 @@ class SongProcessor:
         alternatives = []
 
         for word in random.sample(self.dictionary, len(self.dictionary)):
+            if word.lower() == word_to_replace.lower():
+                continue
+
             current_distance = distance(word_to_replace, word)
 
             if current_distance <= 2:
@@ -157,7 +162,7 @@ class SongProcessor:
         line_to_scramble = re.sub(r"\s+", " ", line_to_scramble)
 
         # scramble the line
-        line_words = line_to_scramble.split(" ")
+        line_words = line_to_scramble.strip().split(" ")
         random.shuffle(line_words)
         scrambled_line = " ".join(line_words)
 
@@ -183,9 +188,13 @@ class SongProcessor:
         inserted_lines_count = 0
         word_tasks_handled = []
         for index, line in enumerate(processed_lines_original):
+            updated_line = line
+
+            # only update the real insertion count after all tasks have been handled
+            lines_inserted_for_current_line = 0
             for task in self.line_reordering_tasks:
                 if task.original_line == line:
-                    processed_lines[index + inserted_lines_count] = (
+                    updated_line = (
                         "_" * (len(line) // 2)
                         + f"lp{task.task_id}"
                         + "_" * (len(line) // 2)
@@ -194,11 +203,11 @@ class SongProcessor:
                         index + inserted_lines_count + 1,
                         "__lrt{task_id}__".format(task_id=task.task_id),
                     )
-                    inserted_lines_count += 1
+                    lines_inserted_for_current_line += 1
 
             for task in self.word_selection_tasks:
                 if task.target_word in line:
-                    processed_lines[index + inserted_lines_count] = line.replace(
+                    updated_line = updated_line.replace(
                         task.target_word,
                         "_" * (len(task.target_word) // 2)
                         + f"wp{task.task_id}"
@@ -209,7 +218,10 @@ class SongProcessor:
                             index + inserted_lines_count + 1, f"__wst{task.task_id}__",
                         )
                         word_tasks_handled.append(task.task_id)
-                        inserted_lines_count += 1
+                        lines_inserted_for_current_line += 1
+
+            processed_lines[index + inserted_lines_count] = updated_line
+            inserted_lines_count += lines_inserted_for_current_line
 
         self.processed_lyrics = "\n".join(processed_lines)
 

@@ -7,7 +7,7 @@ from src.schemas.tasks import LineReorderingTask, WordSelectionTask
 
 class Song(BaseModel):
     spotify_id: str
-    youtube_id: Optional[str]
+    youtube_id: Optional[str] = None
     lyrics: str
 
 
