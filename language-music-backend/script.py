@@ -1,4 +1,3 @@
-import json
 from typing import Tuple, Dict
 
 from thefuzz import fuzz
@@ -89,7 +88,10 @@ def insert_song(title: str, language: str):
     lyrics = get_lyrics(genius_url)
 
     song = SongWithLanguage(
-        spotify_id=spotify_id, youtube_id=youtube_id, lyrics=lyrics, language=language,
+        spotify_id=spotify_id,
+        youtube_id=youtube_id,
+        lyrics=lyrics,
+        language=language,
     )
     json.dump(song.model_dump(), open(f"data/last_song.json", "w", encoding="utf-8"))
 
@@ -111,7 +113,7 @@ def insert_song(title: str, language: str):
     )
 
 
-def __read() -> Tuple[Dict, str]:
+def __read_lyrics_data() -> Tuple[Dict, str]:
     with open("data/fr_timestamped.json", "r") as f:
         data = json.load(f)
 
@@ -161,7 +163,7 @@ def __search_for_segment(
 
 @app.command()
 def find_one_segment(index: int):
-    data, lyrics = __read()
+    data, lyrics = __read_lyrics_data()
 
     first_segment = data["segments"][index]
 
@@ -174,7 +176,7 @@ def find_one_segment(index: int):
 
 @app.command()
 def find_all_relevant_segments():
-    data, lyrics = __read()
+    data, lyrics = __read_lyrics_data()
 
     relevant_segments = data["segments"][:12]
     known_passages = []
