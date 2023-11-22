@@ -1,0 +1,6550 @@
+{
+  "text": " Sur ma route, oui, il y a eu du mouv', oui, de l'aventure dans le mouv', oui, une vie de route. Sur ma route, oui, je ne compte plus les soucis de quoi devenir fou, oui, une vie de route. Sur ma route, oui, il y a eu du mouv', oui, de l'aventure dans le mouv', oui, une vie de route. Sur ma route, oui, je ne compte plus les soucis de quoi devenir fou, oui, une vie de route. Sur ma route, oui, sur ma route, sur ma route, sur ma route, sur ma route. Sur ma route, j'ai eu des moments de doute, je marchais sans savoir vers o\u00f9, j'\u00e9tais t\u00eatu, rien \u00e0 foutre. Sur ma route, j'avais pas de bagages en soute, et dans ma poche pas un sourd, juste la famille entre nous. Sur ma route, il y a eu un tas de bouchons, la v\u00e9rit\u00e9 j'ai souvent tr\u00e8s b\u00fbch\u00e9, est-ce que tu sais que quand tu touches le fond, il y a plus de gens chez qui tu peux te r\u00e9fugier. Tu peux compter que sur tes chers parents parce que les amis, eux disparaissent un par un. Oui, il m'arrive d'avoir le front au sol parce que tu es grand et on est seul en meurtres. Sur ma route, oui, il y a eu du mouvement, oui, de l'aventure dans le mouvement, une vie de route. Sur ma route, oui, j'en compte plus les soucis de quoi devenir fou, oui, une vie de route. Sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route sur ma route, oui, il y a eu du mouvement, oui, de l'aventure dans le mouvement, une vie de route sur ma route, oui, je ne compte plus les soucis, devoir devenir fou, oui, une vie de route sur ma route, oui, il y a eu du mouvement, oui, de l'aventure dans le mouvement, une vie de route sur ma route, oui, je ne compte plus les soucis, devoir devenir fou, oui, une vie de route sur ma route, sur ma route, sur ma route, sur ma route, sur ma route",
+  "segments": [
+    {
+      "id": 0,
+      "seek": 0,
+      "start": 0.0,
+      "end": 22.26,
+      "text": " Sur ma route, oui, il y a eu du mouv', oui, de l'aventure dans le mouv', oui, une vie de route.",
+      "tokens": [
+        50364,
+        6732,
+        463,
+        7955,
+        11,
+        14367,
+        11,
+        1930,
+        288,
+        257,
+        2228,
+        1581,
+        275,
+        22941,
+        6098,
+        14367,
+        11,
+        368,
+        287,
+        6,
+        706,
+        317,
+        540,
+        2680,
+        476,
+        275,
+        22941,
+        6098,
+        14367,
+        11,
+        2251,
+        4941,
+        368,
+        7955,
+        13,
+        51464
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.3131984409533049,
+      "compression_ratio": 1.2179487179487178,
+      "no_speech_prob": 0.16868045926094055,
+      "confidence": 0.835,
+      "words": [
+        {
+          "text": "Sur",
+          "start": 0.0,
+          "end": 15.68,
+          "confidence": 0.213
+        },
+        {
+          "text": "ma",
+          "start": 15.68,
+          "end": 16.12,
+          "confidence": 0.954
+        },
+        {
+          "text": "route,",
+          "start": 16.12,
+          "end": 16.5,
+          "confidence": 0.976
+        },
+        {
+          "text": "oui,",
+          "start": 16.76,
+          "end": 16.98,
+          "confidence": 0.909
+        },
+        {
+          "text": "il",
+          "start": 17.16,
+          "end": 17.32,
+          "confidence": 0.87
+        },
+        {
+          "text": "y",
+          "start": 17.32,
+          "end": 17.48,
+          "confidence": 0.976
+        },
+        {
+          "text": "a",
+          "start": 17.48,
+          "end": 17.58,
+          "confidence": 0.969
+        },
+        {
+          "text": "eu",
+          "start": 17.58,
+          "end": 17.74,
+          "confidence": 0.988
+        },
+        {
+          "text": "du",
+          "start": 17.74,
+          "end": 18.02,
+          "confidence": 0.927
+        },
+        {
+          "text": "mouv',",
+          "start": 18.02,
+          "end": 18.66,
+          "confidence": 0.509
+        },
+        {
+          "text": "oui,",
+          "start": 18.66,
+          "end": 18.82,
+          "confidence": 0.797
+        },
+        {
+          "text": "de",
+          "start": 18.86,
+          "end": 19.0,
+          "confidence": 0.806
+        },
+        {
+          "text": "l'aventure",
+          "start": 19.0,
+          "end": 19.6,
+          "confidence": 0.989
+        },
+        {
+          "text": "dans",
+          "start": 19.6,
+          "end": 19.8,
+          "confidence": 0.966
+        },
+        {
+          "text": "le",
+          "start": 19.8,
+          "end": 19.98,
+          "confidence": 0.942
+        },
+        {
+          "text": "mouv',",
+          "start": 19.98,
+          "end": 20.52,
+          "confidence": 0.935
+        },
+        {
+          "text": "oui,",
+          "start": 20.52,
+          "end": 21.06,
+          "confidence": 0.857
+        },
+        {
+          "text": "une",
+          "start": 21.18,
+          "end": 21.4,
+          "confidence": 0.838
+        },
+        {
+          "text": "vie",
+          "start": 21.4,
+          "end": 21.64,
+          "confidence": 0.986
+        },
+        {
+          "text": "de",
+          "start": 21.64,
+          "end": 21.88,
+          "confidence": 0.923
+        },
+        {
+          "text": "route.",
+          "start": 21.88,
+          "end": 22.26,
+          "confidence": 0.684
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "seek": 2200,
+      "start": 23.14,
+      "end": 29.92,
+      "text": " Sur ma route, oui, je ne compte plus les soucis de quoi devenir fou, oui, une vie de route.",
+      "tokens": [
+        50414,
+        6732,
+        463,
+        7955,
+        11,
+        14367,
+        11,
+        1506,
+        408,
+        19424,
+        1804,
+        1512,
+        6926,
+        26720,
+        368,
+        11714,
+        41271,
+        32012,
+        11,
+        14367,
+        11,
+        2251,
+        4941,
+        368,
+        7955,
+        13,
+        50764
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.0902419608572255,
+      "compression_ratio": 2.325,
+      "no_speech_prob": 0.9319261908531189,
+      "confidence": 0.93,
+      "words": [
+        {
+          "text": "Sur",
+          "start": 23.14,
+          "end": 23.42,
+          "confidence": 0.901
+        },
+        {
+          "text": "ma",
+          "start": 23.42,
+          "end": 23.74,
+          "confidence": 0.995
+        },
+        {
+          "text": "route,",
+          "start": 23.74,
+          "end": 24.2,
+          "confidence": 0.998
+        },
+        {
+          "text": "oui,",
+          "start": 24.2,
+          "end": 24.54,
+          "confidence": 0.982
+        },
+        {
+          "text": "je",
+          "start": 24.7,
+          "end": 24.82,
+          "confidence": 0.974
+        },
+        {
+          "text": "ne",
+          "start": 24.82,
+          "end": 24.96,
+          "confidence": 0.91
+        },
+        {
+          "text": "compte",
+          "start": 24.96,
+          "end": 25.16,
+          "confidence": 0.986
+        },
+        {
+          "text": "plus",
+          "start": 25.16,
+          "end": 25.4,
+          "confidence": 0.997
+        },
+        {
+          "text": "les",
+          "start": 25.4,
+          "end": 25.72,
+          "confidence": 0.991
+        },
+        {
+          "text": "soucis",
+          "start": 25.72,
+          "end": 26.48,
+          "confidence": 0.981
+        },
+        {
+          "text": "de",
+          "start": 26.48,
+          "end": 26.68,
+          "confidence": 0.477
+        },
+        {
+          "text": "quoi",
+          "start": 26.68,
+          "end": 26.92,
+          "confidence": 0.873
+        },
+        {
+          "text": "devenir",
+          "start": 26.92,
+          "end": 27.52,
+          "confidence": 0.99
+        },
+        {
+          "text": "fou,",
+          "start": 27.52,
+          "end": 27.96,
+          "confidence": 0.973
+        },
+        {
+          "text": "oui,",
+          "start": 28.26,
+          "end": 28.56,
+          "confidence": 0.844
+        },
+        {
+          "text": "une",
+          "start": 28.92,
+          "end": 29.04,
+          "confidence": 0.963
+        },
+        {
+          "text": "vie",
+          "start": 29.04,
+          "end": 29.26,
+          "confidence": 0.999
+        },
+        {
+          "text": "de",
+          "start": 29.26,
+          "end": 29.5,
+          "confidence": 0.995
+        },
+        {
+          "text": "route.",
+          "start": 29.5,
+          "end": 29.92,
+          "confidence": 0.993
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "seek": 2200,
+      "start": 30.82,
+      "end": 37.48,
+      "text": " Sur ma route, oui, il y a eu du mouv', oui, de l'aventure dans le mouv', oui, une vie de route.",
+      "tokens": [
+        50814,
+        6732,
+        463,
+        7955,
+        11,
+        14367,
+        11,
+        1930,
+        288,
+        257,
+        2228,
+        1581,
+        275,
+        22941,
+        6098,
+        14367,
+        11,
+        368,
+        287,
+        6,
+        706,
+        317,
+        540,
+        2680,
+        476,
+        275,
+        22941,
+        6098,
+        14367,
+        11,
+        2251,
+        4941,
+        368,
+        7955,
+        13,
+        51114
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.0902419608572255,
+      "compression_ratio": 2.325,
+      "no_speech_prob": 0.9319261908531189,
+      "confidence": 0.992,
+      "words": [
+        {
+          "text": "Sur",
+          "start": 30.82,
+          "end": 31.16,
+          "confidence": 0.922
+        },
+        {
+          "text": "ma",
+          "start": 31.16,
+          "end": 31.46,
+          "confidence": 0.999
+        },
+        {
+          "text": "route,",
+          "start": 31.46,
+          "end": 31.88,
+          "confidence": 1.0
+        },
+        {
+          "text": "oui,",
+          "start": 32.14,
+          "end": 32.32,
+          "confidence": 0.992
+        },
+        {
+          "text": "il",
+          "start": 32.52,
+          "end": 32.66,
+          "confidence": 0.997
+        },
+        {
+          "text": "y",
+          "start": 32.66,
+          "end": 32.86,
+          "confidence": 0.999
+        },
+        {
+          "text": "a",
+          "start": 32.86,
+          "end": 32.94,
+          "confidence": 0.991
+        },
+        {
+          "text": "eu",
+          "start": 32.94,
+          "end": 33.14,
+          "confidence": 0.997
+        },
+        {
+          "text": "du",
+          "start": 33.14,
+          "end": 33.36,
+          "confidence": 0.989
+        },
+        {
+          "text": "mouv',",
+          "start": 33.36,
+          "end": 33.78,
+          "confidence": 0.998
+        },
+        {
+          "text": "oui,",
+          "start": 33.78,
+          "end": 34.1,
+          "confidence": 0.996
+        },
+        {
+          "text": "de",
+          "start": 34.26,
+          "end": 34.32,
+          "confidence": 0.994
+        },
+        {
+          "text": "l'aventure",
+          "start": 34.32,
+          "end": 34.98,
+          "confidence": 0.999
+        },
+        {
+          "text": "dans",
+          "start": 34.98,
+          "end": 35.16,
+          "confidence": 1.0
+        },
+        {
+          "text": "le",
+          "start": 35.16,
+          "end": 35.38,
+          "confidence": 0.994
+        },
+        {
+          "text": "mouv',",
+          "start": 35.38,
+          "end": 35.96,
+          "confidence": 0.997
+        },
+        {
+          "text": "oui,",
+          "start": 35.96,
+          "end": 36.18,
+          "confidence": 0.959
+        },
+        {
+          "text": "une",
+          "start": 36.54,
+          "end": 36.7,
+          "confidence": 0.988
+        },
+        {
+          "text": "vie",
+          "start": 36.7,
+          "end": 36.96,
+          "confidence": 0.999
+        },
+        {
+          "text": "de",
+          "start": 36.96,
+          "end": 37.18,
+          "confidence": 0.998
+        },
+        {
+          "text": "route.",
+          "start": 37.18,
+          "end": 37.48,
+          "confidence": 0.999
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "seek": 2200,
+      "start": 38.5,
+      "end": 45.14,
+      "text": " Sur ma route, oui, je ne compte plus les soucis de quoi devenir fou, oui, une vie de route.",
+      "tokens": [
+        51164,
+        6732,
+        463,
+        7955,
+        11,
+        14367,
+        11,
+        1506,
+        408,
+        19424,
+        1804,
+        1512,
+        6926,
+        26720,
+        368,
+        11714,
+        41271,
+        32012,
+        11,
+        14367,
+        11,
+        2251,
+        4941,
+        368,
+        7955,
+        13,
+        51514
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.0902419608572255,
+      "compression_ratio": 2.325,
+      "no_speech_prob": 0.9319261908531189,
+      "confidence": 0.99,
+      "words": [
+        {
+          "text": "Sur",
+          "start": 38.5,
+          "end": 38.82,
+          "confidence": 0.866
+        },
+        {
+          "text": "ma",
+          "start": 38.82,
+          "end": 39.12,
+          "confidence": 0.999
+        },
+        {
+          "text": "route,",
+          "start": 39.12,
+          "end": 39.48,
+          "confidence": 1.0
+        },
+        {
+          "text": "oui,",
+          "start": 39.72,
+          "end": 39.86,
+          "confidence": 0.998
+        },
+        {
+          "text": "je",
+          "start": 40.1,
+          "end": 40.18,
+          "confidence": 0.998
+        },
+        {
+          "text": "ne",
+          "start": 40.18,
+          "end": 40.28,
+          "confidence": 0.997
+        },
+        {
+          "text": "compte",
+          "start": 40.28,
+          "end": 40.48,
+          "confidence": 0.978
+        },
+        {
+          "text": "plus",
+          "start": 40.48,
+          "end": 40.76,
+          "confidence": 0.999
+        },
+        {
+          "text": "les",
+          "start": 40.76,
+          "end": 41.04,
+          "confidence": 0.999
+        },
+        {
+          "text": "soucis",
+          "start": 41.04,
+          "end": 41.82,
+          "confidence": 0.998
+        },
+        {
+          "text": "de",
+          "start": 41.82,
+          "end": 42.02,
+          "confidence": 0.996
+        },
+        {
+          "text": "quoi",
+          "start": 42.02,
+          "end": 42.2,
+          "confidence": 0.999
+        },
+        {
+          "text": "devenir",
+          "start": 42.2,
+          "end": 42.86,
+          "confidence": 1.0
+        },
+        {
+          "text": "fou,",
+          "start": 42.86,
+          "end": 43.32,
+          "confidence": 0.989
+        },
+        {
+          "text": "oui,",
+          "start": 43.38,
+          "end": 43.84,
+          "confidence": 0.994
+        },
+        {
+          "text": "une",
+          "start": 44.24,
+          "end": 44.38,
+          "confidence": 0.996
+        },
+        {
+          "text": "vie",
+          "start": 44.38,
+          "end": 44.62,
+          "confidence": 0.999
+        },
+        {
+          "text": "de",
+          "start": 44.62,
+          "end": 44.94,
+          "confidence": 0.999
+        },
+        {
+          "text": "route.",
+          "start": 44.94,
+          "end": 45.14,
+          "confidence": 0.999
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "seek": 4500,
+      "start": 45.14,
+      "end": 59.2,
+      "text": " Sur ma route, oui, sur ma route, sur ma route, sur ma route, sur ma route.",
+      "tokens": [
+        50364,
+        6732,
+        463,
+        7955,
+        11,
+        14367,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        13,
+        51064
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.18103069555564005,
+      "compression_ratio": 1.6283185840707965,
+      "no_speech_prob": 0.345091849565506,
+      "confidence": 0.931,
+      "words": [
+        {
+          "text": "Sur",
+          "start": 45.14,
+          "end": 46.2,
+          "confidence": 0.993
+        },
+        {
+          "text": "ma",
+          "start": 46.2,
+          "end": 46.8,
+          "confidence": 0.998
+        },
+        {
+          "text": "route,",
+          "start": 46.8,
+          "end": 47.24,
+          "confidence": 0.996
+        },
+        {
+          "text": "oui,",
+          "start": 49.52,
+          "end": 49.6,
+          "confidence": 0.893
+        },
+        {
+          "text": "sur",
+          "start": 49.64,
+          "end": 50.12,
+          "confidence": 0.686
+        },
+        {
+          "text": "ma",
+          "start": 50.12,
+          "end": 50.6,
+          "confidence": 0.995
+        },
+        {
+          "text": "route,",
+          "start": 50.6,
+          "end": 51.54,
+          "confidence": 0.996
+        },
+        {
+          "text": "sur",
+          "start": 53.42,
+          "end": 53.92,
+          "confidence": 0.67
+        },
+        {
+          "text": "ma",
+          "start": 53.92,
+          "end": 54.48,
+          "confidence": 0.996
+        },
+        {
+          "text": "route,",
+          "start": 54.48,
+          "end": 54.84,
+          "confidence": 0.998
+        },
+        {
+          "text": "sur",
+          "start": 57.2,
+          "end": 57.78,
+          "confidence": 0.917
+        },
+        {
+          "text": "ma",
+          "start": 57.78,
+          "end": 58.24,
+          "confidence": 0.997
+        },
+        {
+          "text": "route,",
+          "start": 58.24,
+          "end": 58.7,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 59.14,
+          "end": 59.16,
+          "confidence": 0.875
+        },
+        {
+          "text": "ma",
+          "start": 59.16,
+          "end": 59.18,
+          "confidence": 0.995
+        },
+        {
+          "text": "route.",
+          "start": 59.18,
+          "end": 59.2,
+          "confidence": 0.998
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "seek": 4500,
+      "start": 61.54,
+      "end": 68.48,
+      "text": " Sur ma route, j'ai eu des moments de doute, je marchais sans savoir vers o\u00f9, j'\u00e9tais t\u00eatu, rien \u00e0 foutre.",
+      "tokens": [
+        51164,
+        6732,
+        463,
+        7955,
+        11,
+        361,
+        6,
+        1301,
+        2228,
+        730,
+        6065,
+        368,
+        41984,
+        11,
+        1506,
+        8368,
+        1527,
+        12177,
+        19345,
+        1774,
+        9068,
+        11,
+        361,
+        6,
+        22824,
+        256,
+        1307,
+        9179,
+        11,
+        13355,
+        1531,
+        41907,
+        265,
+        13,
+        51514
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.18103069555564005,
+      "compression_ratio": 1.6283185840707965,
+      "no_speech_prob": 0.345091849565506,
+      "confidence": 0.881,
+      "words": [
+        {
+          "text": "Sur",
+          "start": 61.54,
+          "end": 61.86,
+          "confidence": 0.935
+        },
+        {
+          "text": "ma",
+          "start": 61.86,
+          "end": 62.12,
+          "confidence": 0.998
+        },
+        {
+          "text": "route,",
+          "start": 62.12,
+          "end": 62.44,
+          "confidence": 0.999
+        },
+        {
+          "text": "j'ai",
+          "start": 62.72,
+          "end": 62.88,
+          "confidence": 0.942
+        },
+        {
+          "text": "eu",
+          "start": 62.88,
+          "end": 63.06,
+          "confidence": 0.987
+        },
+        {
+          "text": "des",
+          "start": 63.06,
+          "end": 63.36,
+          "confidence": 0.995
+        },
+        {
+          "text": "moments",
+          "start": 63.36,
+          "end": 63.74,
+          "confidence": 0.983
+        },
+        {
+          "text": "de",
+          "start": 63.74,
+          "end": 64.08,
+          "confidence": 0.996
+        },
+        {
+          "text": "doute,",
+          "start": 64.08,
+          "end": 64.3,
+          "confidence": 0.808
+        },
+        {
+          "text": "je",
+          "start": 64.36,
+          "end": 64.52,
+          "confidence": 0.721
+        },
+        {
+          "text": "marchais",
+          "start": 64.52,
+          "end": 64.92,
+          "confidence": 0.988
+        },
+        {
+          "text": "sans",
+          "start": 64.92,
+          "end": 65.2,
+          "confidence": 0.995
+        },
+        {
+          "text": "savoir",
+          "start": 65.2,
+          "end": 65.64,
+          "confidence": 0.53
+        },
+        {
+          "text": "vers",
+          "start": 65.64,
+          "end": 66.02,
+          "confidence": 0.937
+        },
+        {
+          "text": "o\u00f9,",
+          "start": 66.02,
+          "end": 66.22,
+          "confidence": 0.97
+        },
+        {
+          "text": "j'\u00e9tais",
+          "start": 66.36,
+          "end": 66.86,
+          "confidence": 0.895
+        },
+        {
+          "text": "t\u00eatu,",
+          "start": 66.86,
+          "end": 67.34,
+          "confidence": 0.596
+        },
+        {
+          "text": "rien",
+          "start": 67.34,
+          "end": 67.66,
+          "confidence": 0.987
+        },
+        {
+          "text": "\u00e0",
+          "start": 67.66,
+          "end": 68.16,
+          "confidence": 0.96
+        },
+        {
+          "text": "foutre.",
+          "start": 68.16,
+          "end": 68.48,
+          "confidence": 0.993
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "seek": 6800,
+      "start": 69.2,
+      "end": 76.08,
+      "text": " Sur ma route, j'avais pas de bagages en soute, et dans ma poche pas un sourd, juste la famille entre nous.",
+      "tokens": [
+        50414,
+        6732,
+        463,
+        7955,
+        11,
+        361,
+        6,
+        18866,
+        1736,
+        368,
+        3411,
+        1660,
+        465,
+        262,
+        14040,
+        11,
+        1030,
+        2680,
+        463,
+        714,
+        1876,
+        1736,
+        517,
+        11006,
+        67,
+        11,
+        13016,
+        635,
+        28123,
+        3962,
+        4666,
+        13,
+        50764
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.15075098325128425,
+      "compression_ratio": 1.673758865248227,
+      "no_speech_prob": 0.15732166171073914,
+      "confidence": 0.918,
+      "words": [
+        {
+          "text": "Sur",
+          "start": 69.2,
+          "end": 69.54,
+          "confidence": 0.996
+        },
+        {
+          "text": "ma",
+          "start": 69.54,
+          "end": 69.8,
+          "confidence": 0.999
+        },
+        {
+          "text": "route,",
+          "start": 69.8,
+          "end": 70.1,
+          "confidence": 1.0
+        },
+        {
+          "text": "j'avais",
+          "start": 70.26,
+          "end": 70.7,
+          "confidence": 0.988
+        },
+        {
+          "text": "pas",
+          "start": 70.7,
+          "end": 70.9,
+          "confidence": 0.992
+        },
+        {
+          "text": "de",
+          "start": 70.9,
+          "end": 71.06,
+          "confidence": 0.8
+        },
+        {
+          "text": "bagages",
+          "start": 71.06,
+          "end": 71.52,
+          "confidence": 0.78
+        },
+        {
+          "text": "en",
+          "start": 71.52,
+          "end": 71.82,
+          "confidence": 0.952
+        },
+        {
+          "text": "soute,",
+          "start": 71.82,
+          "end": 72.02,
+          "confidence": 0.832
+        },
+        {
+          "text": "et",
+          "start": 72.26,
+          "end": 72.46,
+          "confidence": 0.979
+        },
+        {
+          "text": "dans",
+          "start": 72.46,
+          "end": 72.64,
+          "confidence": 0.994
+        },
+        {
+          "text": "ma",
+          "start": 72.64,
+          "end": 72.88,
+          "confidence": 0.977
+        },
+        {
+          "text": "poche",
+          "start": 72.88,
+          "end": 73.14,
+          "confidence": 0.995
+        },
+        {
+          "text": "pas",
+          "start": 73.14,
+          "end": 73.4,
+          "confidence": 0.656
+        },
+        {
+          "text": "un",
+          "start": 73.4,
+          "end": 73.68,
+          "confidence": 0.987
+        },
+        {
+          "text": "sourd,",
+          "start": 73.68,
+          "end": 73.96,
+          "confidence": 0.833
+        },
+        {
+          "text": "juste",
+          "start": 74.02,
+          "end": 74.32,
+          "confidence": 0.961
+        },
+        {
+          "text": "la",
+          "start": 74.32,
+          "end": 74.6,
+          "confidence": 0.991
+        },
+        {
+          "text": "famille",
+          "start": 74.6,
+          "end": 75.06,
+          "confidence": 0.996
+        },
+        {
+          "text": "entre",
+          "start": 75.06,
+          "end": 75.56,
+          "confidence": 0.964
+        },
+        {
+          "text": "nous.",
+          "start": 75.56,
+          "end": 76.08,
+          "confidence": 0.827
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "seek": 6800,
+      "start": 77.56,
+      "end": 84.48,
+      "text": " Sur ma route, il y a eu un tas de bouchons, la v\u00e9rit\u00e9 j'ai souvent tr\u00e8s b\u00fbch\u00e9, est-ce que tu sais que quand tu touches le fond, il y a plus de gens chez qui tu peux te r\u00e9fugier.",
+      "tokens": [
+        50814,
+        6732,
+        463,
+        7955,
+        11,
+        1930,
+        288,
+        257,
+        2228,
+        517,
+        8023,
+        368,
+        272,
+        2220,
+        892,
+        11,
+        635,
+        30678,
+        526,
+        361,
+        6,
+        1301,
+        20847,
+        5732,
+        272,
+        8879,
+        11131,
+        11,
+        871,
+        12,
+        384,
+        631,
+        2604,
+        11757,
+        631,
+        6932,
+        2604,
+        17431,
+        476,
+        9557,
+        11,
+        1930,
+        288,
+        257,
+        1804,
+        368,
+        10668,
+        17855,
+        1956,
+        2604,
+        14844,
+        535,
+        30170,
+        697,
+        811,
+        13,
+        51164
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.15075098325128425,
+      "compression_ratio": 1.673758865248227,
+      "no_speech_prob": 0.15732166171073914,
+      "confidence": 0.908,
+      "words": [
+        {
+          "text": "Sur",
+          "start": 77.56,
+          "end": 77.8,
+          "confidence": 0.96
+        },
+        {
+          "text": "ma",
+          "start": 77.8,
+          "end": 77.98,
+          "confidence": 0.999
+        },
+        {
+          "text": "route,",
+          "start": 77.98,
+          "end": 78.08,
+          "confidence": 1.0
+        },
+        {
+          "text": "il",
+          "start": 78.12,
+          "end": 78.14,
+          "confidence": 0.677
+        },
+        {
+          "text": "y",
+          "start": 78.14,
+          "end": 78.22,
+          "confidence": 0.99
+        },
+        {
+          "text": "a",
+          "start": 78.22,
+          "end": 78.24,
+          "confidence": 0.984
+        },
+        {
+          "text": "eu",
+          "start": 78.24,
+          "end": 78.34,
+          "confidence": 0.996
+        },
+        {
+          "text": "un",
+          "start": 78.34,
+          "end": 78.42,
+          "confidence": 0.974
+        },
+        {
+          "text": "tas",
+          "start": 78.42,
+          "end": 78.62,
+          "confidence": 0.995
+        },
+        {
+          "text": "de",
+          "start": 78.62,
+          "end": 78.76,
+          "confidence": 0.906
+        },
+        {
+          "text": "bouchons,",
+          "start": 78.76,
+          "end": 79.2,
+          "confidence": 0.974
+        },
+        {
+          "text": "la",
+          "start": 79.48,
+          "end": 79.64,
+          "confidence": 0.971
+        },
+        {
+          "text": "v\u00e9rit\u00e9",
+          "start": 79.64,
+          "end": 79.92,
+          "confidence": 0.997
+        },
+        {
+          "text": "j'ai",
+          "start": 79.92,
+          "end": 80.08,
+          "confidence": 0.827
+        },
+        {
+          "text": "souvent",
+          "start": 80.08,
+          "end": 80.34,
+          "confidence": 0.991
+        },
+        {
+          "text": "tr\u00e8s",
+          "start": 80.34,
+          "end": 80.64,
+          "confidence": 0.857
+        },
+        {
+          "text": "b\u00fbch\u00e9,",
+          "start": 80.64,
+          "end": 81.02,
+          "confidence": 0.605
+        },
+        {
+          "text": "est-ce",
+          "start": 81.34,
+          "end": 81.56,
+          "confidence": 0.852
+        },
+        {
+          "text": "que",
+          "start": 81.56,
+          "end": 81.64,
+          "confidence": 0.962
+        },
+        {
+          "text": "tu",
+          "start": 81.64,
+          "end": 81.78,
+          "confidence": 0.982
+        },
+        {
+          "text": "sais",
+          "start": 81.78,
+          "end": 81.86,
+          "confidence": 0.987
+        },
+        {
+          "text": "que",
+          "start": 81.86,
+          "end": 81.98,
+          "confidence": 0.973
+        },
+        {
+          "text": "quand",
+          "start": 81.98,
+          "end": 82.12,
+          "confidence": 0.984
+        },
+        {
+          "text": "tu",
+          "start": 82.12,
+          "end": 82.28,
+          "confidence": 0.971
+        },
+        {
+          "text": "touches",
+          "start": 82.28,
+          "end": 82.48,
+          "confidence": 0.879
+        },
+        {
+          "text": "le",
+          "start": 82.48,
+          "end": 82.74,
+          "confidence": 0.994
+        },
+        {
+          "text": "fond,",
+          "start": 82.74,
+          "end": 82.9,
+          "confidence": 0.848
+        },
+        {
+          "text": "il",
+          "start": 82.96,
+          "end": 83.06,
+          "confidence": 0.933
+        },
+        {
+          "text": "y",
+          "start": 83.06,
+          "end": 83.18,
+          "confidence": 0.931
+        },
+        {
+          "text": "a",
+          "start": 83.18,
+          "end": 83.2,
+          "confidence": 0.983
+        },
+        {
+          "text": "plus",
+          "start": 83.2,
+          "end": 83.36,
+          "confidence": 0.546
+        },
+        {
+          "text": "de",
+          "start": 83.36,
+          "end": 83.44,
+          "confidence": 0.987
+        },
+        {
+          "text": "gens",
+          "start": 83.44,
+          "end": 83.56,
+          "confidence": 0.989
+        },
+        {
+          "text": "chez",
+          "start": 83.56,
+          "end": 83.68,
+          "confidence": 0.952
+        },
+        {
+          "text": "qui",
+          "start": 83.68,
+          "end": 83.82,
+          "confidence": 0.989
+        },
+        {
+          "text": "tu",
+          "start": 83.82,
+          "end": 83.94,
+          "confidence": 0.975
+        },
+        {
+          "text": "peux",
+          "start": 83.94,
+          "end": 84.06,
+          "confidence": 0.985
+        },
+        {
+          "text": "te",
+          "start": 84.06,
+          "end": 84.28,
+          "confidence": 0.986
+        },
+        {
+          "text": "r\u00e9fugier.",
+          "start": 84.28,
+          "end": 84.48,
+          "confidence": 0.987
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "seek": 6800,
+      "start": 85.16,
+      "end": 88.48,
+      "text": " Tu peux compter que sur tes chers parents parce que les amis, eux disparaissent un par un.",
+      "tokens": [
+        51214,
+        7836,
+        14844,
+        715,
+        391,
+        631,
+        1022,
+        20018,
+        417,
+        433,
+        3152,
+        6992,
+        631,
+        1512,
+        32929,
+        11,
+        22648,
+        14548,
+        64,
+        25450,
+        517,
+        971,
+        517,
+        13,
+        51364
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.15075098325128425,
+      "compression_ratio": 1.673758865248227,
+      "no_speech_prob": 0.15732166171073914,
+      "confidence": 0.816,
+      "words": [
+        {
+          "text": "Tu",
+          "start": 85.16,
+          "end": 85.34,
+          "confidence": 0.935
+        },
+        {
+          "text": "peux",
+          "start": 85.34,
+          "end": 85.48,
+          "confidence": 0.547
+        },
+        {
+          "text": "compter",
+          "start": 85.48,
+          "end": 85.7,
+          "confidence": 0.489
+        },
+        {
+          "text": "que",
+          "start": 85.7,
+          "end": 85.8,
+          "confidence": 0.891
+        },
+        {
+          "text": "sur",
+          "start": 85.8,
+          "end": 85.94,
+          "confidence": 0.986
+        },
+        {
+          "text": "tes",
+          "start": 85.94,
+          "end": 86.1,
+          "confidence": 0.991
+        },
+        {
+          "text": "chers",
+          "start": 86.1,
+          "end": 86.38,
+          "confidence": 0.809
+        },
+        {
+          "text": "parents",
+          "start": 86.38,
+          "end": 86.62,
+          "confidence": 0.927
+        },
+        {
+          "text": "parce",
+          "start": 86.62,
+          "end": 86.84,
+          "confidence": 0.62
+        },
+        {
+          "text": "que",
+          "start": 86.84,
+          "end": 86.96,
+          "confidence": 0.988
+        },
+        {
+          "text": "les",
+          "start": 86.96,
+          "end": 87.1,
+          "confidence": 0.963
+        },
+        {
+          "text": "amis,",
+          "start": 87.1,
+          "end": 87.36,
+          "confidence": 0.988
+        },
+        {
+          "text": "eux",
+          "start": 87.36,
+          "end": 87.66,
+          "confidence": 0.69
+        },
+        {
+          "text": "disparaissent",
+          "start": 87.66,
+          "end": 88.08,
+          "confidence": 0.864
+        },
+        {
+          "text": "un",
+          "start": 88.08,
+          "end": 88.28,
+          "confidence": 0.862
+        },
+        {
+          "text": "par",
+          "start": 88.28,
+          "end": 88.4,
+          "confidence": 0.982
+        },
+        {
+          "text": "un.",
+          "start": 88.4,
+          "end": 88.48,
+          "confidence": 0.996
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "seek": 6800,
+      "start": 89.08,
+      "end": 92.13,
+      "text": " Oui, il m'arrive d'avoir le front au sol parce que tu es grand et on est seul en meurtres.",
+      "tokens": [
+        51414,
+        14005,
+        11,
+        1930,
+        275,
+        6,
+        47614,
+        274,
+        6,
+        17239,
+        476,
+        1868,
+        1609,
+        1404,
+        6992,
+        631,
+        2604,
+        785,
+        2697,
+        1030,
+        322,
+        871,
+        24448,
+        465,
+        385,
+        6224,
+        495,
+        13,
+        51564
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.15075098325128425,
+      "compression_ratio": 1.673758865248227,
+      "no_speech_prob": 0.15732166171073914,
+      "confidence": 0.903,
+      "words": [
+        {
+          "text": "Oui,",
+          "start": 89.08,
+          "end": 89.22,
+          "confidence": 0.946
+        },
+        {
+          "text": "il",
+          "start": 89.28,
+          "end": 89.34,
+          "confidence": 0.947
+        },
+        {
+          "text": "m'arrive",
+          "start": 89.34,
+          "end": 89.52,
+          "confidence": 0.994
+        },
+        {
+          "text": "d'avoir",
+          "start": 89.52,
+          "end": 89.74,
+          "confidence": 0.997
+        },
+        {
+          "text": "le",
+          "start": 89.74,
+          "end": 89.94,
+          "confidence": 0.988
+        },
+        {
+          "text": "front",
+          "start": 89.94,
+          "end": 90.12,
+          "confidence": 0.955
+        },
+        {
+          "text": "au",
+          "start": 90.12,
+          "end": 90.36,
+          "confidence": 0.896
+        },
+        {
+          "text": "sol",
+          "start": 90.36,
+          "end": 90.56,
+          "confidence": 0.994
+        },
+        {
+          "text": "parce",
+          "start": 90.56,
+          "end": 90.78,
+          "confidence": 0.885
+        },
+        {
+          "text": "que",
+          "start": 90.78,
+          "end": 90.88,
+          "confidence": 0.993
+        },
+        {
+          "text": "tu",
+          "start": 90.88,
+          "end": 91.02,
+          "confidence": 0.872
+        },
+        {
+          "text": "es",
+          "start": 91.02,
+          "end": 91.1,
+          "confidence": 0.985
+        },
+        {
+          "text": "grand",
+          "start": 91.1,
+          "end": 91.32,
+          "confidence": 0.993
+        },
+        {
+          "text": "et",
+          "start": 91.32,
+          "end": 91.6,
+          "confidence": 0.594
+        },
+        {
+          "text": "on",
+          "start": 91.6,
+          "end": 91.72,
+          "confidence": 0.973
+        },
+        {
+          "text": "est",
+          "start": 91.72,
+          "end": 91.82,
+          "confidence": 0.993
+        },
+        {
+          "text": "seul",
+          "start": 91.82,
+          "end": 91.96,
+          "confidence": 0.75
+        },
+        {
+          "text": "en",
+          "start": 91.96,
+          "end": 92.1,
+          "confidence": 0.947
+        },
+        {
+          "text": "meurtres.",
+          "start": 92.1,
+          "end": 92.13,
+          "confidence": 0.705
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "seek": 9200,
+      "start": 92.13,
+      "end": 98.94,
+      "text": " Sur ma route, oui, il y a eu du mouvement, oui, de l'aventure dans le mouvement, une vie de route.",
+      "tokens": [
+        50364,
+        6732,
+        463,
+        7955,
+        11,
+        14367,
+        11,
+        1930,
+        288,
+        257,
+        2228,
+        1581,
+        41219,
+        11,
+        14367,
+        11,
+        368,
+        287,
+        6,
+        706,
+        317,
+        540,
+        2680,
+        476,
+        41219,
+        11,
+        2251,
+        4941,
+        368,
+        7955,
+        13,
+        50714
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.11642286085313366,
+      "compression_ratio": 1.6293103448275863,
+      "no_speech_prob": 0.5720507502555847,
+      "confidence": 0.891,
+      "words": [
+        {
+          "text": "Sur",
+          "start": 92.13,
+          "end": 92.56,
+          "confidence": 0.98
+        },
+        {
+          "text": "ma",
+          "start": 92.56,
+          "end": 92.82,
+          "confidence": 0.998
+        },
+        {
+          "text": "route,",
+          "start": 92.82,
+          "end": 93.22,
+          "confidence": 0.999
+        },
+        {
+          "text": "oui,",
+          "start": 93.78,
+          "end": 93.86,
+          "confidence": 0.843
+        },
+        {
+          "text": "il",
+          "start": 93.88,
+          "end": 94.06,
+          "confidence": 0.991
+        },
+        {
+          "text": "y",
+          "start": 94.06,
+          "end": 94.22,
+          "confidence": 0.998
+        },
+        {
+          "text": "a",
+          "start": 94.22,
+          "end": 94.34,
+          "confidence": 0.992
+        },
+        {
+          "text": "eu",
+          "start": 94.34,
+          "end": 94.54,
+          "confidence": 0.993
+        },
+        {
+          "text": "du",
+          "start": 94.54,
+          "end": 94.8,
+          "confidence": 0.891
+        },
+        {
+          "text": "mouvement,",
+          "start": 94.8,
+          "end": 95.16,
+          "confidence": 0.423
+        },
+        {
+          "text": "oui,",
+          "start": 95.48,
+          "end": 95.56,
+          "confidence": 0.729
+        },
+        {
+          "text": "de",
+          "start": 95.64,
+          "end": 95.78,
+          "confidence": 0.972
+        },
+        {
+          "text": "l'aventure",
+          "start": 95.78,
+          "end": 96.36,
+          "confidence": 0.991
+        },
+        {
+          "text": "dans",
+          "start": 96.36,
+          "end": 96.54,
+          "confidence": 0.987
+        },
+        {
+          "text": "le",
+          "start": 96.54,
+          "end": 96.76,
+          "confidence": 0.976
+        },
+        {
+          "text": "mouvement,",
+          "start": 96.76,
+          "end": 97.28,
+          "confidence": 0.912
+        },
+        {
+          "text": "une",
+          "start": 97.78,
+          "end": 98.02,
+          "confidence": 0.351
+        },
+        {
+          "text": "vie",
+          "start": 98.02,
+          "end": 98.38,
+          "confidence": 0.999
+        },
+        {
+          "text": "de",
+          "start": 98.38,
+          "end": 98.68,
+          "confidence": 0.998
+        },
+        {
+          "text": "route.",
+          "start": 98.68,
+          "end": 98.94,
+          "confidence": 0.985
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "seek": 9200,
+      "start": 99.88,
+      "end": 106.48,
+      "text": " Sur ma route, oui, j'en compte plus les soucis de quoi devenir fou, oui, une vie de route.",
+      "tokens": [
+        50764,
+        6732,
+        463,
+        7955,
+        11,
+        14367,
+        11,
+        361,
+        6,
+        268,
+        19424,
+        1804,
+        1512,
+        6926,
+        26720,
+        368,
+        11714,
+        41271,
+        32012,
+        11,
+        14367,
+        11,
+        2251,
+        4941,
+        368,
+        7955,
+        13,
+        51064
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.11642286085313366,
+      "compression_ratio": 1.6293103448275863,
+      "no_speech_prob": 0.5720507502555847,
+      "confidence": 0.912,
+      "words": [
+        {
+          "text": "Sur",
+          "start": 99.88,
+          "end": 100.24,
+          "confidence": 0.937
+        },
+        {
+          "text": "ma",
+          "start": 100.24,
+          "end": 100.5,
+          "confidence": 0.999
+        },
+        {
+          "text": "route,",
+          "start": 100.5,
+          "end": 100.9,
+          "confidence": 1.0
+        },
+        {
+          "text": "oui,",
+          "start": 101.14,
+          "end": 101.26,
+          "confidence": 0.939
+        },
+        {
+          "text": "j'en",
+          "start": 101.44,
+          "end": 101.68,
+          "confidence": 0.777
+        },
+        {
+          "text": "compte",
+          "start": 101.68,
+          "end": 101.86,
+          "confidence": 0.668
+        },
+        {
+          "text": "plus",
+          "start": 101.86,
+          "end": 102.14,
+          "confidence": 0.996
+        },
+        {
+          "text": "les",
+          "start": 102.14,
+          "end": 102.42,
+          "confidence": 0.992
+        },
+        {
+          "text": "soucis",
+          "start": 102.42,
+          "end": 103.06,
+          "confidence": 0.753
+        },
+        {
+          "text": "de",
+          "start": 103.06,
+          "end": 103.38,
+          "confidence": 0.962
+        },
+        {
+          "text": "quoi",
+          "start": 103.38,
+          "end": 103.58,
+          "confidence": 0.995
+        },
+        {
+          "text": "devenir",
+          "start": 103.58,
+          "end": 104.22,
+          "confidence": 0.998
+        },
+        {
+          "text": "fou,",
+          "start": 104.22,
+          "end": 104.72,
+          "confidence": 0.992
+        },
+        {
+          "text": "oui,",
+          "start": 105.18,
+          "end": 105.3,
+          "confidence": 0.986
+        },
+        {
+          "text": "une",
+          "start": 105.64,
+          "end": 105.76,
+          "confidence": 0.998
+        },
+        {
+          "text": "vie",
+          "start": 105.76,
+          "end": 106.0,
+          "confidence": 0.999
+        },
+        {
+          "text": "de",
+          "start": 106.0,
+          "end": 106.28,
+          "confidence": 0.999
+        },
+        {
+          "text": "route.",
+          "start": 106.28,
+          "end": 106.48,
+          "confidence": 0.999
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "seek": 10600,
+      "start": 106.48,
+      "end": 136.0,
+      "text": " Sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur",
+      "tokens": [
+        50364,
+        6732,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.053283571662389645,
+      "compression_ratio": 26.655172413793103,
+      "no_speech_prob": 0.4666953980922699,
+      "confidence": 0.978,
+      "words": [
+        {
+          "text": "Sur",
+          "start": 106.48,
+          "end": 106.5,
+          "confidence": 0.962
+        },
+        {
+          "text": "ma",
+          "start": 106.5,
+          "end": 106.52,
+          "confidence": 0.953
+        },
+        {
+          "text": "route,",
+          "start": 106.52,
+          "end": 106.76,
+          "confidence": 0.992
+        },
+        {
+          "text": "sur",
+          "start": 107.08,
+          "end": 111.42,
+          "confidence": 0.511
+        },
+        {
+          "text": "ma",
+          "start": 111.42,
+          "end": 111.96,
+          "confidence": 0.993
+        },
+        {
+          "text": "route,",
+          "start": 111.96,
+          "end": 112.54,
+          "confidence": 0.99
+        },
+        {
+          "text": "sur",
+          "start": 114.78,
+          "end": 115.34,
+          "confidence": 0.903
+        },
+        {
+          "text": "ma",
+          "start": 115.34,
+          "end": 115.92,
+          "confidence": 0.995
+        },
+        {
+          "text": "route,",
+          "start": 115.92,
+          "end": 116.28,
+          "confidence": 0.996
+        },
+        {
+          "text": "sur",
+          "start": 117.48,
+          "end": 119.16,
+          "confidence": 0.932
+        },
+        {
+          "text": "ma",
+          "start": 119.16,
+          "end": 119.7,
+          "confidence": 0.997
+        },
+        {
+          "text": "route,",
+          "start": 119.7,
+          "end": 119.98,
+          "confidence": 0.997
+        },
+        {
+          "text": "sur",
+          "start": 119.98,
+          "end": 120.0,
+          "confidence": 0.872
+        },
+        {
+          "text": "ma",
+          "start": 120.0,
+          "end": 120.02,
+          "confidence": 0.996
+        },
+        {
+          "text": "route,",
+          "start": 120.02,
+          "end": 120.04,
+          "confidence": 0.998
+        },
+        {
+          "text": "sur",
+          "start": 120.04,
+          "end": 120.06,
+          "confidence": 0.846
+        },
+        {
+          "text": "ma",
+          "start": 120.06,
+          "end": 120.08,
+          "confidence": 0.994
+        },
+        {
+          "text": "route,",
+          "start": 120.08,
+          "end": 120.1,
+          "confidence": 0.998
+        },
+        {
+          "text": "sur",
+          "start": 120.1,
+          "end": 120.12,
+          "confidence": 0.793
+        },
+        {
+          "text": "ma",
+          "start": 120.12,
+          "end": 120.14,
+          "confidence": 0.992
+        },
+        {
+          "text": "route,",
+          "start": 120.14,
+          "end": 120.16,
+          "confidence": 0.998
+        },
+        {
+          "text": "sur",
+          "start": 120.16,
+          "end": 120.18,
+          "confidence": 0.878
+        },
+        {
+          "text": "ma",
+          "start": 120.18,
+          "end": 120.2,
+          "confidence": 0.993
+        },
+        {
+          "text": "route,",
+          "start": 120.2,
+          "end": 120.22,
+          "confidence": 0.998
+        },
+        {
+          "text": "sur",
+          "start": 120.22,
+          "end": 120.24,
+          "confidence": 0.893
+        },
+        {
+          "text": "ma",
+          "start": 120.24,
+          "end": 120.26,
+          "confidence": 0.992
+        },
+        {
+          "text": "route,",
+          "start": 120.26,
+          "end": 120.28,
+          "confidence": 0.998
+        },
+        {
+          "text": "sur",
+          "start": 120.28,
+          "end": 120.3,
+          "confidence": 0.909
+        },
+        {
+          "text": "ma",
+          "start": 120.3,
+          "end": 120.32,
+          "confidence": 0.992
+        },
+        {
+          "text": "route,",
+          "start": 120.32,
+          "end": 120.34,
+          "confidence": 0.998
+        },
+        {
+          "text": "sur",
+          "start": 120.34,
+          "end": 120.36,
+          "confidence": 0.925
+        },
+        {
+          "text": "ma",
+          "start": 120.36,
+          "end": 120.38,
+          "confidence": 0.992
+        },
+        {
+          "text": "route,",
+          "start": 120.38,
+          "end": 120.4,
+          "confidence": 0.998
+        },
+        {
+          "text": "sur",
+          "start": 120.4,
+          "end": 120.42,
+          "confidence": 0.936
+        },
+        {
+          "text": "ma",
+          "start": 120.42,
+          "end": 120.44,
+          "confidence": 0.993
+        },
+        {
+          "text": "route,",
+          "start": 120.44,
+          "end": 120.46,
+          "confidence": 0.998
+        },
+        {
+          "text": "sur",
+          "start": 120.46,
+          "end": 120.48,
+          "confidence": 0.944
+        },
+        {
+          "text": "ma",
+          "start": 120.48,
+          "end": 120.5,
+          "confidence": 0.993
+        },
+        {
+          "text": "route,",
+          "start": 120.5,
+          "end": 120.52,
+          "confidence": 0.998
+        },
+        {
+          "text": "sur",
+          "start": 120.52,
+          "end": 120.54,
+          "confidence": 0.95
+        },
+        {
+          "text": "ma",
+          "start": 120.54,
+          "end": 120.56,
+          "confidence": 0.993
+        },
+        {
+          "text": "route,",
+          "start": 120.56,
+          "end": 120.58,
+          "confidence": 0.998
+        },
+        {
+          "text": "sur",
+          "start": 120.58,
+          "end": 120.6,
+          "confidence": 0.953
+        },
+        {
+          "text": "ma",
+          "start": 120.6,
+          "end": 120.62,
+          "confidence": 0.994
+        },
+        {
+          "text": "route,",
+          "start": 120.62,
+          "end": 120.64,
+          "confidence": 0.998
+        },
+        {
+          "text": "sur",
+          "start": 120.64,
+          "end": 120.66,
+          "confidence": 0.956
+        },
+        {
+          "text": "ma",
+          "start": 120.66,
+          "end": 120.68,
+          "confidence": 0.994
+        },
+        {
+          "text": "route,",
+          "start": 120.68,
+          "end": 120.7,
+          "confidence": 0.998
+        },
+        {
+          "text": "sur",
+          "start": 120.7,
+          "end": 120.8,
+          "confidence": 0.957
+        },
+        {
+          "text": "ma",
+          "start": 120.8,
+          "end": 120.82,
+          "confidence": 0.995
+        },
+        {
+          "text": "route,",
+          "start": 120.82,
+          "end": 120.84,
+          "confidence": 0.998
+        },
+        {
+          "text": "sur",
+          "start": 121.22,
+          "end": 121.24,
+          "confidence": 0.96
+        },
+        {
+          "text": "ma",
+          "start": 121.24,
+          "end": 121.26,
+          "confidence": 0.995
+        },
+        {
+          "text": "route,",
+          "start": 121.26,
+          "end": 121.28,
+          "confidence": 0.998
+        },
+        {
+          "text": "sur",
+          "start": 121.54,
+          "end": 121.66,
+          "confidence": 0.961
+        },
+        {
+          "text": "ma",
+          "start": 121.66,
+          "end": 121.68,
+          "confidence": 0.995
+        },
+        {
+          "text": "route,",
+          "start": 121.68,
+          "end": 121.7,
+          "confidence": 0.998
+        },
+        {
+          "text": "sur",
+          "start": 121.7,
+          "end": 121.72,
+          "confidence": 0.963
+        },
+        {
+          "text": "ma",
+          "start": 121.72,
+          "end": 121.74,
+          "confidence": 0.996
+        },
+        {
+          "text": "route,",
+          "start": 121.74,
+          "end": 121.76,
+          "confidence": 0.998
+        },
+        {
+          "text": "sur",
+          "start": 121.76,
+          "end": 121.78,
+          "confidence": 0.965
+        },
+        {
+          "text": "ma",
+          "start": 121.78,
+          "end": 121.8,
+          "confidence": 0.996
+        },
+        {
+          "text": "route,",
+          "start": 121.8,
+          "end": 121.82,
+          "confidence": 0.998
+        },
+        {
+          "text": "sur",
+          "start": 121.82,
+          "end": 121.84,
+          "confidence": 0.966
+        },
+        {
+          "text": "ma",
+          "start": 121.84,
+          "end": 121.86,
+          "confidence": 0.996
+        },
+        {
+          "text": "route,",
+          "start": 121.86,
+          "end": 121.88,
+          "confidence": 0.998
+        },
+        {
+          "text": "sur",
+          "start": 121.88,
+          "end": 121.9,
+          "confidence": 0.968
+        },
+        {
+          "text": "ma",
+          "start": 121.9,
+          "end": 121.92,
+          "confidence": 0.997
+        },
+        {
+          "text": "route,",
+          "start": 121.92,
+          "end": 121.94,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 121.94,
+          "end": 122.28,
+          "confidence": 0.968
+        },
+        {
+          "text": "ma",
+          "start": 122.28,
+          "end": 122.3,
+          "confidence": 0.997
+        },
+        {
+          "text": "route,",
+          "start": 122.3,
+          "end": 122.32,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 122.38,
+          "end": 122.4,
+          "confidence": 0.97
+        },
+        {
+          "text": "ma",
+          "start": 122.4,
+          "end": 122.42,
+          "confidence": 0.997
+        },
+        {
+          "text": "route,",
+          "start": 122.42,
+          "end": 122.44,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 122.44,
+          "end": 122.46,
+          "confidence": 0.971
+        },
+        {
+          "text": "ma",
+          "start": 122.46,
+          "end": 122.48,
+          "confidence": 0.997
+        },
+        {
+          "text": "route,",
+          "start": 122.48,
+          "end": 122.5,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 122.52,
+          "end": 122.82,
+          "confidence": 0.972
+        },
+        {
+          "text": "ma",
+          "start": 122.82,
+          "end": 122.84,
+          "confidence": 0.997
+        },
+        {
+          "text": "route,",
+          "start": 122.84,
+          "end": 122.86,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 122.86,
+          "end": 122.88,
+          "confidence": 0.973
+        },
+        {
+          "text": "ma",
+          "start": 122.88,
+          "end": 122.9,
+          "confidence": 0.997
+        },
+        {
+          "text": "route,",
+          "start": 122.9,
+          "end": 122.92,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 122.92,
+          "end": 123.24,
+          "confidence": 0.973
+        },
+        {
+          "text": "ma",
+          "start": 123.24,
+          "end": 123.48,
+          "confidence": 0.998
+        },
+        {
+          "text": "route,",
+          "start": 123.48,
+          "end": 123.78,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 123.78,
+          "end": 123.8,
+          "confidence": 0.974
+        },
+        {
+          "text": "ma",
+          "start": 123.8,
+          "end": 123.82,
+          "confidence": 0.998
+        },
+        {
+          "text": "route,",
+          "start": 123.82,
+          "end": 123.84,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 123.84,
+          "end": 123.86,
+          "confidence": 0.974
+        },
+        {
+          "text": "ma",
+          "start": 123.86,
+          "end": 123.88,
+          "confidence": 0.998
+        },
+        {
+          "text": "route,",
+          "start": 123.88,
+          "end": 123.9,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 123.9,
+          "end": 123.92,
+          "confidence": 0.974
+        },
+        {
+          "text": "ma",
+          "start": 123.92,
+          "end": 123.94,
+          "confidence": 0.998
+        },
+        {
+          "text": "route,",
+          "start": 123.94,
+          "end": 123.96,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 123.96,
+          "end": 123.98,
+          "confidence": 0.975
+        },
+        {
+          "text": "ma",
+          "start": 123.98,
+          "end": 124.0,
+          "confidence": 0.998
+        },
+        {
+          "text": "route,",
+          "start": 124.0,
+          "end": 124.02,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 124.02,
+          "end": 124.04,
+          "confidence": 0.975
+        },
+        {
+          "text": "ma",
+          "start": 124.04,
+          "end": 124.06,
+          "confidence": 0.998
+        },
+        {
+          "text": "route,",
+          "start": 124.06,
+          "end": 124.08,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 124.08,
+          "end": 124.1,
+          "confidence": 0.975
+        },
+        {
+          "text": "ma",
+          "start": 124.1,
+          "end": 124.12,
+          "confidence": 0.998
+        },
+        {
+          "text": "route,",
+          "start": 124.12,
+          "end": 124.14,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 124.14,
+          "end": 124.16,
+          "confidence": 0.974
+        },
+        {
+          "text": "ma",
+          "start": 124.16,
+          "end": 124.18,
+          "confidence": 0.998
+        },
+        {
+          "text": "route,",
+          "start": 124.18,
+          "end": 124.2,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 124.2,
+          "end": 124.22,
+          "confidence": 0.973
+        },
+        {
+          "text": "ma",
+          "start": 124.22,
+          "end": 124.24,
+          "confidence": 0.998
+        },
+        {
+          "text": "route,",
+          "start": 124.24,
+          "end": 124.26,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 124.26,
+          "end": 124.28,
+          "confidence": 0.973
+        },
+        {
+          "text": "ma",
+          "start": 124.28,
+          "end": 124.3,
+          "confidence": 0.998
+        },
+        {
+          "text": "route,",
+          "start": 124.3,
+          "end": 124.32,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 124.32,
+          "end": 124.34,
+          "confidence": 0.972
+        },
+        {
+          "text": "ma",
+          "start": 124.34,
+          "end": 124.36,
+          "confidence": 0.998
+        },
+        {
+          "text": "route,",
+          "start": 124.36,
+          "end": 124.38,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 124.38,
+          "end": 124.4,
+          "confidence": 0.971
+        },
+        {
+          "text": "ma",
+          "start": 124.4,
+          "end": 124.42,
+          "confidence": 0.998
+        },
+        {
+          "text": "route,",
+          "start": 124.42,
+          "end": 124.44,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 124.44,
+          "end": 124.46,
+          "confidence": 0.969
+        },
+        {
+          "text": "ma",
+          "start": 124.46,
+          "end": 124.48,
+          "confidence": 0.998
+        },
+        {
+          "text": "route,",
+          "start": 124.48,
+          "end": 124.5,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 124.5,
+          "end": 124.52,
+          "confidence": 0.969
+        },
+        {
+          "text": "ma",
+          "start": 124.52,
+          "end": 124.54,
+          "confidence": 0.998
+        },
+        {
+          "text": "route,",
+          "start": 124.54,
+          "end": 124.56,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 124.56,
+          "end": 124.58,
+          "confidence": 0.968
+        },
+        {
+          "text": "ma",
+          "start": 124.58,
+          "end": 124.6,
+          "confidence": 0.998
+        },
+        {
+          "text": "route,",
+          "start": 124.6,
+          "end": 124.62,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 124.62,
+          "end": 124.64,
+          "confidence": 0.968
+        },
+        {
+          "text": "ma",
+          "start": 124.64,
+          "end": 124.66,
+          "confidence": 0.998
+        },
+        {
+          "text": "route,",
+          "start": 124.66,
+          "end": 124.68,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 124.68,
+          "end": 124.7,
+          "confidence": 0.968
+        },
+        {
+          "text": "ma",
+          "start": 124.7,
+          "end": 124.72,
+          "confidence": 0.998
+        },
+        {
+          "text": "route,",
+          "start": 124.72,
+          "end": 124.74,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 124.74,
+          "end": 124.76,
+          "confidence": 0.966
+        },
+        {
+          "text": "ma",
+          "start": 124.76,
+          "end": 124.78,
+          "confidence": 0.998
+        },
+        {
+          "text": "route,",
+          "start": 124.78,
+          "end": 124.8,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 124.8,
+          "end": 124.82,
+          "confidence": 0.965
+        },
+        {
+          "text": "ma",
+          "start": 124.82,
+          "end": 124.84,
+          "confidence": 0.998
+        },
+        {
+          "text": "route,",
+          "start": 124.84,
+          "end": 124.86,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 124.86,
+          "end": 124.88,
+          "confidence": 0.964
+        },
+        {
+          "text": "ma",
+          "start": 124.88,
+          "end": 124.9,
+          "confidence": 0.998
+        },
+        {
+          "text": "route,",
+          "start": 124.9,
+          "end": 124.92,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 124.92,
+          "end": 124.94,
+          "confidence": 0.963
+        },
+        {
+          "text": "ma",
+          "start": 124.94,
+          "end": 124.96,
+          "confidence": 0.998
+        },
+        {
+          "text": "route,",
+          "start": 124.96,
+          "end": 124.98,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 125.32,
+          "end": 125.56,
+          "confidence": 0.961
+        },
+        {
+          "text": "ma",
+          "start": 125.56,
+          "end": 125.58,
+          "confidence": 0.998
+        },
+        {
+          "text": "route,",
+          "start": 125.58,
+          "end": 125.7,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 125.96,
+          "end": 126.44,
+          "confidence": 0.962
+        },
+        {
+          "text": "ma",
+          "start": 126.44,
+          "end": 126.82,
+          "confidence": 0.998
+        },
+        {
+          "text": "route,",
+          "start": 126.82,
+          "end": 127.16,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 127.18,
+          "end": 127.58,
+          "confidence": 0.961
+        },
+        {
+          "text": "ma",
+          "start": 127.58,
+          "end": 127.6,
+          "confidence": 0.998
+        },
+        {
+          "text": "route,",
+          "start": 127.6,
+          "end": 127.62,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 127.92,
+          "end": 128.36,
+          "confidence": 0.962
+        },
+        {
+          "text": "ma",
+          "start": 128.36,
+          "end": 129.0,
+          "confidence": 0.998
+        },
+        {
+          "text": "route,",
+          "start": 129.0,
+          "end": 129.98,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 130.6,
+          "end": 130.88,
+          "confidence": 0.961
+        },
+        {
+          "text": "ma",
+          "start": 130.88,
+          "end": 131.08,
+          "confidence": 0.998
+        },
+        {
+          "text": "route,",
+          "start": 131.08,
+          "end": 131.44,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 131.88,
+          "end": 132.02,
+          "confidence": 0.962
+        },
+        {
+          "text": "ma",
+          "start": 132.02,
+          "end": 135.16,
+          "confidence": 0.998
+        },
+        {
+          "text": "route,",
+          "start": 135.16,
+          "end": 135.32,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 135.98,
+          "end": 136.0,
+          "confidence": 0.962
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "seek": 13600,
+      "start": 136.0,
+      "end": 166.02,
+      "text": " ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma",
+      "tokens": [
+        50364,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.026291267754251113,
+      "compression_ratio": 26.620689655172413,
+      "no_speech_prob": 0.6028051972389221,
+      "confidence": 0.971,
+      "words": [
+        {
+          "text": "ma",
+          "start": 136.0,
+          "end": 136.36,
+          "confidence": 0.577
+        },
+        {
+          "text": "route,",
+          "start": 136.36,
+          "end": 136.38,
+          "confidence": 0.995
+        },
+        {
+          "text": "sur",
+          "start": 137.28,
+          "end": 137.3,
+          "confidence": 0.94
+        },
+        {
+          "text": "ma",
+          "start": 137.3,
+          "end": 137.32,
+          "confidence": 0.989
+        },
+        {
+          "text": "route,",
+          "start": 137.32,
+          "end": 137.34,
+          "confidence": 0.997
+        },
+        {
+          "text": "sur",
+          "start": 137.62,
+          "end": 137.64,
+          "confidence": 0.954
+        },
+        {
+          "text": "ma",
+          "start": 137.64,
+          "end": 137.66,
+          "confidence": 0.988
+        },
+        {
+          "text": "route,",
+          "start": 137.66,
+          "end": 137.68,
+          "confidence": 0.996
+        },
+        {
+          "text": "sur",
+          "start": 142.8,
+          "end": 145.86,
+          "confidence": 0.929
+        },
+        {
+          "text": "ma",
+          "start": 145.86,
+          "end": 146.08,
+          "confidence": 0.98
+        },
+        {
+          "text": "route,",
+          "start": 146.08,
+          "end": 146.1,
+          "confidence": 0.993
+        },
+        {
+          "text": "sur",
+          "start": 146.48,
+          "end": 146.64,
+          "confidence": 0.924
+        },
+        {
+          "text": "ma",
+          "start": 146.64,
+          "end": 146.92,
+          "confidence": 0.974
+        },
+        {
+          "text": "route,",
+          "start": 146.92,
+          "end": 146.94,
+          "confidence": 0.988
+        },
+        {
+          "text": "sur",
+          "start": 146.94,
+          "end": 146.96,
+          "confidence": 0.908
+        },
+        {
+          "text": "ma",
+          "start": 146.96,
+          "end": 146.98,
+          "confidence": 0.976
+        },
+        {
+          "text": "route,",
+          "start": 146.98,
+          "end": 147.0,
+          "confidence": 0.988
+        },
+        {
+          "text": "sur",
+          "start": 147.0,
+          "end": 147.02,
+          "confidence": 0.918
+        },
+        {
+          "text": "ma",
+          "start": 147.02,
+          "end": 147.04,
+          "confidence": 0.975
+        },
+        {
+          "text": "route,",
+          "start": 147.04,
+          "end": 147.26,
+          "confidence": 0.982
+        },
+        {
+          "text": "sur",
+          "start": 147.52,
+          "end": 147.7,
+          "confidence": 0.924
+        },
+        {
+          "text": "ma",
+          "start": 147.7,
+          "end": 147.88,
+          "confidence": 0.974
+        },
+        {
+          "text": "route,",
+          "start": 147.88,
+          "end": 148.16,
+          "confidence": 0.987
+        },
+        {
+          "text": "sur",
+          "start": 148.46,
+          "end": 148.48,
+          "confidence": 0.947
+        },
+        {
+          "text": "ma",
+          "start": 148.48,
+          "end": 148.72,
+          "confidence": 0.984
+        },
+        {
+          "text": "route,",
+          "start": 148.72,
+          "end": 148.74,
+          "confidence": 0.987
+        },
+        {
+          "text": "sur",
+          "start": 148.74,
+          "end": 149.12,
+          "confidence": 0.923
+        },
+        {
+          "text": "ma",
+          "start": 149.12,
+          "end": 149.32,
+          "confidence": 0.981
+        },
+        {
+          "text": "route,",
+          "start": 149.32,
+          "end": 149.34,
+          "confidence": 0.981
+        },
+        {
+          "text": "sur",
+          "start": 149.52,
+          "end": 149.56,
+          "confidence": 0.905
+        },
+        {
+          "text": "ma",
+          "start": 149.56,
+          "end": 149.82,
+          "confidence": 0.979
+        },
+        {
+          "text": "route,",
+          "start": 149.82,
+          "end": 149.84,
+          "confidence": 0.981
+        },
+        {
+          "text": "sur",
+          "start": 150.26,
+          "end": 150.32,
+          "confidence": 0.9
+        },
+        {
+          "text": "ma",
+          "start": 150.32,
+          "end": 150.86,
+          "confidence": 0.978
+        },
+        {
+          "text": "route,",
+          "start": 150.86,
+          "end": 150.9,
+          "confidence": 0.984
+        },
+        {
+          "text": "sur",
+          "start": 150.9,
+          "end": 150.92,
+          "confidence": 0.896
+        },
+        {
+          "text": "ma",
+          "start": 150.92,
+          "end": 151.24,
+          "confidence": 0.978
+        },
+        {
+          "text": "route,",
+          "start": 151.24,
+          "end": 151.38,
+          "confidence": 0.986
+        },
+        {
+          "text": "sur",
+          "start": 151.38,
+          "end": 151.4,
+          "confidence": 0.891
+        },
+        {
+          "text": "ma",
+          "start": 151.4,
+          "end": 151.7,
+          "confidence": 0.977
+        },
+        {
+          "text": "route,",
+          "start": 151.7,
+          "end": 151.94,
+          "confidence": 0.987
+        },
+        {
+          "text": "sur",
+          "start": 151.94,
+          "end": 151.96,
+          "confidence": 0.885
+        },
+        {
+          "text": "ma",
+          "start": 151.96,
+          "end": 151.98,
+          "confidence": 0.977
+        },
+        {
+          "text": "route,",
+          "start": 151.98,
+          "end": 152.0,
+          "confidence": 0.988
+        },
+        {
+          "text": "sur",
+          "start": 152.0,
+          "end": 152.02,
+          "confidence": 0.879
+        },
+        {
+          "text": "ma",
+          "start": 152.02,
+          "end": 152.04,
+          "confidence": 0.977
+        },
+        {
+          "text": "route,",
+          "start": 152.04,
+          "end": 152.06,
+          "confidence": 0.989
+        },
+        {
+          "text": "sur",
+          "start": 152.06,
+          "end": 152.08,
+          "confidence": 0.879
+        },
+        {
+          "text": "ma",
+          "start": 152.08,
+          "end": 152.1,
+          "confidence": 0.977
+        },
+        {
+          "text": "route,",
+          "start": 152.1,
+          "end": 152.12,
+          "confidence": 0.99
+        },
+        {
+          "text": "sur",
+          "start": 152.12,
+          "end": 152.14,
+          "confidence": 0.882
+        },
+        {
+          "text": "ma",
+          "start": 152.14,
+          "end": 152.16,
+          "confidence": 0.977
+        },
+        {
+          "text": "route,",
+          "start": 152.16,
+          "end": 152.18,
+          "confidence": 0.991
+        },
+        {
+          "text": "sur",
+          "start": 152.18,
+          "end": 152.2,
+          "confidence": 0.886
+        },
+        {
+          "text": "ma",
+          "start": 152.2,
+          "end": 152.22,
+          "confidence": 0.979
+        },
+        {
+          "text": "route,",
+          "start": 152.22,
+          "end": 152.24,
+          "confidence": 0.991
+        },
+        {
+          "text": "sur",
+          "start": 152.24,
+          "end": 152.26,
+          "confidence": 0.894
+        },
+        {
+          "text": "ma",
+          "start": 152.26,
+          "end": 152.28,
+          "confidence": 0.98
+        },
+        {
+          "text": "route,",
+          "start": 152.28,
+          "end": 152.3,
+          "confidence": 0.993
+        },
+        {
+          "text": "sur",
+          "start": 152.3,
+          "end": 152.32,
+          "confidence": 0.903
+        },
+        {
+          "text": "ma",
+          "start": 152.32,
+          "end": 152.34,
+          "confidence": 0.982
+        },
+        {
+          "text": "route,",
+          "start": 152.34,
+          "end": 152.36,
+          "confidence": 0.993
+        },
+        {
+          "text": "sur",
+          "start": 152.36,
+          "end": 152.38,
+          "confidence": 0.91
+        },
+        {
+          "text": "ma",
+          "start": 152.38,
+          "end": 152.4,
+          "confidence": 0.984
+        },
+        {
+          "text": "route,",
+          "start": 152.4,
+          "end": 152.42,
+          "confidence": 0.994
+        },
+        {
+          "text": "sur",
+          "start": 152.42,
+          "end": 152.44,
+          "confidence": 0.918
+        },
+        {
+          "text": "ma",
+          "start": 152.44,
+          "end": 152.46,
+          "confidence": 0.985
+        },
+        {
+          "text": "route,",
+          "start": 152.46,
+          "end": 152.48,
+          "confidence": 0.995
+        },
+        {
+          "text": "sur",
+          "start": 152.48,
+          "end": 152.5,
+          "confidence": 0.926
+        },
+        {
+          "text": "ma",
+          "start": 152.5,
+          "end": 152.52,
+          "confidence": 0.986
+        },
+        {
+          "text": "route,",
+          "start": 152.52,
+          "end": 152.54,
+          "confidence": 0.995
+        },
+        {
+          "text": "sur",
+          "start": 152.54,
+          "end": 152.56,
+          "confidence": 0.929
+        },
+        {
+          "text": "ma",
+          "start": 152.56,
+          "end": 152.58,
+          "confidence": 0.986
+        },
+        {
+          "text": "route,",
+          "start": 152.58,
+          "end": 152.6,
+          "confidence": 0.996
+        },
+        {
+          "text": "sur",
+          "start": 152.6,
+          "end": 152.62,
+          "confidence": 0.935
+        },
+        {
+          "text": "ma",
+          "start": 152.62,
+          "end": 152.64,
+          "confidence": 0.987
+        },
+        {
+          "text": "route,",
+          "start": 152.64,
+          "end": 152.66,
+          "confidence": 0.996
+        },
+        {
+          "text": "sur",
+          "start": 152.66,
+          "end": 152.8,
+          "confidence": 0.939
+        },
+        {
+          "text": "ma",
+          "start": 152.8,
+          "end": 152.82,
+          "confidence": 0.988
+        },
+        {
+          "text": "route,",
+          "start": 152.82,
+          "end": 152.84,
+          "confidence": 0.997
+        },
+        {
+          "text": "sur",
+          "start": 152.84,
+          "end": 152.86,
+          "confidence": 0.943
+        },
+        {
+          "text": "ma",
+          "start": 152.86,
+          "end": 152.88,
+          "confidence": 0.988
+        },
+        {
+          "text": "route,",
+          "start": 152.88,
+          "end": 152.9,
+          "confidence": 0.997
+        },
+        {
+          "text": "sur",
+          "start": 152.9,
+          "end": 152.92,
+          "confidence": 0.948
+        },
+        {
+          "text": "ma",
+          "start": 152.92,
+          "end": 152.94,
+          "confidence": 0.989
+        },
+        {
+          "text": "route,",
+          "start": 152.94,
+          "end": 152.96,
+          "confidence": 0.997
+        },
+        {
+          "text": "sur",
+          "start": 152.96,
+          "end": 152.98,
+          "confidence": 0.953
+        },
+        {
+          "text": "ma",
+          "start": 152.98,
+          "end": 153.0,
+          "confidence": 0.99
+        },
+        {
+          "text": "route,",
+          "start": 153.0,
+          "end": 153.02,
+          "confidence": 0.998
+        },
+        {
+          "text": "sur",
+          "start": 153.02,
+          "end": 153.04,
+          "confidence": 0.957
+        },
+        {
+          "text": "ma",
+          "start": 153.04,
+          "end": 153.06,
+          "confidence": 0.99
+        },
+        {
+          "text": "route,",
+          "start": 153.06,
+          "end": 153.08,
+          "confidence": 0.998
+        },
+        {
+          "text": "sur",
+          "start": 153.08,
+          "end": 153.1,
+          "confidence": 0.96
+        },
+        {
+          "text": "ma",
+          "start": 153.1,
+          "end": 153.12,
+          "confidence": 0.991
+        },
+        {
+          "text": "route,",
+          "start": 153.12,
+          "end": 153.14,
+          "confidence": 0.998
+        },
+        {
+          "text": "sur",
+          "start": 153.14,
+          "end": 153.16,
+          "confidence": 0.964
+        },
+        {
+          "text": "ma",
+          "start": 153.16,
+          "end": 153.18,
+          "confidence": 0.992
+        },
+        {
+          "text": "route,",
+          "start": 153.18,
+          "end": 153.2,
+          "confidence": 0.998
+        },
+        {
+          "text": "sur",
+          "start": 153.2,
+          "end": 153.22,
+          "confidence": 0.967
+        },
+        {
+          "text": "ma",
+          "start": 153.22,
+          "end": 153.24,
+          "confidence": 0.992
+        },
+        {
+          "text": "route,",
+          "start": 153.24,
+          "end": 153.26,
+          "confidence": 0.998
+        },
+        {
+          "text": "sur",
+          "start": 153.26,
+          "end": 153.28,
+          "confidence": 0.97
+        },
+        {
+          "text": "ma",
+          "start": 153.28,
+          "end": 153.3,
+          "confidence": 0.993
+        },
+        {
+          "text": "route,",
+          "start": 153.3,
+          "end": 153.32,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 153.32,
+          "end": 153.34,
+          "confidence": 0.972
+        },
+        {
+          "text": "ma",
+          "start": 153.34,
+          "end": 153.36,
+          "confidence": 0.993
+        },
+        {
+          "text": "route,",
+          "start": 153.36,
+          "end": 153.38,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 153.38,
+          "end": 153.4,
+          "confidence": 0.974
+        },
+        {
+          "text": "ma",
+          "start": 153.4,
+          "end": 153.42,
+          "confidence": 0.994
+        },
+        {
+          "text": "route,",
+          "start": 153.42,
+          "end": 153.44,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 153.44,
+          "end": 153.46,
+          "confidence": 0.975
+        },
+        {
+          "text": "ma",
+          "start": 153.46,
+          "end": 153.48,
+          "confidence": 0.994
+        },
+        {
+          "text": "route,",
+          "start": 153.48,
+          "end": 153.5,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 153.5,
+          "end": 153.52,
+          "confidence": 0.976
+        },
+        {
+          "text": "ma",
+          "start": 153.52,
+          "end": 153.54,
+          "confidence": 0.995
+        },
+        {
+          "text": "route,",
+          "start": 153.54,
+          "end": 153.56,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 153.56,
+          "end": 153.58,
+          "confidence": 0.977
+        },
+        {
+          "text": "ma",
+          "start": 153.58,
+          "end": 153.6,
+          "confidence": 0.995
+        },
+        {
+          "text": "route,",
+          "start": 153.6,
+          "end": 153.62,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 153.62,
+          "end": 153.64,
+          "confidence": 0.977
+        },
+        {
+          "text": "ma",
+          "start": 153.64,
+          "end": 153.66,
+          "confidence": 0.995
+        },
+        {
+          "text": "route,",
+          "start": 153.66,
+          "end": 153.68,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 153.68,
+          "end": 153.7,
+          "confidence": 0.976
+        },
+        {
+          "text": "ma",
+          "start": 153.7,
+          "end": 153.72,
+          "confidence": 0.995
+        },
+        {
+          "text": "route,",
+          "start": 153.72,
+          "end": 153.74,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 153.74,
+          "end": 153.76,
+          "confidence": 0.977
+        },
+        {
+          "text": "ma",
+          "start": 153.76,
+          "end": 153.78,
+          "confidence": 0.996
+        },
+        {
+          "text": "route,",
+          "start": 153.78,
+          "end": 153.8,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 153.8,
+          "end": 153.82,
+          "confidence": 0.976
+        },
+        {
+          "text": "ma",
+          "start": 153.82,
+          "end": 153.84,
+          "confidence": 0.995
+        },
+        {
+          "text": "route,",
+          "start": 153.84,
+          "end": 153.86,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 153.86,
+          "end": 153.88,
+          "confidence": 0.976
+        },
+        {
+          "text": "ma",
+          "start": 153.88,
+          "end": 153.9,
+          "confidence": 0.996
+        },
+        {
+          "text": "route,",
+          "start": 153.9,
+          "end": 153.92,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 153.92,
+          "end": 153.94,
+          "confidence": 0.974
+        },
+        {
+          "text": "ma",
+          "start": 153.94,
+          "end": 153.96,
+          "confidence": 0.996
+        },
+        {
+          "text": "route,",
+          "start": 153.96,
+          "end": 153.98,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 153.98,
+          "end": 154.0,
+          "confidence": 0.973
+        },
+        {
+          "text": "ma",
+          "start": 154.0,
+          "end": 154.02,
+          "confidence": 0.996
+        },
+        {
+          "text": "route,",
+          "start": 154.02,
+          "end": 154.04,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 154.04,
+          "end": 154.06,
+          "confidence": 0.97
+        },
+        {
+          "text": "ma",
+          "start": 154.06,
+          "end": 154.1,
+          "confidence": 0.996
+        },
+        {
+          "text": "route,",
+          "start": 154.1,
+          "end": 155.0,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 155.36,
+          "end": 155.38,
+          "confidence": 0.968
+        },
+        {
+          "text": "ma",
+          "start": 155.38,
+          "end": 156.04,
+          "confidence": 0.996
+        },
+        {
+          "text": "route,",
+          "start": 156.04,
+          "end": 156.52,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 156.9,
+          "end": 157.04,
+          "confidence": 0.967
+        },
+        {
+          "text": "ma",
+          "start": 157.04,
+          "end": 157.2,
+          "confidence": 0.996
+        },
+        {
+          "text": "route,",
+          "start": 157.2,
+          "end": 157.66,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 157.66,
+          "end": 157.88,
+          "confidence": 0.965
+        },
+        {
+          "text": "ma",
+          "start": 157.88,
+          "end": 158.04,
+          "confidence": 0.996
+        },
+        {
+          "text": "route,",
+          "start": 158.04,
+          "end": 158.76,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 159.44,
+          "end": 159.46,
+          "confidence": 0.964
+        },
+        {
+          "text": "ma",
+          "start": 159.46,
+          "end": 159.48,
+          "confidence": 0.996
+        },
+        {
+          "text": "route,",
+          "start": 159.48,
+          "end": 160.34,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 161.24,
+          "end": 161.56,
+          "confidence": 0.962
+        },
+        {
+          "text": "ma",
+          "start": 161.56,
+          "end": 161.8,
+          "confidence": 0.996
+        },
+        {
+          "text": "route,",
+          "start": 161.8,
+          "end": 162.12,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 163.0,
+          "end": 163.02,
+          "confidence": 0.96
+        },
+        {
+          "text": "ma",
+          "start": 163.02,
+          "end": 163.62,
+          "confidence": 0.996
+        },
+        {
+          "text": "route,",
+          "start": 163.62,
+          "end": 163.64,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 164.64,
+          "end": 164.66,
+          "confidence": 0.959
+        },
+        {
+          "text": "ma",
+          "start": 164.66,
+          "end": 165.6,
+          "confidence": 0.995
+        },
+        {
+          "text": "route,",
+          "start": 165.6,
+          "end": 165.62,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 165.98,
+          "end": 166.0,
+          "confidence": 0.957
+        },
+        {
+          "text": "ma",
+          "start": 166.0,
+          "end": 166.02,
+          "confidence": 0.995
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "seek": 16600,
+      "start": 166.02,
+      "end": 196.04,
+      "text": " route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route, sur ma route",
+      "tokens": [
+        50364,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.048162280711357905,
+      "compression_ratio": 26.724137931034484,
+      "no_speech_prob": 0.2233058661222458,
+      "confidence": 0.944,
+      "words": [
+        {
+          "text": "route,",
+          "start": 166.02,
+          "end": 166.14,
+          "confidence": 0.968
+        },
+        {
+          "text": "sur",
+          "start": 168.42,
+          "end": 168.94,
+          "confidence": 0.873
+        },
+        {
+          "text": "ma",
+          "start": 168.94,
+          "end": 169.66,
+          "confidence": 0.989
+        },
+        {
+          "text": "route,",
+          "start": 169.66,
+          "end": 171.3,
+          "confidence": 0.995
+        },
+        {
+          "text": "sur",
+          "start": 172.14,
+          "end": 172.8,
+          "confidence": 0.946
+        },
+        {
+          "text": "ma",
+          "start": 172.8,
+          "end": 173.34,
+          "confidence": 0.988
+        },
+        {
+          "text": "route,",
+          "start": 173.34,
+          "end": 174.66,
+          "confidence": 0.993
+        },
+        {
+          "text": "sur",
+          "start": 175.9,
+          "end": 176.64,
+          "confidence": 0.931
+        },
+        {
+          "text": "ma",
+          "start": 176.64,
+          "end": 177.14,
+          "confidence": 0.986
+        },
+        {
+          "text": "route,",
+          "start": 177.14,
+          "end": 177.42,
+          "confidence": 0.991
+        },
+        {
+          "text": "sur",
+          "start": 177.66,
+          "end": 177.74,
+          "confidence": 0.916
+        },
+        {
+          "text": "ma",
+          "start": 177.74,
+          "end": 178.06,
+          "confidence": 0.98
+        },
+        {
+          "text": "route,",
+          "start": 178.06,
+          "end": 179.08,
+          "confidence": 0.984
+        },
+        {
+          "text": "sur",
+          "start": 179.82,
+          "end": 180.5,
+          "confidence": 0.91
+        },
+        {
+          "text": "ma",
+          "start": 180.5,
+          "end": 180.9,
+          "confidence": 0.981
+        },
+        {
+          "text": "route,",
+          "start": 180.9,
+          "end": 180.92,
+          "confidence": 0.984
+        },
+        {
+          "text": "sur",
+          "start": 180.92,
+          "end": 180.94,
+          "confidence": 0.913
+        },
+        {
+          "text": "ma",
+          "start": 180.94,
+          "end": 180.98,
+          "confidence": 0.979
+        },
+        {
+          "text": "route,",
+          "start": 180.98,
+          "end": 181.2,
+          "confidence": 0.977
+        },
+        {
+          "text": "sur",
+          "start": 181.2,
+          "end": 181.22,
+          "confidence": 0.523
+        },
+        {
+          "text": "ma",
+          "start": 181.22,
+          "end": 181.24,
+          "confidence": 0.7
+        },
+        {
+          "text": "route,",
+          "start": 181.24,
+          "end": 181.26,
+          "confidence": 0.953
+        },
+        {
+          "text": "sur",
+          "start": 181.26,
+          "end": 181.28,
+          "confidence": 0.792
+        },
+        {
+          "text": "ma",
+          "start": 181.28,
+          "end": 181.3,
+          "confidence": 0.972
+        },
+        {
+          "text": "route,",
+          "start": 181.3,
+          "end": 181.32,
+          "confidence": 0.973
+        },
+        {
+          "text": "sur",
+          "start": 181.32,
+          "end": 181.34,
+          "confidence": 0.769
+        },
+        {
+          "text": "ma",
+          "start": 181.34,
+          "end": 181.36,
+          "confidence": 0.974
+        },
+        {
+          "text": "route,",
+          "start": 181.36,
+          "end": 181.38,
+          "confidence": 0.974
+        },
+        {
+          "text": "sur",
+          "start": 181.38,
+          "end": 181.4,
+          "confidence": 0.751
+        },
+        {
+          "text": "ma",
+          "start": 181.4,
+          "end": 181.42,
+          "confidence": 0.971
+        },
+        {
+          "text": "route,",
+          "start": 181.42,
+          "end": 181.44,
+          "confidence": 0.974
+        },
+        {
+          "text": "sur",
+          "start": 181.44,
+          "end": 181.46,
+          "confidence": 0.724
+        },
+        {
+          "text": "ma",
+          "start": 181.46,
+          "end": 181.48,
+          "confidence": 0.966
+        },
+        {
+          "text": "route,",
+          "start": 181.48,
+          "end": 181.5,
+          "confidence": 0.97
+        },
+        {
+          "text": "sur",
+          "start": 181.5,
+          "end": 181.52,
+          "confidence": 0.692
+        },
+        {
+          "text": "ma",
+          "start": 181.52,
+          "end": 181.54,
+          "confidence": 0.959
+        },
+        {
+          "text": "route,",
+          "start": 181.54,
+          "end": 181.56,
+          "confidence": 0.965
+        },
+        {
+          "text": "sur",
+          "start": 181.56,
+          "end": 181.58,
+          "confidence": 0.665
+        },
+        {
+          "text": "ma",
+          "start": 181.58,
+          "end": 181.6,
+          "confidence": 0.952
+        },
+        {
+          "text": "route,",
+          "start": 181.6,
+          "end": 181.62,
+          "confidence": 0.96
+        },
+        {
+          "text": "sur",
+          "start": 181.62,
+          "end": 181.64,
+          "confidence": 0.649
+        },
+        {
+          "text": "ma",
+          "start": 181.64,
+          "end": 181.66,
+          "confidence": 0.946
+        },
+        {
+          "text": "route,",
+          "start": 181.66,
+          "end": 181.68,
+          "confidence": 0.959
+        },
+        {
+          "text": "sur",
+          "start": 181.68,
+          "end": 181.7,
+          "confidence": 0.648
+        },
+        {
+          "text": "ma",
+          "start": 181.7,
+          "end": 181.72,
+          "confidence": 0.945
+        },
+        {
+          "text": "route,",
+          "start": 181.72,
+          "end": 181.74,
+          "confidence": 0.96
+        },
+        {
+          "text": "sur",
+          "start": 181.74,
+          "end": 181.76,
+          "confidence": 0.66
+        },
+        {
+          "text": "ma",
+          "start": 181.76,
+          "end": 181.78,
+          "confidence": 0.95
+        },
+        {
+          "text": "route,",
+          "start": 181.78,
+          "end": 181.8,
+          "confidence": 0.963
+        },
+        {
+          "text": "sur",
+          "start": 181.8,
+          "end": 181.82,
+          "confidence": 0.681
+        },
+        {
+          "text": "ma",
+          "start": 181.82,
+          "end": 181.84,
+          "confidence": 0.956
+        },
+        {
+          "text": "route,",
+          "start": 181.84,
+          "end": 181.86,
+          "confidence": 0.968
+        },
+        {
+          "text": "sur",
+          "start": 181.86,
+          "end": 181.88,
+          "confidence": 0.711
+        },
+        {
+          "text": "ma",
+          "start": 181.88,
+          "end": 181.9,
+          "confidence": 0.964
+        },
+        {
+          "text": "route,",
+          "start": 181.9,
+          "end": 181.92,
+          "confidence": 0.973
+        },
+        {
+          "text": "sur",
+          "start": 181.92,
+          "end": 181.94,
+          "confidence": 0.742
+        },
+        {
+          "text": "ma",
+          "start": 181.94,
+          "end": 181.96,
+          "confidence": 0.97
+        },
+        {
+          "text": "route,",
+          "start": 181.96,
+          "end": 181.98,
+          "confidence": 0.978
+        },
+        {
+          "text": "sur",
+          "start": 181.98,
+          "end": 182.0,
+          "confidence": 0.774
+        },
+        {
+          "text": "ma",
+          "start": 182.0,
+          "end": 182.56,
+          "confidence": 0.976
+        },
+        {
+          "text": "route,",
+          "start": 182.56,
+          "end": 182.58,
+          "confidence": 0.982
+        },
+        {
+          "text": "sur",
+          "start": 182.66,
+          "end": 182.68,
+          "confidence": 0.805
+        },
+        {
+          "text": "ma",
+          "start": 182.68,
+          "end": 182.7,
+          "confidence": 0.981
+        },
+        {
+          "text": "route,",
+          "start": 182.7,
+          "end": 182.72,
+          "confidence": 0.986
+        },
+        {
+          "text": "sur",
+          "start": 182.72,
+          "end": 182.74,
+          "confidence": 0.836
+        },
+        {
+          "text": "ma",
+          "start": 182.74,
+          "end": 182.76,
+          "confidence": 0.984
+        },
+        {
+          "text": "route,",
+          "start": 182.76,
+          "end": 182.78,
+          "confidence": 0.989
+        },
+        {
+          "text": "sur",
+          "start": 182.8,
+          "end": 182.82,
+          "confidence": 0.861
+        },
+        {
+          "text": "ma",
+          "start": 182.82,
+          "end": 183.14,
+          "confidence": 0.987
+        },
+        {
+          "text": "route,",
+          "start": 183.14,
+          "end": 183.16,
+          "confidence": 0.991
+        },
+        {
+          "text": "sur",
+          "start": 183.16,
+          "end": 183.24,
+          "confidence": 0.883
+        },
+        {
+          "text": "ma",
+          "start": 183.24,
+          "end": 183.26,
+          "confidence": 0.989
+        },
+        {
+          "text": "route,",
+          "start": 183.26,
+          "end": 183.28,
+          "confidence": 0.993
+        },
+        {
+          "text": "sur",
+          "start": 183.3,
+          "end": 183.32,
+          "confidence": 0.903
+        },
+        {
+          "text": "ma",
+          "start": 183.32,
+          "end": 183.34,
+          "confidence": 0.99
+        },
+        {
+          "text": "route,",
+          "start": 183.34,
+          "end": 183.36,
+          "confidence": 0.994
+        },
+        {
+          "text": "sur",
+          "start": 183.36,
+          "end": 183.38,
+          "confidence": 0.921
+        },
+        {
+          "text": "ma",
+          "start": 183.38,
+          "end": 183.4,
+          "confidence": 0.992
+        },
+        {
+          "text": "route,",
+          "start": 183.4,
+          "end": 183.42,
+          "confidence": 0.996
+        },
+        {
+          "text": "sur",
+          "start": 183.42,
+          "end": 183.44,
+          "confidence": 0.934
+        },
+        {
+          "text": "ma",
+          "start": 183.44,
+          "end": 183.46,
+          "confidence": 0.993
+        },
+        {
+          "text": "route,",
+          "start": 183.46,
+          "end": 183.48,
+          "confidence": 0.997
+        },
+        {
+          "text": "sur",
+          "start": 183.5,
+          "end": 184.32,
+          "confidence": 0.944
+        },
+        {
+          "text": "ma",
+          "start": 184.32,
+          "end": 184.74,
+          "confidence": 0.994
+        },
+        {
+          "text": "route,",
+          "start": 184.74,
+          "end": 184.76,
+          "confidence": 0.998
+        },
+        {
+          "text": "sur",
+          "start": 184.76,
+          "end": 184.78,
+          "confidence": 0.953
+        },
+        {
+          "text": "ma",
+          "start": 184.78,
+          "end": 184.8,
+          "confidence": 0.994
+        },
+        {
+          "text": "route,",
+          "start": 184.8,
+          "end": 184.82,
+          "confidence": 0.998
+        },
+        {
+          "text": "sur",
+          "start": 184.82,
+          "end": 184.84,
+          "confidence": 0.96
+        },
+        {
+          "text": "ma",
+          "start": 184.84,
+          "end": 185.04,
+          "confidence": 0.995
+        },
+        {
+          "text": "route,",
+          "start": 185.04,
+          "end": 185.5,
+          "confidence": 0.998
+        },
+        {
+          "text": "sur",
+          "start": 185.5,
+          "end": 185.52,
+          "confidence": 0.966
+        },
+        {
+          "text": "ma",
+          "start": 185.52,
+          "end": 185.58,
+          "confidence": 0.996
+        },
+        {
+          "text": "route,",
+          "start": 185.58,
+          "end": 185.62,
+          "confidence": 0.998
+        },
+        {
+          "text": "sur",
+          "start": 185.62,
+          "end": 185.64,
+          "confidence": 0.97
+        },
+        {
+          "text": "ma",
+          "start": 185.64,
+          "end": 185.7,
+          "confidence": 0.996
+        },
+        {
+          "text": "route,",
+          "start": 185.7,
+          "end": 186.02,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 186.22,
+          "end": 186.24,
+          "confidence": 0.971
+        },
+        {
+          "text": "ma",
+          "start": 186.24,
+          "end": 186.26,
+          "confidence": 0.996
+        },
+        {
+          "text": "route,",
+          "start": 186.26,
+          "end": 186.78,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 187.46,
+          "end": 187.48,
+          "confidence": 0.97
+        },
+        {
+          "text": "ma",
+          "start": 187.48,
+          "end": 187.5,
+          "confidence": 0.997
+        },
+        {
+          "text": "route,",
+          "start": 187.5,
+          "end": 187.6,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 189.94,
+          "end": 189.96,
+          "confidence": 0.967
+        },
+        {
+          "text": "ma",
+          "start": 189.96,
+          "end": 189.98,
+          "confidence": 0.997
+        },
+        {
+          "text": "route,",
+          "start": 189.98,
+          "end": 190.0,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 190.0,
+          "end": 190.02,
+          "confidence": 0.965
+        },
+        {
+          "text": "ma",
+          "start": 190.02,
+          "end": 190.04,
+          "confidence": 0.997
+        },
+        {
+          "text": "route,",
+          "start": 190.04,
+          "end": 190.06,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 191.4,
+          "end": 192.04,
+          "confidence": 0.96
+        },
+        {
+          "text": "ma",
+          "start": 192.04,
+          "end": 192.42,
+          "confidence": 0.997
+        },
+        {
+          "text": "route,",
+          "start": 192.42,
+          "end": 192.44,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 192.44,
+          "end": 192.46,
+          "confidence": 0.96
+        },
+        {
+          "text": "ma",
+          "start": 192.46,
+          "end": 192.48,
+          "confidence": 0.997
+        },
+        {
+          "text": "route,",
+          "start": 192.48,
+          "end": 192.5,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 192.5,
+          "end": 192.52,
+          "confidence": 0.958
+        },
+        {
+          "text": "ma",
+          "start": 192.52,
+          "end": 192.54,
+          "confidence": 0.997
+        },
+        {
+          "text": "route,",
+          "start": 192.54,
+          "end": 192.56,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 192.56,
+          "end": 192.58,
+          "confidence": 0.956
+        },
+        {
+          "text": "ma",
+          "start": 192.58,
+          "end": 192.6,
+          "confidence": 0.997
+        },
+        {
+          "text": "route,",
+          "start": 192.6,
+          "end": 192.62,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 192.62,
+          "end": 192.64,
+          "confidence": 0.956
+        },
+        {
+          "text": "ma",
+          "start": 192.64,
+          "end": 192.66,
+          "confidence": 0.997
+        },
+        {
+          "text": "route,",
+          "start": 192.66,
+          "end": 192.68,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 192.68,
+          "end": 192.7,
+          "confidence": 0.956
+        },
+        {
+          "text": "ma",
+          "start": 192.7,
+          "end": 192.72,
+          "confidence": 0.997
+        },
+        {
+          "text": "route,",
+          "start": 192.72,
+          "end": 192.74,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 192.74,
+          "end": 192.76,
+          "confidence": 0.955
+        },
+        {
+          "text": "ma",
+          "start": 192.76,
+          "end": 192.78,
+          "confidence": 0.997
+        },
+        {
+          "text": "route,",
+          "start": 192.78,
+          "end": 192.8,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 192.8,
+          "end": 192.82,
+          "confidence": 0.954
+        },
+        {
+          "text": "ma",
+          "start": 192.82,
+          "end": 192.84,
+          "confidence": 0.997
+        },
+        {
+          "text": "route,",
+          "start": 192.84,
+          "end": 192.86,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 192.86,
+          "end": 192.88,
+          "confidence": 0.954
+        },
+        {
+          "text": "ma",
+          "start": 192.88,
+          "end": 192.9,
+          "confidence": 0.997
+        },
+        {
+          "text": "route,",
+          "start": 192.9,
+          "end": 192.92,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 192.92,
+          "end": 192.94,
+          "confidence": 0.956
+        },
+        {
+          "text": "ma",
+          "start": 192.94,
+          "end": 192.96,
+          "confidence": 0.997
+        },
+        {
+          "text": "route,",
+          "start": 192.96,
+          "end": 192.98,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 192.98,
+          "end": 193.0,
+          "confidence": 0.956
+        },
+        {
+          "text": "ma",
+          "start": 193.0,
+          "end": 193.02,
+          "confidence": 0.997
+        },
+        {
+          "text": "route,",
+          "start": 193.02,
+          "end": 193.04,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 193.04,
+          "end": 193.06,
+          "confidence": 0.956
+        },
+        {
+          "text": "ma",
+          "start": 193.06,
+          "end": 193.08,
+          "confidence": 0.997
+        },
+        {
+          "text": "route,",
+          "start": 193.08,
+          "end": 193.1,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 193.1,
+          "end": 193.12,
+          "confidence": 0.957
+        },
+        {
+          "text": "ma",
+          "start": 193.12,
+          "end": 193.14,
+          "confidence": 0.997
+        },
+        {
+          "text": "route,",
+          "start": 193.14,
+          "end": 193.16,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 193.16,
+          "end": 193.18,
+          "confidence": 0.958
+        },
+        {
+          "text": "ma",
+          "start": 193.18,
+          "end": 193.2,
+          "confidence": 0.997
+        },
+        {
+          "text": "route,",
+          "start": 193.2,
+          "end": 193.22,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 193.22,
+          "end": 193.24,
+          "confidence": 0.959
+        },
+        {
+          "text": "ma",
+          "start": 193.24,
+          "end": 193.26,
+          "confidence": 0.997
+        },
+        {
+          "text": "route,",
+          "start": 193.26,
+          "end": 193.28,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 193.28,
+          "end": 193.3,
+          "confidence": 0.96
+        },
+        {
+          "text": "ma",
+          "start": 193.3,
+          "end": 193.32,
+          "confidence": 0.997
+        },
+        {
+          "text": "route,",
+          "start": 193.32,
+          "end": 193.34,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 193.34,
+          "end": 193.36,
+          "confidence": 0.961
+        },
+        {
+          "text": "ma",
+          "start": 193.36,
+          "end": 193.38,
+          "confidence": 0.997
+        },
+        {
+          "text": "route,",
+          "start": 193.38,
+          "end": 193.4,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 193.4,
+          "end": 193.42,
+          "confidence": 0.962
+        },
+        {
+          "text": "ma",
+          "start": 193.42,
+          "end": 193.9,
+          "confidence": 0.996
+        },
+        {
+          "text": "route,",
+          "start": 193.9,
+          "end": 194.0,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 195.98,
+          "end": 196.0,
+          "confidence": 0.963
+        },
+        {
+          "text": "ma",
+          "start": 196.0,
+          "end": 196.02,
+          "confidence": 0.996
+        },
+        {
+          "text": "route",
+          "start": 196.02,
+          "end": 196.04,
+          "confidence": 0.999
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "seek": 19600,
+      "start": 196.04,
+      "end": 206.5,
+      "text": " sur ma route, oui, il y a eu du mouvement, oui, de l'aventure dans le mouvement, une vie de route",
+      "tokens": [
+        50364,
+        1022,
+        463,
+        7955,
+        11,
+        14367,
+        11,
+        1930,
+        288,
+        257,
+        2228,
+        1581,
+        41219,
+        11,
+        14367,
+        11,
+        368,
+        287,
+        6,
+        706,
+        317,
+        540,
+        2680,
+        476,
+        41219,
+        11,
+        2251,
+        4941,
+        368,
+        7955,
+        50914
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.1929515626695421,
+      "compression_ratio": 2.4444444444444446,
+      "no_speech_prob": 0.5921920537948608,
+      "confidence": 0.822,
+      "words": [
+        {
+          "text": "sur",
+          "start": 196.04,
+          "end": 199.92,
+          "confidence": 0.312
+        },
+        {
+          "text": "ma",
+          "start": 199.92,
+          "end": 200.24,
+          "confidence": 0.989
+        },
+        {
+          "text": "route,",
+          "start": 200.24,
+          "end": 200.66,
+          "confidence": 0.994
+        },
+        {
+          "text": "oui,",
+          "start": 200.66,
+          "end": 201.14,
+          "confidence": 0.874
+        },
+        {
+          "text": "il",
+          "start": 201.34,
+          "end": 201.48,
+          "confidence": 0.948
+        },
+        {
+          "text": "y",
+          "start": 201.48,
+          "end": 201.66,
+          "confidence": 0.974
+        },
+        {
+          "text": "a",
+          "start": 201.66,
+          "end": 201.76,
+          "confidence": 0.976
+        },
+        {
+          "text": "eu",
+          "start": 201.76,
+          "end": 201.96,
+          "confidence": 0.976
+        },
+        {
+          "text": "du",
+          "start": 201.96,
+          "end": 202.24,
+          "confidence": 0.773
+        },
+        {
+          "text": "mouvement,",
+          "start": 202.24,
+          "end": 202.6,
+          "confidence": 0.529
+        },
+        {
+          "text": "oui,",
+          "start": 202.86,
+          "end": 202.98,
+          "confidence": 0.662
+        },
+        {
+          "text": "de",
+          "start": 203.0,
+          "end": 203.2,
+          "confidence": 0.938
+        },
+        {
+          "text": "l'aventure",
+          "start": 203.2,
+          "end": 203.76,
+          "confidence": 0.988
+        },
+        {
+          "text": "dans",
+          "start": 203.76,
+          "end": 203.96,
+          "confidence": 0.976
+        },
+        {
+          "text": "le",
+          "start": 203.96,
+          "end": 204.18,
+          "confidence": 0.978
+        },
+        {
+          "text": "mouvement,",
+          "start": 204.18,
+          "end": 204.7,
+          "confidence": 0.987
+        },
+        {
+          "text": "une",
+          "start": 205.22,
+          "end": 205.52,
+          "confidence": 0.321
+        },
+        {
+          "text": "vie",
+          "start": 205.52,
+          "end": 205.76,
+          "confidence": 0.59
+        },
+        {
+          "text": "de",
+          "start": 205.76,
+          "end": 206.02,
+          "confidence": 0.931
+        },
+        {
+          "text": "route",
+          "start": 206.02,
+          "end": 206.5,
+          "confidence": 0.954
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "seek": 19600,
+      "start": 207.3,
+      "end": 214.24,
+      "text": " sur ma route, oui, je ne compte plus les soucis, devoir devenir fou, oui, une vie de route",
+      "tokens": [
+        50914,
+        1022,
+        463,
+        7955,
+        11,
+        14367,
+        11,
+        1506,
+        408,
+        19424,
+        1804,
+        1512,
+        6926,
+        26720,
+        11,
+        48920,
+        41271,
+        32012,
+        11,
+        14367,
+        11,
+        2251,
+        4941,
+        368,
+        7955,
+        51314
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.1929515626695421,
+      "compression_ratio": 2.4444444444444446,
+      "no_speech_prob": 0.5921920537948608,
+      "confidence": 0.808,
+      "words": [
+        {
+          "text": "sur",
+          "start": 207.3,
+          "end": 207.64,
+          "confidence": 0.762
+        },
+        {
+          "text": "ma",
+          "start": 207.64,
+          "end": 207.94,
+          "confidence": 0.991
+        },
+        {
+          "text": "route,",
+          "start": 207.94,
+          "end": 208.34,
+          "confidence": 0.998
+        },
+        {
+          "text": "oui,",
+          "start": 208.36,
+          "end": 208.66,
+          "confidence": 0.992
+        },
+        {
+          "text": "je",
+          "start": 208.88,
+          "end": 208.98,
+          "confidence": 0.555
+        },
+        {
+          "text": "ne",
+          "start": 208.98,
+          "end": 209.1,
+          "confidence": 0.522
+        },
+        {
+          "text": "compte",
+          "start": 209.1,
+          "end": 209.28,
+          "confidence": 0.993
+        },
+        {
+          "text": "plus",
+          "start": 209.28,
+          "end": 209.54,
+          "confidence": 0.998
+        },
+        {
+          "text": "les",
+          "start": 209.54,
+          "end": 209.84,
+          "confidence": 0.959
+        },
+        {
+          "text": "soucis,",
+          "start": 209.84,
+          "end": 210.54,
+          "confidence": 0.638
+        },
+        {
+          "text": "devoir",
+          "start": 210.6,
+          "end": 210.96,
+          "confidence": 0.259
+        },
+        {
+          "text": "devenir",
+          "start": 210.96,
+          "end": 211.62,
+          "confidence": 0.855
+        },
+        {
+          "text": "fou,",
+          "start": 211.62,
+          "end": 212.16,
+          "confidence": 0.972
+        },
+        {
+          "text": "oui,",
+          "start": 212.44,
+          "end": 212.64,
+          "confidence": 0.984
+        },
+        {
+          "text": "une",
+          "start": 213.02,
+          "end": 213.2,
+          "confidence": 0.98
+        },
+        {
+          "text": "vie",
+          "start": 213.2,
+          "end": 213.42,
+          "confidence": 0.999
+        },
+        {
+          "text": "de",
+          "start": 213.42,
+          "end": 213.64,
+          "confidence": 0.996
+        },
+        {
+          "text": "route",
+          "start": 213.64,
+          "end": 214.24,
+          "confidence": 0.995
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "seek": 19600,
+      "start": 214.92,
+      "end": 221.8,
+      "text": " sur ma route, oui, il y a eu du mouvement, oui, de l'aventure dans le mouvement, une vie de route",
+      "tokens": [
+        51314,
+        1022,
+        463,
+        7955,
+        11,
+        14367,
+        11,
+        1930,
+        288,
+        257,
+        2228,
+        1581,
+        41219,
+        11,
+        14367,
+        11,
+        368,
+        287,
+        6,
+        706,
+        317,
+        540,
+        2680,
+        476,
+        41219,
+        11,
+        2251,
+        4941,
+        368,
+        7955,
+        51714
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.1929515626695421,
+      "compression_ratio": 2.4444444444444446,
+      "no_speech_prob": 0.5921920537948608,
+      "confidence": 0.987,
+      "words": [
+        {
+          "text": "sur",
+          "start": 214.92,
+          "end": 215.3,
+          "confidence": 0.798
+        },
+        {
+          "text": "ma",
+          "start": 215.3,
+          "end": 215.6,
+          "confidence": 0.997
+        },
+        {
+          "text": "route,",
+          "start": 215.6,
+          "end": 215.98,
+          "confidence": 1.0
+        },
+        {
+          "text": "oui,",
+          "start": 216.22,
+          "end": 216.54,
+          "confidence": 0.999
+        },
+        {
+          "text": "il",
+          "start": 216.68,
+          "end": 216.86,
+          "confidence": 0.998
+        },
+        {
+          "text": "y",
+          "start": 216.86,
+          "end": 216.98,
+          "confidence": 0.999
+        },
+        {
+          "text": "a",
+          "start": 216.98,
+          "end": 217.14,
+          "confidence": 0.995
+        },
+        {
+          "text": "eu",
+          "start": 217.14,
+          "end": 217.28,
+          "confidence": 0.991
+        },
+        {
+          "text": "du",
+          "start": 217.28,
+          "end": 217.56,
+          "confidence": 0.995
+        },
+        {
+          "text": "mouvement,",
+          "start": 217.56,
+          "end": 217.9,
+          "confidence": 0.993
+        },
+        {
+          "text": "oui,",
+          "start": 218.16,
+          "end": 218.28,
+          "confidence": 0.998
+        },
+        {
+          "text": "de",
+          "start": 218.4,
+          "end": 218.46,
+          "confidence": 0.991
+        },
+        {
+          "text": "l'aventure",
+          "start": 218.46,
+          "end": 219.12,
+          "confidence": 0.999
+        },
+        {
+          "text": "dans",
+          "start": 219.12,
+          "end": 219.32,
+          "confidence": 0.997
+        },
+        {
+          "text": "le",
+          "start": 219.32,
+          "end": 219.54,
+          "confidence": 0.995
+        },
+        {
+          "text": "mouvement,",
+          "start": 219.54,
+          "end": 220.06,
+          "confidence": 0.997
+        },
+        {
+          "text": "une",
+          "start": 220.64,
+          "end": 220.88,
+          "confidence": 0.987
+        },
+        {
+          "text": "vie",
+          "start": 220.88,
+          "end": 221.06,
+          "confidence": 0.999
+        },
+        {
+          "text": "de",
+          "start": 221.06,
+          "end": 221.34,
+          "confidence": 0.985
+        },
+        {
+          "text": "route",
+          "start": 221.34,
+          "end": 221.8,
+          "confidence": 0.997
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "seek": 22300,
+      "start": 223.0,
+      "end": 229.56,
+      "text": " sur ma route, oui, je ne compte plus les soucis, devoir devenir fou, oui, une vie de route",
+      "tokens": [
+        50364,
+        1022,
+        463,
+        7955,
+        11,
+        14367,
+        11,
+        1506,
+        408,
+        19424,
+        1804,
+        1512,
+        6926,
+        26720,
+        11,
+        48920,
+        41271,
+        32012,
+        11,
+        14367,
+        11,
+        2251,
+        4941,
+        368,
+        7955,
+        50714
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.08867281675338745,
+      "compression_ratio": 1.9390243902439024,
+      "no_speech_prob": 0.8140174746513367,
+      "confidence": 0.988,
+      "words": [
+        {
+          "text": "sur",
+          "start": 223.0,
+          "end": 223.06,
+          "confidence": 0.949
+        },
+        {
+          "text": "ma",
+          "start": 223.06,
+          "end": 223.26,
+          "confidence": 0.996
+        },
+        {
+          "text": "route,",
+          "start": 223.26,
+          "end": 223.62,
+          "confidence": 0.999
+        },
+        {
+          "text": "oui,",
+          "start": 223.66,
+          "end": 224.0,
+          "confidence": 0.995
+        },
+        {
+          "text": "je",
+          "start": 224.2,
+          "end": 224.3,
+          "confidence": 0.916
+        },
+        {
+          "text": "ne",
+          "start": 224.3,
+          "end": 224.64,
+          "confidence": 0.995
+        },
+        {
+          "text": "compte",
+          "start": 224.64,
+          "end": 224.66,
+          "confidence": 0.994
+        },
+        {
+          "text": "plus",
+          "start": 224.66,
+          "end": 224.9,
+          "confidence": 0.998
+        },
+        {
+          "text": "les",
+          "start": 224.9,
+          "end": 225.24,
+          "confidence": 0.997
+        },
+        {
+          "text": "soucis,",
+          "start": 225.24,
+          "end": 225.9,
+          "confidence": 0.999
+        },
+        {
+          "text": "devoir",
+          "start": 226.12,
+          "end": 226.4,
+          "confidence": 0.978
+        },
+        {
+          "text": "devenir",
+          "start": 226.4,
+          "end": 226.96,
+          "confidence": 0.998
+        },
+        {
+          "text": "fou,",
+          "start": 226.96,
+          "end": 227.52,
+          "confidence": 0.993
+        },
+        {
+          "text": "oui,",
+          "start": 228.06,
+          "end": 228.08,
+          "confidence": 0.993
+        },
+        {
+          "text": "une",
+          "start": 228.4,
+          "end": 228.52,
+          "confidence": 0.989
+        },
+        {
+          "text": "vie",
+          "start": 228.52,
+          "end": 228.76,
+          "confidence": 0.999
+        },
+        {
+          "text": "de",
+          "start": 228.76,
+          "end": 229.0,
+          "confidence": 0.998
+        },
+        {
+          "text": "route",
+          "start": 229.0,
+          "end": 229.56,
+          "confidence": 0.998
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "seek": 22300,
+      "start": 229.88,
+      "end": 242.86,
+      "text": " sur ma route, sur ma route, sur ma route, sur ma route, sur ma route",
+      "tokens": [
+        50714,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        11,
+        1022,
+        463,
+        7955,
+        51364
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.08867281675338745,
+      "compression_ratio": 1.9390243902439024,
+      "no_speech_prob": 0.8140174746513367,
+      "confidence": 0.964,
+      "words": [
+        {
+          "text": "sur",
+          "start": 229.88,
+          "end": 230.42,
+          "confidence": 0.964
+        },
+        {
+          "text": "ma",
+          "start": 230.42,
+          "end": 230.94,
+          "confidence": 0.997
+        },
+        {
+          "text": "route,",
+          "start": 230.94,
+          "end": 232.0,
+          "confidence": 0.997
+        },
+        {
+          "text": "sur",
+          "start": 233.72,
+          "end": 234.2,
+          "confidence": 0.759
+        },
+        {
+          "text": "ma",
+          "start": 234.2,
+          "end": 234.74,
+          "confidence": 0.998
+        },
+        {
+          "text": "route,",
+          "start": 234.74,
+          "end": 236.04,
+          "confidence": 1.0
+        },
+        {
+          "text": "sur",
+          "start": 237.56,
+          "end": 238.04,
+          "confidence": 0.976
+        },
+        {
+          "text": "ma",
+          "start": 238.04,
+          "end": 238.58,
+          "confidence": 0.999
+        },
+        {
+          "text": "route,",
+          "start": 238.58,
+          "end": 238.94,
+          "confidence": 1.0
+        },
+        {
+          "text": "sur",
+          "start": 241.36,
+          "end": 241.88,
+          "confidence": 0.935
+        },
+        {
+          "text": "ma",
+          "start": 241.88,
+          "end": 242.0,
+          "confidence": 0.998
+        },
+        {
+          "text": "route,",
+          "start": 242.0,
+          "end": 242.02,
+          "confidence": 0.999
+        },
+        {
+          "text": "sur",
+          "start": 242.02,
+          "end": 242.04,
+          "confidence": 0.878
+        },
+        {
+          "text": "ma",
+          "start": 242.04,
+          "end": 242.4,
+          "confidence": 0.997
+        },
+        {
+          "text": "route",
+          "start": 242.4,
+          "end": 242.86,
+          "confidence": 0.999
+        }
+      ]
+    }
+  ],
+  "language": "fr"
+}

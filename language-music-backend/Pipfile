@@ -16,11 +16,13 @@ firebase-admin = "*"
 spotipy = "*"
 async-timeout = "*"
 starlette = "*"
-typer = {extras = ["all"], version = "*"}
 levenshtein = "*"
 google-api-python-client = "*"
+thefuzz = "*"
 
 [dev-packages]
+typer = {extras = ["all"], version = "*"}
+matplotlib = "*"
 
 [requires]
 python_version = "3.11"

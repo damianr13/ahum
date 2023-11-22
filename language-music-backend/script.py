@@ -1,4 +1,8 @@
 import json
+from typing import Tuple, Dict
+
+from thefuzz import fuzz
+import json
 
 import typer
 
@@ -105,6 +109,90 @@ def insert_song(title: str, language: str):
     db.collection("songs").document(f"spotify-{spotify_id}").set(
         processed_song.model_dump()
     )
+
+
+def __read() -> Tuple[Dict, str]:
+    with open("data/fr_timestamped.json", "r") as f:
+        data = json.load(f)
+
+    with open("data/fr_plain.txt", "r") as f:
+        lyrics = f.read()
+
+    lyrics = lyrics.strip().replace("\\s+", " ")
+
+    return data, lyrics
+
+
+def __search_for_segment(
+    lyrics: str, segment_text: str, start: int = 0
+) -> Tuple[int, int]:
+    # Idea to improve this: use a sliding window to find the best passage
+    # Then look around that passage (add/subtract words to the left and right) to see if the score improves
+    # We would have to try to append and subtract words from the passage, and see if the score improves
+    current_passage_start = start
+
+    score_matrix = {}
+
+    while current_passage_start < len(lyrics.split()) - 1:
+        current_passage_end = current_passage_start + 1
+        while current_passage_end < len(lyrics.split()):
+            current_passage = " ".join(
+                lyrics.split()[current_passage_start:current_passage_end]
+            )
+
+            passage_score = fuzz.ratio(current_passage, segment_text)
+            score_matrix[(current_passage_start, current_passage_end)] = passage_score
+
+            current_passage_end += 1
+
+        current_passage_start += 1
+
+    # find the max score
+    max_score = max(score_matrix.values())
+
+    # Get the passage with the max score, and the lowest start index, but longest length
+    longest_passage = min(
+        [k for k, v in score_matrix.items() if v == max_score],
+        key=lambda x: x[0] * 1000 - (x[1] - x[0]),
+    )
+
+    return longest_passage
+
+
+@app.command()
+def find_one_segment(index: int):
+    data, lyrics = __read()
+
+    first_segment = data["segments"][index]
+
+    longest_passage = __search_for_segment(lyrics, first_segment["text"])
+
+    print(longest_passage)
+    print(" ".join(lyrics.split()[longest_passage[0] : longest_passage[1]]))
+    print(first_segment["text"])
+
+
+@app.command()
+def find_all_relevant_segments():
+    data, lyrics = __read()
+
+    relevant_segments = data["segments"][:12]
+    known_passages = []
+    for segment in relevant_segments:
+        longest_passage = __search_for_segment(
+            lyrics,
+            segment["text"],
+            start=0 if len(known_passages) == 0 else known_passages[-1][1],
+        )
+
+        known_passages.append(longest_passage)
+        print(longest_passage)
+
+    print(known_passages)
+    for i in range(len(known_passages)):
+        print(" ".join(lyrics.split()[known_passages[i][0] : known_passages[i][1]]))
+        print(relevant_segments[i]["text"])
+        print("\n")
 
 
 if __name__ == "__main__":
