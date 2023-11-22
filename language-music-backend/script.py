@@ -125,49 +125,134 @@ def __read_lyrics_data() -> Tuple[Dict, str]:
     return data, lyrics
 
 
+def __explore_around_passage(
+    lyrics: str,
+    segment_text: str,
+    longest_passage: Tuple[int, int],
+    start: int = 0,
+) -> Tuple[int, int]:
+    """
+    Given a passage, explore around it to see if there is a longer / shorter passage that has a higher score
+    """
+    max_score = fuzz.ratio(
+        " ".join(lyrics.split()[longest_passage[0] : longest_passage[1]]), segment_text
+    )
+
+    # remove tokens from the left until the score decreases
+    while longest_passage[0] < longest_passage[1]:
+        new_start = longest_passage[0] + 1
+        new_passage = " ".join(lyrics.split()[new_start : longest_passage[1]])
+        new_score = fuzz.ratio(new_passage, segment_text)
+
+        if new_score < max_score:
+            break
+
+        longest_passage = (new_start, longest_passage[1])
+        max_score = new_score
+
+    # remove tokens from the right until the score decreases
+    while longest_passage[0] < longest_passage[1]:
+        new_end = longest_passage[1] - 1
+        new_passage = " ".join(lyrics.split()[longest_passage[0] : new_end])
+        new_score = fuzz.ratio(new_passage, segment_text)
+
+        if new_score < max_score:
+            break
+
+        longest_passage = (longest_passage[0], new_end)
+        max_score = new_score
+
+    # prepend tokens to the left until the score decreases
+    while longest_passage[0] > start:
+        new_start = longest_passage[0] - 1
+        new_passage = " ".join(lyrics.split()[new_start : longest_passage[1]])
+        new_score = fuzz.ratio(new_passage, segment_text)
+
+        if new_score < max_score:
+            break
+
+        longest_passage = (new_start, longest_passage[1])
+        max_score = new_score
+
+    # append tokens to the right until the score decreases
+    while longest_passage[1] < len(lyrics.split()):
+        new_end = longest_passage[1] + 1
+        new_passage = " ".join(lyrics.split()[longest_passage[0] : new_end])
+        new_score = fuzz.ratio(new_passage, segment_text)
+
+        if new_score < max_score:
+            break
+
+        longest_passage = (longest_passage[0], new_end)
+        max_score = new_score
+
+    return longest_passage
+
+
 def __search_for_segment(
     lyrics: str, segment_text: str, start: int = 0
 ) -> Tuple[int, int]:
-    # Idea to improve this: use a sliding window to find the best passage
-    # Then look around that passage (add/subtract words to the left and right) to see if the score improves
-    # We would have to try to append and subtract words from the passage, and see if the score improves
+    """
+    Search for a segment in the lyrics, starting at the given index
+    :param lyrics:
+    :param segment_text:
+    :param start:
+    :return:
+    """
+    total_words = len(lyrics.split())
+
     current_passage_start = start
+    window_size = len(segment_text.split())
+    if window_size + start > total_words:
+        # How?
+        # Whisper hallucinates with very long sequences of words, we just skip those.
+        return start, start
 
     score_matrix = {}
 
-    while current_passage_start < len(lyrics.split()) - 1:
-        current_passage_end = current_passage_start + 1
-        while current_passage_end < len(lyrics.split()):
-            current_passage = " ".join(
-                lyrics.split()[current_passage_start:current_passage_end]
-            )
+    while current_passage_start < len(lyrics.split()) - window_size:
+        current_passage_end = current_passage_start + window_size
+        current_passage = " ".join(
+            lyrics.split()[current_passage_start:current_passage_end]
+        )
 
-            passage_score = fuzz.ratio(current_passage, segment_text)
-            score_matrix[(current_passage_start, current_passage_end)] = passage_score
+        passage_score = fuzz.ratio(current_passage, segment_text)
+        # Adjust the score to favor passages that are closer to the start of the lyrics
+        passage_score = passage_score * (
+            1 - (current_passage_start - start) / (len(lyrics.split()) - start) * 0.2
+        )
 
-            current_passage_end += 1
+        score_matrix[(current_passage_start, current_passage_end)] = passage_score
 
         current_passage_start += 1
 
     # find the max score
     max_score = max(score_matrix.values())
 
+    if max_score < 75:
+        # If the max score is too low, we don't want to return anything
+        return start, start
+
     # Get the passage with the max score, and the lowest start index, but longest length
     longest_passage = min(
         [k for k, v in score_matrix.items() if v == max_score],
         key=lambda x: x[0] * 1000 - (x[1] - x[0]),
     )
+    longest_passage = __explore_around_passage(
+        lyrics, segment_text, longest_passage, start=start
+    )
+    print(max_score, longest_passage)
 
     return longest_passage
 
 
 @app.command()
-def find_one_segment(index: int):
+def find_one_segment(index: int, start: int):
     data, lyrics = __read_lyrics_data()
 
     first_segment = data["segments"][index]
 
-    longest_passage = __search_for_segment(lyrics, first_segment["text"])
+    longest_passage = __search_for_segment(lyrics, first_segment["text"], start=start)
 
     print(longest_passage)
     print(" ".join(lyrics.split()[longest_passage[0] : longest_passage[1]]))
@@ -178,23 +263,37 @@ def find_one_segment(index: int):
 def find_all_relevant_segments():
     data, lyrics = __read_lyrics_data()
 
-    relevant_segments = data["segments"][:12]
+    relevant_segments = data["segments"]
     known_passages = []
     for segment in relevant_segments:
         longest_passage = __search_for_segment(
             lyrics,
-            segment["text"],
+            segment["text"].strip(),
             start=0 if len(known_passages) == 0 else known_passages[-1][1],
         )
 
         known_passages.append(longest_passage)
-        print(longest_passage)
 
-    print(known_passages)
     for i in range(len(known_passages)):
+        print(known_passages[i])
         print(" ".join(lyrics.split()[known_passages[i][0] : known_passages[i][1]]))
-        print(relevant_segments[i]["text"])
+        print(relevant_segments[i]["text"].strip())
         print("\n")
+
+    max_gap = max(
+        [
+            known_passages[i + 1][0] - known_passages[i][1]
+            for i in range(len(known_passages) - 1)
+        ]
+    )
+    print(
+        "Covered up to index",
+        known_passages[-1][1],
+        "out of",
+        len(lyrics.split()),
+        ", max gap:",
+        max_gap,
+    )
 
 
 if __name__ == "__main__":
