@@ -1,9 +1,8 @@
+import json
 from typing import Tuple, Dict
 
-from thefuzz import fuzz
-import json
-
 import typer
+from thefuzz import fuzz
 
 from src import firestore
 from src.genius import get_song_url, get_lyrics
@@ -11,6 +10,7 @@ from src.players import spotify, youtube
 from src.players.utils import convert_id
 from src.processing import SongProcessor
 from src.schemas.song import SongWithLanguage
+from src.sound.process import process
 
 app = typer.Typer()
 
@@ -51,6 +51,7 @@ def get_youtube_id(spotify_id: str):
     spotify_client = spotify.SpotifyClient()
     extended_title = spotify_client.fetch_song_extended_title(spotify_id)
 
+    print("Searching youtube for song:" + extended_title)
     youtube_client = youtube.YoutubeClient()
     youtube_id = youtube_client.search_for_song(extended_title)
 
@@ -294,6 +295,11 @@ def find_all_relevant_segments():
         ", max gap:",
         max_gap,
     )
+
+
+@app.command()
+def separate_vocals(youtube_id: str):
+    process(youtube_id)
 
 
 if __name__ == "__main__":

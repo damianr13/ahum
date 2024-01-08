@@ -19,6 +19,9 @@ class SpotifyClient(AbstractPlayer):
         )
 
     def fetch_song_extended_title(self, song_id: str):
+        if "spotify-" in song_id:
+            song_id = song_id.replace("spotify-", "")
+
         uri = f"spotify:track:{song_id}"
 
         spotify_track = self.spotify.track(uri)

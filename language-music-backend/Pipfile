@@ -19,10 +19,19 @@ starlette = "*"
 levenshtein = "*"
 google-api-python-client = "*"
 thefuzz = "*"
+transformers = "*"
+scipy = "*"
+librosa = "*"
+numpy = "*"
+pytube = "*"
+torch = "*"
+torchaudio = "*"
+pydub = "*"
 
 [dev-packages]
 typer = {extras = ["all"], version = "*"}
 matplotlib = "*"
+jupyter = "*"
 
 [requires]
-python_version = "3.11"
+python_version = "3.10"
