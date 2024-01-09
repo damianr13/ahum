@@ -298,8 +298,8 @@ def find_all_relevant_segments():
 
 
 @app.command()
-def separate_vocals(youtube_id: str):
-    process(youtube_id)
+def separate_vocals(youtube_id: str, language: str):
+    process(youtube_id, language)
 
 
 if __name__ == "__main__":

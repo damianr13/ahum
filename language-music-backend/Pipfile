@@ -27,6 +27,9 @@ pytube = "*"
 torch = "*"
 torchaudio = "*"
 pydub = "*"
+whisper-timestamped = "~=1.14"
+structlog = "*"
+tqdm = "*"
 
 [dev-packages]
 typer = {extras = ["all"], version = "*"}

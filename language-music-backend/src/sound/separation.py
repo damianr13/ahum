@@ -1,11 +1,23 @@
 import os.path
 
+import pydub
+import pydub.silence
 import torch
 import torchaudio
 from torchaudio.pipelines import HDEMUCS_HIGH_MUSDB_PLUS
 from torchaudio.transforms import Fade
 
-from src.sound.utils import CONVERTED_FILE_NAME, VOCALS_FILE_NAME
+from structlog import get_logger
+
+from src.sound.utils import (
+    CONVERTED_FILE_NAME,
+    VOCALS_FILE_NAME,
+    SPLITS_DIR_NAME,
+    SPLITS_TIMESTAMPS_FILE_NAME,
+)
+
+
+logger = get_logger()
 
 
 def __separate_sources(
@@ -61,6 +73,7 @@ def __separate_sources(
 
 
 def extract_voice(target_location: str) -> str:
+    logger.info("Extracting vocals")
     bundle = HDEMUCS_HIGH_MUSDB_PLUS
     model = bundle.get_model()
     device = torch.device("cpu")
@@ -74,15 +87,13 @@ def extract_voice(target_location: str) -> str:
     waveform = waveform.to(device)
 
     if sample_rate != 44100:
-        print("Warn: Resampling to 44100Hz, from ", sample_rate, "Hz")
+        logger.warn("Warn: Resampling to 44100Hz", sample_rate=sample_rate)
         waveform = torchaudio.functional.resample(waveform, sample_rate, 44100)
         sample_rate = 44100
 
     # parameters
     segment: int = 10
     overlap = 0.1
-
-    print("Separating track")
 
     ref = waveform.mean(0)
     waveform = (waveform - ref.mean()) / ref.std()  # normalization
@@ -105,3 +116,39 @@ def extract_voice(target_location: str) -> str:
     torchaudio.save(output_file_name, audios["vocals"], sample_rate)
 
     return output_file_name
+
+
+def split(target_location: str) -> str:
+    logger.info("Splitting vocals")
+    vocals_file = os.path.join(target_location, VOCALS_FILE_NAME)
+    sound = pydub.AudioSegment.from_file(vocals_file, format="wav")
+    chunk_timestamps = pydub.silence.detect_nonsilent(
+        sound, min_silence_len=5000, silence_thresh=-32
+    )
+    chunks = [
+        sound[
+            max(chunk_timestamps[i][0] - 2000, 0) : min(
+                chunk_timestamps[i][1] + 2000, len(sound)
+            )
+        ]
+        for i in range(len(chunk_timestamps))
+    ]
+
+    splits_dir = os.path.join(target_location, SPLITS_DIR_NAME)
+    if not os.path.exists(splits_dir):
+        os.makedirs(splits_dir)
+
+    logger.info("Splitting vocals", chunks_count=len(chunks))
+    for i in range(len(chunks)):
+        chunk = chunks[i]
+
+        chunk.export(
+            os.path.join(splits_dir, f"{i}.wav"),
+            format="wav",
+        )
+
+    with open(os.path.join(splits_dir, SPLITS_TIMESTAMPS_FILE_NAME), "w") as f:
+        for timestamp in chunk_timestamps:
+            f.write(f"{timestamp[0]} {timestamp[1]}\n")
+
+    return os.path.join(target_location, SPLITS_DIR_NAME)
