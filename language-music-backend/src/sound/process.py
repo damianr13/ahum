@@ -7,25 +7,20 @@ def process(youtube_id: str, language: str):
     """
     Applies all the processing necessary to go from a song id on youtube to the synchronized lyrics
 
-    :return: TODO
+    All the intermediate files (including the final transcriptions) are stored in local storage.
+
+    :param youtube_id: the song id on youtube
+    :param language:  the language of the lyrics
+    :return:
     """
     working_dir = f"data/songs/{youtube_id}"
 
-    # download(working_dir)
+    download(working_dir)
 
-    # convert(working_dir)
+    convert(working_dir)
 
-    # extract_voice(working_dir)
+    extract_voice(working_dir)
 
-    # split(working_dir)
+    split(working_dir)
 
     transcribe(working_dir, language)
-
-    """
-    TODO: 
-    
-    1. Split the voices audio to remove silent segments
-    2. Go through whisper to extract lyrics timestamps
-    3. Sync text from Whisper with original text
-    4. Find a good format to store the data
-    """
