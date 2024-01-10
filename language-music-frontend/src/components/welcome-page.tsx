@@ -11,7 +11,7 @@ const WelcomePage = () => {
       en: "English",
       fr: "Français",
       es: "Español",
-      sw: "Svenska",
+      sv: "Svenska",
     }),
     [],
   );
