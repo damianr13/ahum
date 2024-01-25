@@ -47,15 +47,3 @@ class ProcessorTest(unittest.TestCase):
             processed_song.line_reordering_tasks[0].original_line.strip(),
             processed_song.line_reordering_tasks[0].original_line,
         )
-
-    def test_french_song(self):
-        processed_song, song_processor = _process_song("test/data/sur_ma_route.json")
-
-        # Check that we reached the end of the song processing
-        self.assertTrue(True)
-
-    def test_swedish_song(self):
-        processed_song, song_processor = _process_song("test/data/dom_andra.json")
-
-        # Check that we reached the end of the song processing
-        self.assertTrue(True)

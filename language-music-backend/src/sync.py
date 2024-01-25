@@ -1,4 +1,5 @@
 import json
+import math
 import re
 from typing import Tuple, Dict, List
 
@@ -97,19 +98,25 @@ def __explore_around_passage(
 
 
 def search_for_segment(
-    lyrics: str, segment_text: str, start: int = 0
+    lyrics: str, segment_text: str, start: int = 0, matching_threshold: int = 75
 ) -> Tuple[int, int]:
     """
     Search for a segment in the lyrics, starting at the given index
     :param lyrics:
     :param segment_text:
     :param start:
+    :param matching_threshold:
     :return:
     """
     total_words = len(lyrics.split())
 
     current_passage_start = start
-    window_size = len(segment_text.split())
+    segment_size = len(segment_text.split())
+
+    # Maybe whisper splits some words
+    # For example we don't want to skip if the segment size if 6 and the total words count is 5
+    # This happens when we recursively search through the gaps after the first iteration on the full lyrics
+    window_size = len(segment_text.split()) - math.ceil(segment_size / 5)
     if window_size + start > total_words:
         # How?
         # Whisper hallucinates with very long sequences of words, we just skip those.
@@ -146,7 +153,7 @@ def search_for_segment(
     # find the max score
     max_score = max(score_matrix.values())
 
-    if max_score < 75:
+    if max_score < matching_threshold:
         # If the max score is too low, we don't want to return anything
         return start, start
 
@@ -158,26 +165,106 @@ def search_for_segment(
     longest_passage = __explore_around_passage(
         lyrics, segment_text, longest_passage, start=start
     )
-    print(max_score, longest_passage)
 
     return longest_passage
 
 
-def extract_known_passages(relevant_segments: List[Dict], lyrics: str):
+def __identify_gaps(
+    known_passages: List[Tuple[int, int]], lyrics: str
+) -> List[Tuple[int, int]]:
+    gaps = [
+        (known_passages[i][1], known_passages[i + 1][0])
+        for i in range(len(known_passages) - 1)
+        if known_passages[i + 1][0] - known_passages[i][1] > 0
+    ]
+    if known_passages[-1][1] < len(lyrics.split()):
+        gaps.append((known_passages[-1][1], len(lyrics.split())))
+
+    return gaps
+
+
+def __recursively_map_passages(
+    relevant_segments: List[Dict], lyrics: str, recursive_ttl: int = 3
+) -> List[Tuple[int, int]]:
     known_passages = []
     for segment in relevant_segments:
         longest_passage = search_for_segment(
             lyrics,
             segment["text"].strip(),
             start=0 if len(known_passages) == 0 else known_passages[-1][1],
+            matching_threshold=50 + 10 * recursive_ttl,
         )
 
         known_passages.append(longest_passage)
 
+    gaps = __identify_gaps(known_passages, lyrics)
+
+    missed_segments = {
+        i: known_passages[i]
+        for i in range(len(known_passages))
+        if known_passages[i][1] - known_passages[i][0] == 0
+    }
+
+    gap_segments_mapping = {
+        g: [s for s, p in missed_segments.items() if p[0] >= g[0] and p[1] <= g[1]]
+        for g in gaps
+    }
+
+    if recursive_ttl < 0:
+        """
+        Finally if we have gaps with only 1 corresponding segment we allow it.
+        """
+        for gap, segments in gap_segments_mapping.items():
+            if len(segments) == 1:
+                known_passages[segments[0]] = (gap[0], gap[1])
+
+        return known_passages
+
+    for gap, segments in gap_segments_mapping.items():
+        if len(segments) == 0:
+            continue
+
+        partial_lyrics = " ".join(lyrics.split()[gap[0] : gap[1]])
+        gap_known_passages = __recursively_map_passages(
+            relevant_segments=[relevant_segments[s] for s in segments],
+            lyrics=partial_lyrics,
+            recursive_ttl=recursive_ttl - 1,
+        )
+
+        for i, p in enumerate(gap_known_passages):
+            known_passages[segments[i]] = (p[0] + gap[0], p[1] + gap[0])
+
     return known_passages
 
 
-def debug_print_sync_stats(
+def extract_known_passages(
+    relevant_segments: List[Dict], lyrics: str
+) -> List[Tuple[int, int]]:
+    known_passages = __recursively_map_passages(relevant_segments, lyrics)
+
+    missed_segment_starts = [
+        known_passages[i][0]
+        for i in range(len(known_passages))
+        if known_passages[i][1] - known_passages[i][0] == 0
+    ]
+    if not missed_segment_starts or missed_segment_starts[0] == len(lyrics.split()):
+        """
+        What this means:
+
+        We covered all the segments (except for maybe some hallucination at the end.
+        In this case we assume it's safe to "patch" the gaps, by appending the words we skip to the end of the
+        most appropriate segment.
+        """
+
+        return [
+            (known_passages[i][0], known_passages[i + 1][0])
+            for i in range(len(known_passages) - 1)
+        ] + [known_passages[-1]]
+
+    return known_passages
+
+
+def print_sync_stats_debug(
     known_passages: List[Tuple[int, int]], relevant_segments: List[Dict], lyrics: str
 ):
     for i in range(len(known_passages)):

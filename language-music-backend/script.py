@@ -15,7 +15,7 @@ from src.sync import (
     search_for_segment,
     read_toy_lyrics_data,
     extract_known_passages,
-    debug_print_sync_stats,
+    print_sync_stats_debug,
     clean_lyrics,
 )
 
@@ -141,7 +141,7 @@ def find_all_relevant_segments():
     relevant_segments = data["segments"]
     known_passages = extract_known_passages(relevant_segments, lyrics)
 
-    debug_print_sync_stats(known_passages, relevant_segments, lyrics)
+    print_sync_stats_debug(known_passages, relevant_segments, lyrics)
 
 
 @app.command()
@@ -172,7 +172,7 @@ def sync_lyrics(song_id: str):
     relevant_segments = data["segments"]
     known_passages = extract_known_passages(relevant_segments, lyrics)
 
-    debug_print_sync_stats(known_passages, relevant_segments, lyrics)
+    print_sync_stats_debug(known_passages, relevant_segments, lyrics)
 
 
 if __name__ == "__main__":
