@@ -14,6 +14,7 @@ from src.sound.utils import (
     VOCALS_FILE_NAME,
     SPLITS_DIR_NAME,
     SPLITS_TIMESTAMPS_FILE_NAME,
+    SPLITS_PADDING,
 )
 
 
@@ -125,12 +126,16 @@ def split(target_location: str) -> str:
     chunk_timestamps = pydub.silence.detect_nonsilent(
         sound, min_silence_len=5000, silence_thresh=-32
     )
+
+    chunk_timestamps = [
+        (
+            max(chunk_timestamps[i][0] - SPLITS_PADDING, 0),
+            min(chunk_timestamps[i][1] + SPLITS_PADDING, len(sound)),
+        )
+        for i in range(len(chunk_timestamps))
+    ]
     chunks = [
-        sound[
-            max(chunk_timestamps[i][0] - 2000, 0) : min(
-                chunk_timestamps[i][1] + 2000, len(sound)
-            )
-        ]
+        sound[chunk_timestamps[i][0] : chunk_timestamps[i][1]]
         for i in range(len(chunk_timestamps))
     ]
 

@@ -17,6 +17,8 @@ from src.sync import (
     extract_known_passages,
     print_sync_stats_debug,
     clean_lyrics,
+    sync_words,
+    lrc,
 )
 
 app = typer.Typer()
@@ -167,12 +169,17 @@ def sync_lyrics(song_id: str):
     ) as f:
         data = json.load(f)
 
-    lyrics = clean_lyrics(song.lyrics)
+    lyrics_continuous = clean_lyrics(song.lyrics)
+    lyrics_with_new_lines = clean_lyrics(song.lyrics, keep_new_lines=True)
 
     relevant_segments = data["segments"]
-    known_passages = extract_known_passages(relevant_segments, lyrics)
+    known_passages = extract_known_passages(relevant_segments, lyrics_continuous)
+    synced_words = sync_words(known_passages, data["segments"], lyrics_continuous)
 
-    print_sync_stats_debug(known_passages, relevant_segments, lyrics)
+    formatted_lrc = lrc.apply_formatting(lyrics_with_new_lines, synced_words)
+
+    with open(os.path.join(f"data/songs/", song.youtube_id, "lyrics.lrc"), "w") as f:
+        f.write(formatted_lrc)
 
 
 if __name__ == "__main__":

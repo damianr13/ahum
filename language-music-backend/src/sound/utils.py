@@ -8,6 +8,8 @@ SPLITS_DIR_NAME = "splits"
 SPLITS_TIMESTAMPS_FILE_NAME = "timestamps.txt"
 TRANSCRIPTION_FILE_NAME = "transcription.json"
 
+SPLITS_PADDING = 2000  # ms
+
 
 def convert_to_numpy(audio: pydub.AudioSegment):
     return (

@@ -18,18 +18,24 @@ def read_toy_lyrics_data() -> Tuple[Dict, str]:
     return data, lyrics
 
 
-def clean_lyrics(lyrics: str) -> str:
+def clean_lyrics(lyrics: str, keep_new_lines=False) -> str:
     """
     We scrape lyrics, and they might come with their own HTML code and square brackets, which we don't want.
 
     We want the vanilla lyrics to match them with the whisper output.
     :param lyrics:
+    :param keep_new_lines:
     :return:
     """
+    if keep_new_lines:
+        lyrics = re.sub("<br/?>", "\n", lyrics)
 
     # Replace tags and square brackets with spaces instead of empty strings to prevent word concatenation
     no_html = re.sub(r"<[^>]*>", " ", lyrics)
     no_brackets = re.sub(r"\[.*?]", " ", no_html)
+    if not keep_new_lines:
+        no_brackets = re.sub(r"\n", " ", no_brackets)
+
     return no_brackets.replace("\\s+", " ").strip()
 
 
