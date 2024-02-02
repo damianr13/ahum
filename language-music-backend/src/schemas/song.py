@@ -9,6 +9,7 @@ class Song(BaseModel):
     spotify_id: str
     youtube_id: Optional[str] = None
     lyrics: str
+    lyrics_url: Optional[str] = None
 
 
 class SongWithLanguage(Song):

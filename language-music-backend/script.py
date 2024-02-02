@@ -102,6 +102,7 @@ def insert_song(title: str, language: str):
         youtube_id=youtube_id,
         lyrics=lyrics,
         language=language,
+        lyrics_url=genius_url,
     )
     json.dump(song.model_dump(), open(f"data/last_song.json", "w", encoding="utf-8"))
 

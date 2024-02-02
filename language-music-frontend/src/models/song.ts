@@ -15,6 +15,7 @@ export interface Song {
   youtube_id: string;
   lyrics: string;
   processed_lyrics: string;
+  lyrics_url?: string;
 
   line_reordering_tasks: LineReorderingTask[];
   word_selection_tasks: WordSelectionTask[];

@@ -1,17 +1,18 @@
-import { useCallback, useEffect, useMemo, useState } from "react";
+import React, { useCallback, useEffect, useMemo, useState } from "react";
 import { Song } from "@/models/song";
 import backend from "@/services/backend";
 import { useSearchParams } from "next/navigation";
 import WelcomePage from "@/components/welcome-page";
 import KaraokeLyrics from "@/components/karaoke-viewer";
 import MusicPlayer from "@/components/music-player";
+import TopBar from "@/components/top-bar";
 
 const MainComponent = () => {
   const [song, setSong] = useState<Song | undefined>(undefined);
   const [updatedLyrics, setUpdatedLyrics] = useState<string | undefined>();
   const query = useSearchParams();
   const [syncedLyrics, setSyncedLyrics] = useState<string | undefined>();
-  const [isPlayerTop, setIsPlayerTop] = useState(true);
+  const [isPlayerTop, setIsPlayerTop] = useState(false);
   const [startPlayerAt, setStartPlayerAt] = useState<number | undefined>(
     undefined,
   );
@@ -83,39 +84,45 @@ const MainComponent = () => {
   );
 
   return (
-    <div
-      className={
-        "flex h-screen overflow-hidden " +
-        (isPlayerTop ? "flex-col" : "flex-col-reverse")
-      }
-    >
-      <div className={`transition-all duration-250 ease-in-out ${translation}`}>
-        {song && (
-          <MusicPlayer
-            videoId={song.youtube_id}
-            isTop={isPlayerTop}
-            onSwitchPosition={() => setIsPlayerTop(!isPlayerTop)}
-            onPlayerTimeChanged={(time) => setCurrentTime(time)}
-            startAt={startPlayerAt}
-          />
-        )}
-      </div>
+    <div className="flex h-screen overflow-hidden flex-col">
+      <TopBar />
       <div
-        className={`overflow-y-auto transform transition duration-500 ease-in-out ${opacity}`}
+        className={
+          "flex h-screen overflow-hidden " +
+          (isPlayerTop ? "flex-col" : "flex-col-reverse")
+        }
       >
-        <div className="flex flex-col max-w-[800px] mx-auto">
-          {!selectedLanguage && <WelcomePage />}
-          {song && updatedLyrics && (
-            <>
-              <div className="flex flex-row justify-center font-roboto-mono bg-gray-700 text-white p-6 items-center">
-                <KaraokeLyrics
-                  lyrics={syncedLyrics ?? ""}
-                  currentTime={currentTime}
-                  onSeek={(time) => setStartPlayerAt(time)}
-                />
-              </div>
-            </>
+        <div
+          className={`transition-all duration-250 ease-in-out ${translation}`}
+        >
+          {song && (
+            <MusicPlayer
+              videoId={song.youtube_id}
+              isTop={isPlayerTop}
+              onSwitchPosition={() => setIsPlayerTop(!isPlayerTop)}
+              onPlayerTimeChanged={(time) => setCurrentTime(time)}
+              startAt={startPlayerAt}
+            />
           )}
+        </div>
+        <div
+          className={`overflow-y-auto transform transition duration-500 ease-in-out ${opacity}`}
+        >
+          <div className="flex flex-col max-w-[800px] mx-auto">
+            {!selectedLanguage && <WelcomePage />}
+            {song && updatedLyrics && (
+              <>
+                <div className="flex flex-row justify-center font-roboto-mono bg-gray-700 text-white p-6 items-center">
+                  <KaraokeLyrics
+                    lyrics={syncedLyrics ?? ""}
+                    currentTime={currentTime}
+                    onSeek={(time) => setStartPlayerAt(time)}
+                    lyricsUrl={song.lyrics_url}
+                  />
+                </div>
+              </>
+            )}
+          </div>
         </div>
       </div>
     </div>

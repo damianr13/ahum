@@ -7,6 +7,7 @@ type LyricLine = {
 
 type KaraokeLyricsProps = {
   lyrics: string;
+  lyricsUrl?: string;
   currentTime: number;
   onSeek: (time: number) => void;
 };
@@ -29,6 +30,7 @@ const KaraokeLyrics: React.FC<KaraokeLyricsProps> = ({
   lyrics,
   currentTime,
   onSeek,
+  lyricsUrl,
 }) => {
   const [parsedLyrics, setParsedLyrics] = useState<LyricLine[][]>([]);
 
@@ -70,7 +72,24 @@ const KaraokeLyrics: React.FC<KaraokeLyricsProps> = ({
     ));
   };
 
-  return <div>{renderLyrics()}</div>;
+  return (
+    <div>
+      <div>{renderLyrics()}</div>
+
+      {/*Attribution*/}
+      <div className="text-xs text-gray-400 mt-2 italic">
+        Lyrics by:{" "}
+        <a
+          className="underline"
+          href={lyricsUrl ?? "https://genius.com"}
+          target="_blank"
+          rel="noreferrer"
+        >
+          Genius.com
+        </a>
+      </div>
+    </div>
+  );
 };
 
 export default KaraokeLyrics;
