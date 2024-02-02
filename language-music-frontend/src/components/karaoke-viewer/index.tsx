@@ -8,6 +8,7 @@ type LyricLine = {
 type KaraokeLyricsProps = {
   lyrics: string;
   currentTime: number;
+  onSeek: (time: number) => void;
 };
 
 const parseLrc = (lrcString: string): LyricLine[][] => {
@@ -27,6 +28,7 @@ const parseLrc = (lrcString: string): LyricLine[][] => {
 const KaraokeLyrics: React.FC<KaraokeLyricsProps> = ({
   lyrics,
   currentTime,
+  onSeek,
 }) => {
   const [parsedLyrics, setParsedLyrics] = useState<LyricLine[][]>([]);
 
@@ -36,7 +38,7 @@ const KaraokeLyrics: React.FC<KaraokeLyricsProps> = ({
 
   const renderLyrics = () => {
     return parsedLyrics.map((line, lineIndex) => (
-      <div key={lineIndex}>
+      <p key={lineIndex}>
         {line.map((item, wordIndex) => {
           const isActive =
             currentTime >= item.time &&
@@ -46,18 +48,25 @@ const KaraokeLyrics: React.FC<KaraokeLyricsProps> = ({
               parsedLyrics[lineIndex + 1].length > 0
                 ? parsedLyrics[lineIndex + 1][0].time
                 : item.time + 3);
-          const activeStyle = isActive
-            ? { fontWeight: "bold", fontSize: "larger", color: "white" }
-            : { color: "white" };
+          const clickableWordClass =
+            "hover:text-gray-400 cursor-pointer " +
+            "transition duration-150 ease-in-out transform hover:scale-105";
+          const activeClass = `my-1 ${clickableWordClass} ${
+            isActive ? "font-bold text-lg" : "text-base"
+          }`;
 
           return (
-            <span key={wordIndex} style={activeStyle}>
+            <span
+              key={wordIndex}
+              className={activeClass}
+              onClick={() => onSeek(item.time)}
+            >
               {item.word}{" "}
             </span>
           );
         })}
         {line.length == 0 && <br />}
-      </div>
+      </p>
     ));
   };
 
