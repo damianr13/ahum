@@ -27,7 +27,7 @@ const MusicPlayer = (props: MusicPlayerProps) => {
   }, [isTop]);
 
   const frameClassNames = useMemo(() => {
-    return isTop ? "flex flex-grow w-[800px]" : "w-[200px]";
+    return isTop ? "flex flex-grow md:w-[800px] w-full" : "w-[200px]";
   }, [isTop]);
   const [player, setPlayer] = useState<any>(null);
 
