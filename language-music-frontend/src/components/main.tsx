@@ -16,9 +16,9 @@ const MainComponent = () => {
     undefined,
   );
 
-  const [selectedLanguage, setSelectedLanguage] = useState<
-    string | undefined
-  >();
+  const [selectedLanguage, setSelectedLanguage] = useState<string | undefined>(
+    "sv",
+  );
   const [currentTime, setCurrentTime] = useState(0);
 
   // Opacity variables to animate the transition of the player from top to bottom and vice versa
