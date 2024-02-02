@@ -10,17 +10,17 @@ const TopBar = () => {
       <h1 className="text-2xl font-bold">Ahum</h1>
       <div className="flex items-center gap-4">
         {/* Discord Button */}
-        <a
-          href="https://discord.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:bg-gray-700 p-2 rounded transition-colors duration-300"
-        >
-          <FaDiscord className="h-6 w-6" />
-        </a>
+        {/*<a*/}
+        {/*  href="https://discord.com"*/}
+        {/*  target="_blank"*/}
+        {/*  rel="noopener noreferrer"*/}
+        {/*  className="hover:bg-gray-700 p-2 rounded transition-colors duration-300"*/}
+        {/*>*/}
+        {/*  <FaDiscord className="h-6 w-6" />*/}
+        {/*</a>*/}
         {/* GitHub Button */}
         <a
-          href="https://github.com"
+          href="https://github.com/damianr13/ahum"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:bg-gray-700 p-2 rounded transition-colors duration-300"
@@ -29,7 +29,7 @@ const TopBar = () => {
         </a>
         {/* Medium Button */}
         <a
-          href="https://medium.com"
+          href="https://medium.com/@damianr13"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:bg-gray-700 p-2 rounded transition-colors duration-300"

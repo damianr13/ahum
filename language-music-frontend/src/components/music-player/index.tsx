@@ -20,7 +20,7 @@ const MusicPlayer = (props: MusicPlayerProps) => {
     const common =
       "transition-all duration-1000 ease-in-out flex flex-shrink-0 flex-grow-0 w-full";
     const specific = isTop
-      ? "flex-col h-[500px] bg-gray-400 p-2 items-center gap-4"
+      ? "flex-col h-[300px] bg-gray-400 p-2 items-center gap-2 md:h-[500px] md:gap-4"
       : "flex-row justify-self-end bg-gray-400 p-3 flex justify-around";
 
     return `${common} ${specific}`;

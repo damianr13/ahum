@@ -6,7 +6,7 @@ import React from "react";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Language Music App",
+  title: "Ahum.io",
   description: "Learn a language through music",
 };
 

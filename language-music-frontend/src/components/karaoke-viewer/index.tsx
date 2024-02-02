@@ -38,6 +38,19 @@ const KaraokeLyrics: React.FC<KaraokeLyricsProps> = ({
     setParsedLyrics(parseLrc(lyrics));
   }, [lyrics]);
 
+  useEffect(() => {
+    const element = window.document.getElementsByClassName("word-active")[0];
+    if (!element) {
+      return;
+    }
+    // Scroll to element
+    element.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "start",
+    });
+  }, [currentTime]);
+
   const renderLyrics = () => {
     return parsedLyrics.map((line, lineIndex) => (
       <p key={lineIndex}>
@@ -54,11 +67,12 @@ const KaraokeLyrics: React.FC<KaraokeLyricsProps> = ({
             "hover:text-gray-400 cursor-pointer " +
             "transition duration-150 ease-in-out transform hover:scale-105";
           const activeClass = `my-1 ${clickableWordClass} ${
-            isActive ? "font-bold text-lg" : "text-base"
+            isActive ? "font-bold text-lg word-active" : "text-base"
           }`;
 
           return (
             <span
+              id={`word-${wordIndex}`}
               key={wordIndex}
               className={activeClass}
               onClick={() => onSeek(item.time)}
