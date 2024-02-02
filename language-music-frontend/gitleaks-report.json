@@ -1,0 +1,42 @@
+[
+ {
+  "Description": "GCP API key",
+  "StartLine": 7,
+  "EndLine": 7,
+  "StartColumn": 13,
+  "EndColumn": 52,
+  "Match": "AIzaSyD86mT3nUupXb5dHFsU7UiBfKPza0HGDSQ\"",
+  "Secret": "AIzaSyD86mT3nUupXb5dHFsU7UiBfKPza0HGDSQ",
+  "File": "language-music-frontend/src/services/backend.ts",
+  "SymlinkFile": "",
+  "Commit": "01faabae016ba370d6564d1ecdeb1e77f649a7a5",
+  "Entropy": 4.9070716,
+  "Author": "damianr13",
+  "Email": "damian.robert.andrei@gmail.com",
+  "Date": "2023-09-23T17:25:51Z",
+  "Message": "Chore: Switched backend to firestore library",
+  "Tags": [],
+  "RuleID": "gcp-api-key",
+  "Fingerprint": "01faabae016ba370d6564d1ecdeb1e77f649a7a5:language-music-frontend/src/services/backend.ts:gcp-api-key:7"
+ },
+ {
+  "Description": "GCP API key",
+  "StartLine": 7,
+  "EndLine": 7,
+  "StartColumn": 13,
+  "EndColumn": 52,
+  "Match": "AIzaSyD86mT3nUupXb5dHFsU7UiBfKPza0HGDSQ\"",
+  "Secret": "AIzaSyD86mT3nUupXb5dHFsU7UiBfKPza0HGDSQ",
+  "File": "language-music-frontend/src/services/backend.ts",
+  "SymlinkFile": "",
+  "Commit": "3fb95465e244333339c6c3f779a7a48340cd58fe",
+  "Entropy": 4.9070716,
+  "Author": "damianr13",
+  "Email": "damian.robert.andrei@gmail.com",
+  "Date": "2023-09-23T17:25:51Z",
+  "Message": "Chore: Switched backend to firestore library",
+  "Tags": [],
+  "RuleID": "gcp-api-key",
+  "Fingerprint": "3fb95465e244333339c6c3f779a7a48340cd58fe:language-music-frontend/src/services/backend.ts:gcp-api-key:7"
+ }
+]

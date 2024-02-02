@@ -10,6 +10,12 @@ import {
   limit,
 } from "firebase/firestore";
 
+/**
+ * GitLeaks complains about this key, but in fact it's fine if it is public. It has to be shared with the user anyway
+ * for the app to work, and it is restricted to access only cloud firestore.
+ *
+ * More details: https://stackoverflow.com/questions/37482366/is-it-safe-to-expose-firebase-apikey-to-the-public
+ */
 const firebaseConfig = {
   apiKey: "AIzaSyD86mT3nUupXb5dHFsU7UiBfKPza0HGDSQ",
   authDomain: "stracensus.firebaseapp.com",
