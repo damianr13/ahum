@@ -14,6 +14,10 @@ def download(target_location: str) -> str:
     if target_location.endswith("/"):
         target_location = target_location[:-1]
 
+    result_file_name = os.path.join(target_location, ORIGINAL_FILE_NAME)
+    if os.path.exists(result_file_name):
+        return result_file_name
+
     youtube_id = target_location.split("/")[-1]
     yt = pytube.YouTube(f"https://www.youtube.com/watch?v={youtube_id}")
     yt.streams.filter(type="audio", mime_type="audio/webm").order_by(

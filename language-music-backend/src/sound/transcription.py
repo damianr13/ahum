@@ -70,4 +70,4 @@ def transcribe(target_location: str, language: str):
         }
 
     with open(os.path.join(target_location, TRANSCRIPTION_FILE_NAME), "w") as f:
-        json.dump(full_transcription, f)
+        json.dump(full_transcription, f, indent=4)
