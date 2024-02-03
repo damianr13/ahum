@@ -56,6 +56,8 @@ const MusicPlayer = (props: MusicPlayerProps) => {
         onPlayerTimeChanged(event.target.getCurrentTime());
       }, 10);
       return () => clearInterval(interval);
+    } else if (event.target.getPlayerState() === YouTube.PlayerState.PAUSED) {
+      setIsPaused(true);
     }
   };
 
