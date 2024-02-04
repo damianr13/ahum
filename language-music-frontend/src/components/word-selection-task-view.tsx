@@ -1,10 +1,12 @@
-import { WordSelectionTask } from "@/models/song";
+import { Song } from "@/models/song";
 import { Button } from "@mui/material";
 import { useEffect, useMemo, useState } from "react";
 import { TaskResponse } from "@/models/task-response";
+import { extractIndex } from "@/utils/parse";
 
 export interface WordSelectionTaskProps {
-  task: WordSelectionTask;
+  song: Song;
+  line: string;
   onInput: (value: TaskResponse) => void;
 }
 
@@ -16,8 +18,7 @@ interface WordSelectionButtonProps {
 }
 
 const WordSelectionButton = (props: WordSelectionButtonProps) => {
-  const { selectedWord, onSelect, alternative, targetWord } =
-    props;
+  const { selectedWord, onSelect, alternative, targetWord } = props;
   const isDisabled = useMemo(() => {
     return selectedWord !== undefined;
   }, [selectedWord]);
@@ -51,15 +52,18 @@ const WordSelectionTaskView = (props: WordSelectionTaskProps) => {
   const [selectedWord, setSelectedWord] = useState<string | undefined>(
     undefined,
   );
+  const task = props.song.word_selection_tasks.find((task) => {
+    return task.task_id === extractIndex(props.line, "wst");
+  });
 
   useEffect(() => {
-    if (!props.task || !selectedWord) return;
+    if (!task || !selectedWord) return;
 
     props.onInput({
       response: selectedWord,
       done: true,
     });
-  }, [selectedWord, props]);
+  }, [selectedWord, task, props]);
 
   return (
     <div
@@ -71,13 +75,13 @@ const WordSelectionTaskView = (props: WordSelectionTaskProps) => {
         margin: "16px",
       }}
     >
-      {props.task.alternatives.map((alternative, index) => (
+      {task?.alternatives.map((alternative, index) => (
         <WordSelectionButton
           key={index}
           selectedWord={selectedWord}
           onSelect={() => setSelectedWord(alternative)}
           alternative={alternative}
-          targetWord={props.task.target_word}
+          targetWord={task.target_word}
         />
       ))}
     </div>

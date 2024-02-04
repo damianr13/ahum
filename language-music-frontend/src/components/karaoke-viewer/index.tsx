@@ -1,4 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
+import { Song } from "@/models/song";
+import WordSelectionTaskView from "@/components/word-selection-task-view";
+import LineReorderingTaskView from "@/components/line-reordering-task-view";
+import { TaskResponse } from "@/models/task-response";
 
 type LyricLine = {
   word: string;
@@ -6,10 +10,11 @@ type LyricLine = {
 };
 
 type KaraokeLyricsProps = {
-  lyrics: string;
-  lyricsUrl?: string;
+  song: Song;
   currentTime: number;
   onSeek: (time: number) => void;
+
+  wordRenderer?: (word: string, isActive: boolean) => React.JSX.Element;
 };
 
 const parseLrc = (lrcString: string): LyricLine[][] => {
@@ -26,12 +31,11 @@ const parseLrc = (lrcString: string): LyricLine[][] => {
   });
 };
 
-const KaraokeLyrics: React.FC<KaraokeLyricsProps> = ({
-  lyrics,
-  currentTime,
-  onSeek,
-  lyricsUrl,
-}) => {
+const KaraokeLyrics: React.FC<KaraokeLyricsProps> = (
+  props: KaraokeLyricsProps,
+) => {
+  const { song, currentTime, onSeek, wordRenderer } = props;
+  const { processed_lyrics: lyrics, lyrics_url: lyricsUrl } = song;
   const [parsedLyrics, setParsedLyrics] = useState<LyricLine[][]>([]);
 
   useEffect(() => {
@@ -70,6 +74,37 @@ const KaraokeLyrics: React.FC<KaraokeLyricsProps> = ({
             isActive ? "font-bold text-lg word-active" : "text-base"
           }`;
 
+          let processedWord = item.word;
+          if (processedWord.indexOf("__lp") !== -1) {
+            processedWord = processedWord.replace(/lp\d+/g, "");
+          }
+          if (processedWord.indexOf("__wp") !== -1) {
+            processedWord = processedWord.replace(/wp\d+/g, "");
+          }
+
+          // TODO: These tasks should update the lyrics with the "onInput" callback
+          // TODO 2: The components are still ugly
+          if (processedWord.indexOf("__wst") !== -1) {
+            return (
+              <WordSelectionTaskView
+                key={wordIndex}
+                line={processedWord}
+                song={song}
+                onInput={() => {}}
+              />
+            );
+          }
+          if (processedWord.indexOf("__lrt") !== -1) {
+            return (
+              <LineReorderingTaskView
+                key={wordIndex}
+                line={processedWord}
+                song={song}
+                onInput={(response: TaskResponse) => {}}
+              />
+            );
+          }
+
           return (
             <span
               id={`word-${wordIndex}`}
@@ -77,7 +112,7 @@ const KaraokeLyrics: React.FC<KaraokeLyricsProps> = ({
               className={activeClass}
               onClick={() => onSeek(item.time)}
             >
-              {item.word}{" "}
+              {processedWord}{" "}
             </span>
           );
         })}

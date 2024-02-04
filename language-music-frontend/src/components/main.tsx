@@ -1,6 +1,5 @@
-import React, { useCallback, useEffect, useMemo, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { Song } from "@/models/song";
-import backend from "@/services/backend";
 import { useSearchParams } from "next/navigation";
 import WelcomePage from "@/components/welcome-page";
 import KaraokeLyrics from "@/components/karaoke-viewer";
@@ -11,7 +10,6 @@ const MainComponent = () => {
   const [song, setSong] = useState<Song | undefined>(undefined);
   const [updatedLyrics, setUpdatedLyrics] = useState<string | undefined>();
   const query = useSearchParams();
-  const [syncedLyrics, setSyncedLyrics] = useState<string | undefined>();
   const [isPlayerTop, setIsPlayerTop] = useState(false);
   const [startPlayerAt, setStartPlayerAt] = useState<number | undefined>(
     undefined,
@@ -40,15 +38,6 @@ const MainComponent = () => {
     toggleFlexDirection();
   }, [isPlayerTop]);
 
-  // Load the hardcoded lyrics file from public/lyrics.lrc
-  useEffect(() => {
-    fetch("/lyrics.lrc")
-      .then((response) => response.text())
-      .then((lyrics) => {
-        setSyncedLyrics(lyrics);
-      });
-  }, []);
-
   // Get the language from the query parameters
 
   useEffect(() => {
@@ -62,26 +51,13 @@ const MainComponent = () => {
 
   useEffect(() => {
     if (!selectedLanguage) return;
-    backend.getSong(selectedLanguage).then((song) => {
-      setSong(song);
-    });
+    fetch("/processed.json")
+      .then((response) => response.json())
+      .then((s) => setSong(s as Song));
+    // backend.getSong(selectedLanguage).then((song) => {
+    //   setSong(song);
+    // });
   }, [selectedLanguage]);
-
-  const extractIndex = useCallback(
-    (line: string, identifier: string): number | undefined => {
-      const startOfIndexNumber = line.indexOf(identifier) + identifier.length;
-      const endOfIndexNumber = line.indexOf("_", startOfIndexNumber);
-      if (startOfIndexNumber === -1 || endOfIndexNumber === -1)
-        return undefined;
-
-      const indexAsString = line.substring(
-        startOfIndexNumber,
-        endOfIndexNumber,
-      );
-      return parseInt(indexAsString);
-    },
-    [],
-  );
 
   return (
     <div className="flex h-screen overflow-hidden flex-col">
@@ -110,14 +86,13 @@ const MainComponent = () => {
         >
           <div className="flex flex-col max-w-[800px] mx-auto">
             {!selectedLanguage && <WelcomePage />}
-            {song && updatedLyrics && (
+            {song && song.processed_lyrics && (
               <>
                 <div className="flex flex-row justify-center font-roboto-mono bg-gray-700 text-white p-6 items-center">
                   <KaraokeLyrics
-                    lyrics={syncedLyrics ?? ""}
+                    song={song}
                     currentTime={currentTime}
                     onSeek={(time) => setStartPlayerAt(time)}
-                    lyricsUrl={song.lyrics_url}
                   />
                 </div>
               </>

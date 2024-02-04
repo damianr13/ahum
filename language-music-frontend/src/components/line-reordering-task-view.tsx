@@ -1,10 +1,12 @@
 import { useEffect, useMemo, useState } from "react";
 import { Button } from "@mui/material";
-import { LineReorderingTask } from "@/models/song";
+import { Song } from "@/models/song";
 import { TaskResponse } from "@/models/task-response";
+import { extractIndex } from "@/utils/parse";
 
 export interface LineReorderingTaskProps {
-  task: LineReorderingTask;
+  song: Song;
+  line: string;
   onInput: (value: TaskResponse) => void;
 }
 
@@ -17,20 +19,14 @@ interface LineOrderButtonProps {
 }
 
 const LineOrderButton = (props: LineOrderButtonProps) => {
-  const {
-    onSelected,
-    word,
-    isSelected,
-    isCorrect,
-    selectionIndex
-  } = props;
+  const { onSelected, word, isSelected, isCorrect, selectionIndex } = props;
   const backgroundColor = useMemo(() => {
     if (!isSelected) return "transparent";
 
     return isCorrect ? "green" : "red";
   }, [isSelected, isCorrect]);
 
-  console.log(word, props)
+  console.log(word, props);
   return (
     <Button
       variant="outlined"
@@ -49,22 +45,32 @@ const LineOrderButton = (props: LineOrderButtonProps) => {
 
 const LineReorderingTaskView = (props: LineReorderingTaskProps) => {
   const [currentSelection, setCurrentSelection] = useState<number[]>([]);
+  const { song, line } = props;
+
+  const task = useMemo(
+    () =>
+      song.line_reordering_tasks.find((task) => {
+        return task.task_id === extractIndex(line, "lrt");
+      }),
+    [song, line],
+  );
+
   const correctSelection = useMemo(() => {
-    if (!props.task) return [];
-    return props.task.original_line.trim().split(" ");
-  }, [props]);
+    if (!task) return [];
+    return task.original_line.trim().split(" ");
+  }, [task]);
   const selectionValidity = useMemo(() => {
     return currentSelection.map((wordIndex, index) => {
       return (
-        props.task.scrambled_line[wordIndex].toLowerCase() ===
+        task?.scrambled_line[wordIndex].toLowerCase() ===
         correctSelection[index].toLowerCase()
       );
     });
-  }, [currentSelection, correctSelection, props]);
+  }, [currentSelection, correctSelection, task]);
 
   useEffect(() => {
     console.log("currentSelection", currentSelection);
-    if (!props.task || currentSelection.length === 0) return;
+    if (!task || currentSelection.length === 0) return;
 
     if (selectionValidity.some((valid) => !valid)) {
       props.onInput({
@@ -76,9 +82,7 @@ const LineReorderingTaskView = (props: LineReorderingTaskProps) => {
 
     console.log("selections", currentSelection, correctSelection);
     props.onInput({
-      response: currentSelection
-        .map((i) => props.task.scrambled_line[i])
-        .join(" "),
+      response: currentSelection.map((i) => task.scrambled_line[i]).join(" "),
       done: currentSelection.length === correctSelection.length,
     });
   }, [currentSelection, props, selectionValidity, correctSelection]);
@@ -95,7 +99,7 @@ const LineReorderingTaskView = (props: LineReorderingTaskProps) => {
         flexWrap: "wrap",
       }}
     >
-      {props.task.scrambled_line.map((word, index) => (
+      {task?.scrambled_line.map((word, index) => (
         <LineOrderButton
           key={index}
           isSelected={currentSelection.includes(index)}

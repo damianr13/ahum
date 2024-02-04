@@ -9,6 +9,20 @@ from src.schemas.song import SongWithLanguage, ProcessedSong
 from src.schemas.tasks import WordSelectionTask, LineReorderingTask
 
 
+def apply_lyric_curation(lyrics: str):
+    curated_lyrics = lyrics.replace("<br>", "\n").replace("<br/>", "\n")
+
+    # remove html tags and text within brackets from lyrics
+    curated_lyrics = re.sub(r"<[^>]*>", " ", curated_lyrics)
+    curated_lyrics = re.sub(r"\[[^]]*]", " ", curated_lyrics)
+    # remove punctuation
+    curated_lyrics = re.sub(r"[^\w\s]", " ", curated_lyrics)
+
+    # remove multiple spaces, but keep newlines
+    curated_lyrics = re.sub(r" +", " ", curated_lyrics)
+    return curated_lyrics
+
+
 def requires_dictionary(func):
     @wraps(func)
     def wrapper(self: "SongProcessor", *method_args, **method_kwargs):
@@ -40,9 +54,9 @@ def requires_oov_words(func):
 
 
 class SongProcessor:
-    def __init__(self, song: SongWithLanguage):
+    def __init__(self, song: SongWithLanguage, keep_lrc=False):
         self.song = song
-        self.lyrics = song.lyrics
+        self.lyrics = re.sub(r"\n{3,}", "\n\n", song.lyrics.strip())
         self.dictionary = None
         self.curated_lyrics = None
         self.words_from_lyrics = None
@@ -51,18 +65,10 @@ class SongProcessor:
 
         self.word_selection_tasks: list[WordSelectionTask] = []
         self.line_reordering_tasks: list[LineReorderingTask] = []
+        self.keep_lrc = keep_lrc
 
     def _extract_words_from_lyrics(self):
-        curated_lyrics = self.lyrics.replace("<br>", "\n").replace("<br/>", "\n")
-
-        # remove html tags and text within brackets from lyrics
-        curated_lyrics = re.sub(r"<[^>]*>", " ", curated_lyrics)
-        curated_lyrics = re.sub(r"\[[^]]*]", " ", curated_lyrics)
-        # remove punctuation
-        curated_lyrics = re.sub(r"[^\w\s]", " ", curated_lyrics)
-
-        # remove multiple spaces, but keep newlines
-        curated_lyrics = re.sub(r" +", " ", curated_lyrics)
+        curated_lyrics = apply_lyric_curation(self.lyrics)
 
         # normalize spaces
         curated_lyrics_words = re.sub(r"\s+", " ", curated_lyrics)
@@ -77,11 +83,15 @@ class SongProcessor:
         ]
 
     def _find_oov_words(self):
-        return [
-            word
-            for word in self.words_from_lyrics
-            if (word not in self.dictionary and not word.lower() in self.dictionary)
-        ]
+        return (
+            [
+                word
+                for word in self.words_from_lyrics
+                if (word not in self.dictionary and not word.lower() in self.dictionary)
+            ]
+            if self.song.language != "sv"
+            else []
+        )  # The swedish dictionary of words is not complete
 
     @requires_dictionary
     @requires_words_from_lyrics
@@ -111,17 +121,16 @@ class SongProcessor:
 
         # Find 2 other words in the dictionary that are close to this one
         alternatives = []
+        word_list = self.dictionary.copy()
+        word_list = sorted(word_list, key=lambda word: distance(word_to_replace, word))
 
-        for word in random.sample(self.dictionary, len(self.dictionary)):
+        for word in random.sample(word_list, 25):
             if word.lower() == word_to_replace.lower():
                 continue
 
-            current_distance = distance(word_to_replace, word)
-
-            if current_distance <= 2:
-                alternatives.append(word)
-                if len(alternatives) == 2:
-                    break
+            alternatives.append(word)
+            if len(alternatives) == 3:
+                break
 
         alternatives.append(word_to_replace)
         new_task = WordSelectionTask(
@@ -154,7 +163,17 @@ class SongProcessor:
     @requires_words_from_lyrics
     @requires_dictionary
     @requires_oov_words
-    def create_line_reordering_task(self) -> "SongProcessor":
+    def create_line_reordering_task(self, forced_line: str = None) -> "SongProcessor":
+        if forced_line:
+            new_task = LineReorderingTask(
+                task_id=len(self.line_reordering_tasks),
+                original_line=forced_line,
+                scrambled_line=forced_line.split(" "),
+            )
+            self.line_reordering_tasks.append(new_task)
+
+            return self
+
         all_lines = [line.strip() for line in self.curated_lyrics.splitlines()]
 
         # extract the lines containing no oov words
@@ -189,30 +208,60 @@ class SongProcessor:
 
         return self
 
+    @staticmethod
+    def __add_timestamps_to_task_lines(processed_lines: list[str]):
+        # add timestamps to the inserted lines, equal to the timestamp of the next line
+        for i, line in enumerate(processed_lines):
+            if not line.startswith("__"):
+                continue
+
+            for j in range(i + 1, len(processed_lines)):
+                line_timestamp = re.search(r"(\[\d+:\d+.\d+])", processed_lines[j])
+                if line_timestamp:
+                    processed_lines[i] = line_timestamp.group(1) + processed_lines[i]
+                    break
+
+            if not processed_lines[i].startswith("__"):
+                continue
+
+            for j in range(len(processed_lines) - 1, 0, -1):
+                line_timestamp = re.search(r"(\[\d+:\d+.\d+])", processed_lines[j])
+                if line_timestamp:
+                    processed_lines[i] = line_timestamp.group(1) + processed_lines[i]
+                    break
+
+        return processed_lines
+
     @requires_words_from_lyrics
     def mask_words_according_to_tasks(self) -> "SongProcessor":
-        processed_lyrics = self.curated_lyrics
+        processed_lyrics = self.lyrics if self.keep_lrc else self.curated_lyrics
 
         self.processed_lyrics = processed_lyrics.strip()
-        self.processed_lyrics = re.sub(r"\n{3,}", "\n\n", self.processed_lyrics)
 
         processed_lines = self.processed_lyrics.splitlines()
         processed_lines_original = processed_lines.copy()
+        curated_lines_original = self.curated_lyrics.splitlines()
 
         inserted_lines_count = 0
         word_tasks_handled = []
-        for index, line in enumerate(processed_lines_original):
-            updated_line = line
+        for index, processed_line in enumerate(processed_lines_original):
+            updated_line = processed_line
+            curated_line = apply_lyric_curation(processed_line).strip()
 
             # only update the real insertion count after all tasks have been handled
             lines_inserted_for_current_line = 0
             for task in self.line_reordering_tasks:
-                if task.original_line == line:
+                if task.original_line.strip().lower() == curated_line.strip().lower():
                     updated_line = (
-                        "_" * (len(line) // 2)
+                        "_" * (len(curated_line) // 2)
                         + f"lp{task.task_id}"
-                        + "_" * (len(line) // 2)
+                        + "_" * (len(curated_line) // 2)
                     )
+                    if self.keep_lrc and processed_line.startswith("["):
+                        line_timestamp = re.search(r"(\[\d+:\d+.\d+])", processed_line)
+                        if line_timestamp:
+                            updated_line = line_timestamp.group(1) + updated_line
+
                     processed_lines.insert(
                         index + inserted_lines_count + 1,
                         "__lrt{task_id}__".format(task_id=task.task_id),
@@ -220,7 +269,7 @@ class SongProcessor:
                     lines_inserted_for_current_line += 1
 
             for task in self.word_selection_tasks:
-                if task.target_word in line:
+                if task.target_word in processed_line:
                     updated_line = updated_line.replace(
                         task.target_word,
                         "_" * (len(task.target_word) // 2)
@@ -229,13 +278,17 @@ class SongProcessor:
                     )
                     if task.task_id not in word_tasks_handled:
                         processed_lines.insert(
-                            index + inserted_lines_count + 1, f"__wst{task.task_id}__",
+                            index + inserted_lines_count + 1,
+                            f"__wst{task.task_id}__",
                         )
                         word_tasks_handled.append(task.task_id)
                         lines_inserted_for_current_line += 1
 
             processed_lines[index + inserted_lines_count] = updated_line
             inserted_lines_count += lines_inserted_for_current_line
+
+        if self.keep_lrc:
+            processed_lines = self.__add_timestamps_to_task_lines(processed_lines)
 
         self.processed_lyrics = "\n".join(processed_lines)
 
@@ -245,6 +298,7 @@ class SongProcessor:
         return ProcessedSong(
             **{
                 **self.song.model_dump(),
+                "lyrics": self.lyrics,  # we removed the empty lines straight from the lyrics
                 "processed_lyrics": self.processed_lyrics,
                 "word_selection_tasks": self.word_selection_tasks,
                 "line_reordering_tasks": self.line_reordering_tasks,

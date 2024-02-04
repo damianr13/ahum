@@ -27,7 +27,13 @@ logger = get_logger()
 app = typer.Typer()
 
 
-def __sync_lyrics_for_song(song: SongWithLanguage):
+def __sync_lyrics_for_song(song: SongWithLanguage) -> str:
+    """
+    Uses fuzzy matching to map between the Whisper Output and the actual scraped lyrics.
+
+    :param song:
+    :return: the synced lyrics
+    """
     transcription_path = os.path.join(
         "data/songs", song.youtube_id, TRANSCRIPTION_FILE_NAME
     )
@@ -50,6 +56,8 @@ def __sync_lyrics_for_song(song: SongWithLanguage):
 
     with open(os.path.join(f"data/songs/", song.youtube_id, "lyrics.lrc"), "w") as f:
         f.write(formatted_lrc)
+
+    return formatted_lrc
 
 
 @app.command()
@@ -111,9 +119,7 @@ def update_with_youtube_id(firestore_id: str):
     db.collection("songs").document(firestore_id).update({"youtube_id": youtube_id})
 
 
-def __process_from_scratch(
-    title: str, language: str
-) -> Union[ProcessedSong, SongWithLanguage]:
+def __load_song(title: str, language: str) -> SongWithLanguage:
     spotify_client = spotify.SpotifyClient()
     youtube_client = youtube.YoutubeClient()
 
@@ -126,35 +132,33 @@ def __process_from_scratch(
     lyrics = get_lyrics(genius_url)
 
     logger.info("Saving song")
-    song = SongWithLanguage(
+    return SongWithLanguage(
         spotify_id=spotify_id,
         youtube_id=youtube_id,
         lyrics=lyrics,
         language=language,
         lyrics_url=genius_url,
     )
-    json.dump(
-        song.model_dump(), open(f"data/songs/last_song.json", "w", encoding="utf-8")
-    )
-
-    try:
-        processor = SongProcessor(song)
-
-        return (
-            processor.create_line_reordering_task()
-            .create_word_selection_task()
-            .create_word_selection_task()
-            .create_word_selection_task()
-            .mask_words_according_to_tasks()
-            .get_processed_song()
-        )
-    except ValueError:  # Unknown language
-        return song
 
 
 @app.command()
 def insert_song(title: str, language: str):
-    processed_song = __process_from_scratch(title, language)
+    song = __load_song(title, language)
+
+    json.dump(
+        song.model_dump(), open(f"data/songs/last_song.json", "w", encoding="utf-8")
+    )
+
+    processor = SongProcessor(song)
+
+    processed_song = (
+        processor.create_line_reordering_task()
+        .create_word_selection_task()
+        .create_word_selection_task()
+        .create_word_selection_task()
+        .mask_words_according_to_tasks()
+        .get_processed_song()
+    )
     spotify_id = processed_song.spotify_id
 
     db = firestore.init_firestore()
@@ -166,17 +170,36 @@ def insert_song(title: str, language: str):
 
 @app.command()
 def process_locally(title: str, language: str):
-    processed_song = __process_from_scratch(title, language)
-    song_dir = os.path.join("data", "songs", processed_song.youtube_id)
+    song = __load_song(title, language)
+    song_dir = os.path.join("data", "songs", song.youtube_id)
     if not os.path.exists(song_dir):
         os.makedirs(song_dir)
 
     with open(os.path.join(song_dir, "doc.json"), "w", encoding="utf-8") as f:
+        json.dump(song.model_dump(), f, ensure_ascii=False, indent=4)
+
+    if not os.path.exists(os.path.join("data", "songs", song.youtube_id, "lyrics.lrc")):
+        transcribe_song(song.youtube_id, language)
+        formatted_lrc = __sync_lyrics_for_song(song)
+    else:
+        with open(os.path.join(song_dir, "lyrics.lrc"), "r", encoding="utf-8") as f:
+            formatted_lrc = f.read()
+
+    song.lyrics = formatted_lrc
+
+    processor = SongProcessor(song, keep_lrc=True)
+
+    processed_song = (
+        processor.create_line_reordering_task()
+        .create_word_selection_task()
+        .create_word_selection_task()
+        .create_word_selection_task()
+        .mask_words_according_to_tasks()
+        .get_processed_song()
+    )
+
+    with open(os.path.join(song_dir, "processed.json"), "w", encoding="utf-8") as f:
         json.dump(processed_song.model_dump(), f, ensure_ascii=False, indent=4)
-
-    transcribe_song(processed_song.youtube_id, language)
-
-    __sync_lyrics_for_song(processed_song)
 
 
 @app.command()
