@@ -1,8 +1,9 @@
-import { useEffect, useMemo, useState } from "react";
-import { Button } from "@mui/material";
+import React, { useCallback, useMemo, useState } from "react";
 import { Song } from "@/models/song";
 import { TaskResponse } from "@/models/task-response";
 import { extractIndex } from "@/utils/parse";
+import TaskButton from "@/components/karaoke-viewer/tasks/components/task-button";
+import TaskButtonsContainer from "@/components/karaoke-viewer/tasks/components/task-buttons-container";
 
 export interface LineReorderingTaskProps {
   song: Song;
@@ -12,34 +13,24 @@ export interface LineReorderingTaskProps {
 
 interface LineOrderButtonProps {
   onSelected: () => void;
-  isSelected: boolean;
   isCorrect: boolean | undefined;
   selectionIndex: number | undefined;
   word: string;
 }
 
 const LineOrderButton = (props: LineOrderButtonProps) => {
-  const { onSelected, word, isSelected, isCorrect, selectionIndex } = props;
-  const backgroundColor = useMemo(() => {
-    if (!isSelected) return "transparent";
+  const { onSelected, word, isCorrect, selectionIndex } = props;
 
-    return isCorrect ? "green" : "red";
-  }, [isSelected, isCorrect]);
-
-  console.log(word, props);
+  console.log("Selection index", selectionIndex);
   return (
-    <Button
-      variant="outlined"
-      style={{
-        color: "white",
-        borderColor: "white",
-        backgroundColor: backgroundColor,
-      }}
+    <TaskButton
       onClick={onSelected}
+      isCorrect={isCorrect}
+      disabled={selectionIndex !== undefined}
     >
       {word}
       <sub>{selectionIndex !== -1 ? selectionIndex : ""}</sub>
-    </Button>
+    </TaskButton>
   );
 };
 
@@ -68,48 +59,40 @@ const LineReorderingTaskView = (props: LineReorderingTaskProps) => {
     });
   }, [currentSelection, correctSelection, task]);
 
-  useEffect(() => {
-    console.log("currentSelection", currentSelection);
-    if (!task || currentSelection.length === 0) return;
+  const onSelected = useCallback(
+    (index: number) => {
+      if (!task) return;
 
-    if (selectionValidity.some((valid) => !valid)) {
+      const newSelection = [...currentSelection, index];
+      setCurrentSelection(newSelection);
+
       props.onInput({
-        response: currentSelection.join(" "),
-        done: true,
+        response: newSelection.map((i) => task.scrambled_line[i]).join(" "),
+        done: newSelection.length === correctSelection.length,
       });
-      return;
-    }
-
-    console.log("selections", currentSelection, correctSelection);
-    props.onInput({
-      response: currentSelection.map((i) => task.scrambled_line[i]).join(" "),
-      done: currentSelection.length === correctSelection.length,
-    });
-  }, [currentSelection, props, selectionValidity, correctSelection]);
+    },
+    [currentSelection, props, task, correctSelection],
+  );
+  const selectionIndex = useCallback(
+    (index: number) => {
+      const resultFromJS = currentSelection.indexOf(index);
+      return resultFromJS >= 0 ? resultFromJS : undefined;
+    },
+    [currentSelection],
+  );
 
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "row",
-        gap: "8px",
-        justifyContent: "center",
-        margin: "16px",
-        maxWidth: "100%",
-        flexWrap: "wrap",
-      }}
-    >
+    <TaskButtonsContainer>
       {task?.scrambled_line.map((word, index) => (
         <LineOrderButton
           key={index}
-          isSelected={currentSelection.includes(index)}
           isCorrect={selectionValidity[currentSelection.indexOf(index)]}
-          selectionIndex={currentSelection.indexOf(index)}
-          onSelected={() => setCurrentSelection([...currentSelection, index])}
+          selectionIndex={selectionIndex(index)}
+          onSelected={() => onSelected(index)}
           word={word}
         />
       ))}
-    </div>
+    </TaskButtonsContainer>
   );
 };
 
