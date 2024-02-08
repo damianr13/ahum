@@ -1,15 +1,17 @@
 import json
 import os.path
-from typing import Union
+from typing import Optional
 
 import typer
+from structlog import get_logger
+from typing_extensions import Annotated
 
 from src import firestore
 from src.genius import get_song_url, get_lyrics
 from src.players import spotify, youtube
 from src.players.utils import convert_id
 from src.processing import SongProcessor
-from src.schemas.song import SongWithLanguage, ProcessedSong
+from src.schemas.song import SongWithLanguage
 from src.sound.process import process as transcribe_song
 from src.sound.utils import TRANSCRIPTION_FILE_NAME
 from src.sync import (
@@ -21,7 +23,7 @@ from src.sync import (
     sync_words,
     lrc,
 )
-from structlog import get_logger
+from src.wiktionary import WiktionaryScraper
 
 logger = get_logger()
 app = typer.Typer()
@@ -239,6 +241,16 @@ def sync_lyrics(song_id: str):
     song = SongWithLanguage(**song_doc.to_dict())
 
     __sync_lyrics_for_song(song)
+
+
+@app.command()
+def get_word_details(
+    word: str, language: Annotated[Optional[str], typer.Argument()] = "sv"
+):
+    wiktionary_scraper = WiktionaryScraper(language)
+    word_dict = wiktionary_scraper.scrape(word)
+
+    print(json.dumps(word_dict, indent=4))
 
 
 if __name__ == "__main__":
