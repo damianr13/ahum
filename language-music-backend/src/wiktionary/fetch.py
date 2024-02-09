@@ -34,7 +34,7 @@ class WiktionaryScraper:
         self.base = f"https://{language_code}.wiktionary.org"
         self.inflexion_marker = inflexion_marker
 
-    def get_url(self, word):
+    def __get_url(self, word):
         return f"{self.base}/wiki/{word}"
 
     @staticmethod
@@ -106,7 +106,7 @@ class WiktionaryScraper:
             if element.name == "ul":
                 audio = self.__scrape_audio(element)
             elif element.name == "ol":
-                definitions = self.__scrape_definition(element)
+                definitions += self.__scrape_definition(element)
         return {
             "part_of_speech": part_of_speech,
             "definitions": definitions,
@@ -156,7 +156,7 @@ class WiktionaryScraper:
 
         return {"success": True, "options": options, "base": base_word}
 
-    def scrape(self, url: str):
+    def scrape(self, word: str):
         """
         :param url:
         :return: Dictionary with the following structure:
@@ -179,6 +179,8 @@ class WiktionaryScraper:
             "base": string
         }
         """
+        url = self.__get_url(word)
+
         response = requests.get(url)
         if response.status_code != 200:
             return {"success": False, "url": url, "options": []}

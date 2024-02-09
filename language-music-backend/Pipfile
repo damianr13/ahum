@@ -30,6 +30,7 @@ pydub = "*"
 whisper-timestamped = "~=1.14"
 structlog = "*"
 tqdm = "*"
+spacy = "*"
 
 [dev-packages]
 typer = {extras = ["all"], version = "*"}

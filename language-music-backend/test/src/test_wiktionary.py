@@ -74,3 +74,9 @@ class WiktionaryScraperTestUnit(unittest.TestCase):
         test_result = self.__scrape_wiktionary_page(test_page)
 
         self.assertEqual(test_result["base"], "lycklig")
+
+    def test_word_with_multiple_groups(self):
+        test_page = self.__load_page("akt")
+        test_result = self.__scrape_wiktionary_page(test_page)
+
+        self.assertEqual(len(test_result["options"][0]["definitions"]), 8)

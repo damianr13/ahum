@@ -1,9 +1,12 @@
 import json
 import os.path
-from typing import Optional
+import re
+from typing import Optional, List
 
+import spacy
 import typer
 from structlog import get_logger
+from tqdm import tqdm
 from typing_extensions import Annotated
 
 from src import firestore
@@ -251,6 +254,71 @@ def get_word_details(
     word_dict = wiktionary_scraper.scrape(word)
 
     print(json.dumps(word_dict, indent=4))
+
+
+def __get_clean_lyrics(youtube_id: str) -> str:
+    song_dir = os.path.join("data", "songs", youtube_id)
+    if os.path.exists(song_dir) and os.path.exists(
+        os.path.join(song_dir, "lyrics.lrc")
+    ):
+        with open(os.path.join(song_dir, "lyrics.lrc"), "r", encoding="utf-8") as f:
+            lyrics = f.read()
+    else:
+        raise Exception("Lyrics not found")
+
+    return re.sub("\[\d+:\d+\.\d+]", "", lyrics)
+
+
+def __build_vocabulary(words_unique: List[str], song_dir: str):
+    wiktionary_scraper = (
+        WiktionaryScraper()
+    )  # Assumes the lyrics are in Swedish for now
+    word_details = {}
+    bases = []
+    for word in tqdm(words_unique):
+        word_dict = wiktionary_scraper.scrape(word)
+        word_details[word] = word_dict
+        if word_dict.get("base", None):
+            bases.append(word_dict["base"])
+
+    for word in tqdm(bases):
+        if word in word_details:
+            continue
+
+        base_dict = wiktionary_scraper.scrape(word)
+        word_details[word] = base_dict
+
+    with open(os.path.join(song_dir, "vocabulary.json"), "w", encoding="utf-8") as f:
+        json.dump(word_details, f, ensure_ascii=False, indent=4)
+
+
+@app.command()
+def create_song_vocabulary(youtube_id: str):
+    lyrics = __get_clean_lyrics(youtube_id)
+    song_dir = os.path.join("data", "songs", youtube_id)
+
+    words = lyrics.split()
+
+    words_clean = [re.sub("[,.!?:;]", "", word) for word in words]
+    words_unique = list(set(words_clean))
+
+    __build_vocabulary(words_unique, song_dir)
+
+
+@app.command()
+def analyze_with_spacy(youtube_id: str):
+    lyrics = __get_clean_lyrics(youtube_id)
+    nlp = spacy.load("sv_core_news_lg")
+    doc = nlp(lyrics)
+
+    words = [
+        token.text.lower()
+        for token in doc
+        if token.pos_ not in ["PUNCT", "SPACE", "PROPN"]
+    ]
+    words_unique = list(set(words))
+
+    __build_vocabulary(words_unique, song_dir=os.path.join("data", "songs", youtube_id))
 
 
 if __name__ == "__main__":
