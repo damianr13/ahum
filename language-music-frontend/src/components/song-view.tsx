@@ -61,7 +61,7 @@ const SongView = () => {
   return (
     <div
       className={
-        "flex h-full overflow-hidden max-w-screen-sm " +
+        "flex h-full overflow-y-hidden max-w-screen-sm " +
         (isPlayerTop ? "flex-col" : "flex-col-reverse")
       }
     >

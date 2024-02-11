@@ -153,6 +153,15 @@ const WordComponent = (props: WordComponentProps): React.JSX.Element => {
 const KaraokeLyrics: React.FC<KaraokeLyricsProps> = (
   props: KaraokeLyricsProps,
 ) => {
+  /**
+   * The component that shows the lyrics for the song with synced timestamps.
+   *
+   * Note: this used to scroll to each word, but there were some issues with that:
+   * - if the user tried to scroll to some other part of the song they would be blocked
+   * - if this component is used in a tab component, the scroll would affect the horizontal position, and put the tab
+   * component in a weird state
+   */
+
   const { song, currentTime, onSeek } = props;
   const { processed_lyrics: lyrics, lyrics_url: lyricsUrl } = song;
   const [parsedLyrics, setParsedLyrics] = useState<LyricLine[][]>([]);
@@ -164,19 +173,6 @@ const KaraokeLyrics: React.FC<KaraokeLyricsProps> = (
   useEffect(() => {
     setParsedLyrics(parseLrc(lyrics));
   }, [lyrics]);
-
-  useEffect(() => {
-    const element = window.document.getElementsByClassName("word-active")[0];
-    if (!element) {
-      return;
-    }
-    // Scroll to element
-    element.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-      inline: "start",
-    });
-  }, [currentTime]);
 
   const renderedLyrics = useMemo(() => {
     return parsedLyrics.map((line, lineIndex) => (
