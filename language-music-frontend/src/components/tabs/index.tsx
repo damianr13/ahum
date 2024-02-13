@@ -149,7 +149,9 @@ export const Tabs = ({ children, ...props }: TabProps) => {
           <div
             key={index}
             className={`transition-all ease-in-out duration-300 w-screen  ${
-              index === activeTab ? "z-10 opacity-100" : "z-0 opacity-50"
+              index === activeTab
+                ? "z-10 opacity-100 cursor-default"
+                : "z-0 opacity-50"
             }`}
             onClick={(event) => activateTab(event, index)}
             style={{

@@ -10,6 +10,7 @@ from tqdm import tqdm
 from typing_extensions import Annotated
 
 from src import firestore
+from src.cefr import CEFRIndex
 from src.genius import get_song_url, get_lyrics
 from src.players import spotify, youtube
 from src.players.utils import convert_id
@@ -275,8 +276,11 @@ def __build_vocabulary(words_unique: List[str], song_dir: str):
     )  # Assumes the lyrics are in Swedish for now
     word_details = {}
     bases = []
+
+    cefr_index = CEFRIndex()
     for word in tqdm(words_unique):
         word_dict = wiktionary_scraper.scrape(word)
+
         word_details[word] = word_dict
         if word_dict.get("base", None):
             bases.append(word_dict["base"])
@@ -288,8 +292,21 @@ def __build_vocabulary(words_unique: List[str], song_dir: str):
         base_dict = wiktionary_scraper.scrape(word)
         word_details[word] = base_dict
 
+    word_details_with_level = {}
+    for word, word_dict in word_details.items():
+        if word_dict.get("base", None):
+            continue  # Most probably the derivatives will not be in the list but we will be looking for the base
+
+        cefr_word_data = cefr_index.get_entry(word)
+        if cefr_word_data:
+            word_dict = {**word_dict, **cefr_word_data.model_dump()}
+        else:
+            word_dict = {**word_dict, "cefr": "unknown"}
+            logger.warn("Couldn't find word in CEFR index", word=word)
+        word_details_with_level[word] = word_dict
+
     with open(os.path.join(song_dir, "vocabulary.json"), "w", encoding="utf-8") as f:
-        json.dump(word_details, f, ensure_ascii=False, indent=4)
+        json.dump(word_details_with_level, f, ensure_ascii=False, indent=4)
 
 
 @app.command()

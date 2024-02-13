@@ -17,3 +17,7 @@ English: https://github.com/lorenbrichter/Words/tree/master/Words
 French: https://github.com/lorenbrichter/Words/tree/master/Words
 
 Swedish: https://github.com/almgru/svenska-ord.txt/tree/master
+
+### Word frequency
+
+Swedish: https://spraakbanken.gu.se/en/resources/kelly

@@ -1,0 +1,2645 @@
+{
+    "sagt": {
+        "success": true,
+        "options": [
+            {
+                "part_of_speech": "Adjektiv",
+                "definitions": [
+                    {
+                        "text": "böjningsform av sagd",
+                        "examples": []
+                    }
+                ],
+                "audio": null
+            },
+            {
+                "part_of_speech": "Verb",
+                "definitions": [
+                    {
+                        "text": "böjningsform av säga",
+                        "examples": []
+                    },
+                    {
+                        "text": "böjningsform av säja",
+                        "examples": []
+                    }
+                ],
+                "audio": null
+            }
+        ],
+        "base": null,
+        "url": "https://sv.wiktionary.org/wiki/sagt",
+        "cefr": "unknown"
+    },
+    "hey": {
+        "success": false,
+        "options": [],
+        "url": "https://sv.wiktionary.org/wiki/hey",
+        "cefr": "unknown"
+    },
+    "ett": {
+        "success": true,
+        "options": [
+            {
+                "part_of_speech": "Pronomen",
+                "definitions": [
+                    {
+                        "text": "syftar tillbaka på det tidigare nämnda substantivet",
+                        "examples": [
+                            "Jag har sett träd förut men vad är det här för något mörkt ett?"
+                        ]
+                    }
+                ],
+                "audio": null
+            },
+            {
+                "part_of_speech": "Räkneord",
+                "definitions": [
+                    {
+                        "text": "det första naturliga talet; siffran 1 mellan noll och två; I med romerska siffror",
+                        "examples": [
+                            "Ni ska räkna uppgift ett till tio i matematikboken denna vecka."
+                        ]
+                    }
+                ],
+                "audio": "https://upload.wikimedia.org/wikipedia/commons/transcoded/3/34/Sv-ett.ogg/Sv-ett.ogg.mp3"
+            },
+            {
+                "part_of_speech": "Artikel",
+                "definitions": [
+                    {
+                        "text": "obestämd artikel singular neutrum",
+                        "examples": [
+                            "ett hus"
+                        ]
+                    }
+                ],
+                "audio": null
+            }
+        ],
+        "base": null,
+        "url": "https://sv.wiktionary.org/wiki/ett",
+        "id": "3418",
+        "raw": "1929",
+        "wpm": 16.92,
+        "cefr": 3,
+        "gf": "ett",
+        "pos": "pronoun",
+        "example": null
+    },
+    "det": {
+        "success": true,
+        "options": [
+            {
+                "part_of_speech": "Pronomen",
+                "definitions": [
+                    {
+                        "text": "personligt pronomen som syftar på den omtalade i subjektsform om den omtalade har t-genus; personligt pronomen i tredje person singular nominativ neutrum",
+                        "examples": []
+                    },
+                    {
+                        "text": "personligt pronomen som syftar på den omtalade i objektsform om den omtalade har t-genus; personligt pronomen i tredje person singular ackusativ och dativ neutrum",
+                        "examples": []
+                    },
+                    {
+                        "text": "personligt pronomen som används som formellt subjekt",
+                        "examples": []
+                    }
+                ],
+                "audio": null
+            },
+            {
+                "part_of_speech": "Artikel",
+                "definitions": [
+                    {
+                        "text": "bestämd artikel singular neutrum av den",
+                        "examples": [
+                            "Det röda huset brinner."
+                        ]
+                    }
+                ],
+                "audio": null
+            }
+        ],
+        "base": null,
+        "url": "https://sv.wiktionary.org/wiki/det",
+        "id": "124",
+        "raw": "367250",
+        "wpm": 3221.41,
+        "cefr": 1,
+        "gf": "det",
+        "pos": "det",
+        "example": null
+    },
+    "då": {
+        "success": true,
+        "options": [
+            {
+                "part_of_speech": "Adverb",
+                "definitions": [
+                    {
+                        "text": "(tidsadverbial)  vid den tidpunkten",
+                        "examples": [
+                            "Den första gång jag såg dig, då glänste sommarskyn -Birger Sjöberg"
+                        ]
+                    },
+                    {
+                        "text": "om så är fallet",
+                        "examples": [
+                            "Om denna mening är sann, då kommer världen att gå under inom en vecka."
+                        ]
+                    }
+                ],
+                "audio": null
+            },
+            {
+                "part_of_speech": "Konjunktion",
+                "definitions": [
+                    {
+                        "text": "(temporal konjunktion) indikerar att en handling omedelbart följs av en annan",
+                        "examples": [
+                            "Just då klockan ringde reste eleven sig."
+                        ]
+                    },
+                    {
+                        "text": "anger orsak",
+                        "examples": [
+                            "Kungen själv var inte så mycket till regent, då han inte var särskilt brydd om att styra landet."
+                        ]
+                    }
+                ],
+                "audio": null
+            }
+        ],
+        "base": null,
+        "url": "https://sv.wiktionary.org/wiki/då",
+        "id": "154",
+        "raw": "203943",
+        "wpm": 1788.93,
+        "cefr": 1,
+        "gf": "då",
+        "pos": "adverb",
+        "example": null
+    },
+    "stilla": {
+        "success": true,
+        "options": [
+            {
+                "part_of_speech": "Verb",
+                "definitions": [
+                    {
+                        "text": "få still(are), dämpa, lugna",
+                        "examples": [
+                            "Jag hoppas denna korv med bröd kan stilla min hunger."
+                        ]
+                    }
+                ],
+                "audio": null
+            },
+            {
+                "part_of_speech": "Adjektiv",
+                "definitions": [
+                    {
+                        "text": "inte i rörelse; inte livlig",
+                        "examples": [
+                            "Det var en stilla natt, mer stilla än natten innan."
+                        ]
+                    }
+                ],
+                "audio": null
+            },
+            {
+                "part_of_speech": "Adverb",
+                "definitions": [
+                    {
+                        "text": "utan att vara i rörelse; utan att röra sig",
+                        "examples": [
+                            "Jag kan stå stillast av alla här."
+                        ]
+                    }
+                ],
+                "audio": null
+            }
+        ],
+        "base": null,
+        "url": "https://sv.wiktionary.org/wiki/stilla",
+        "id": "3471",
+        "raw": "1875",
+        "wpm": 16.45,
+        "cefr": 3,
+        "gf": "stilla",
+        "pos": "adverb",
+        "example": null
+    },
+    "ned": {
+        "success": true,
+        "options": [
+            {
+                "part_of_speech": "Adverb",
+                "definitions": [
+                    {
+                        "text": "formellare variant av ner",
+                        "examples": []
+                    }
+                ],
+                "audio": null
+            },
+            {
+                "part_of_speech": "Verbpartikel",
+                "definitions": [
+                    {
+                        "text": "formellare variant av ner",
+                        "examples": []
+                    }
+                ],
+                "audio": null
+            }
+        ],
+        "base": null,
+        "url": "https://sv.wiktionary.org/wiki/ned",
+        "id": "825",
+        "raw": "13737",
+        "wpm": 120.5,
+        "cefr": 1,
+        "gf": "ned",
+        "pos": "particle",
+        "example": null
+    },
+    "jag": {
+        "success": true,
+        "options": [
+            {
+                "part_of_speech": "Pronomen",
+                "definitions": [
+                    {
+                        "text": "personligt pronomen som syftar på den talande i subjektsform; personligt pronomen i första person singular nominativ",
+                        "examples": [
+                            "Jag skriver ofta i Wikipedia."
+                        ]
+                    }
+                ],
+                "audio": null
+            },
+            {
+                "part_of_speech": "Substantiv",
+                "definitions": [
+                    {
+                        "text": "det hos en människa som upplever eller \"är\" och även fattar beslut och handlar, en människas \"varelse\"; inom psykoanalysen specifikt det av Freud beskrivna egot",
+                        "examples": [
+                            "Laget före jaget under matchen nu, killar!"
+                        ]
+                    },
+                    {
+                        "text": "person som ett litterärt verk skrivet i första persons perspektiv handlar om",
+                        "examples": [
+                            "Jaget i berättelsen märkte att något var fel varför hon direkt ringde 112."
+                        ]
+                    }
+                ],
+                "audio": null
+            }
+        ],
+        "base": null,
+        "url": "https://sv.wiktionary.org/wiki/jag",
+        "id": "4791",
+        "raw": "1071",
+        "wpm": 9.39,
+        "cefr": 4,
+        "gf": "jag",
+        "pos": "noun-ett",
+        "example": null
+    },
+    "vilset": {
+        "success": true,
+        "options": [
+            {
+                "part_of_speech": "Adjektiv",
+                "definitions": [
+                    {
+                        "text": "böjningsform av vilsen",
+                        "examples": []
+                    }
+                ],
+                "audio": null
+            },
+            {
+                "part_of_speech": "Adverb",
+                "definitions": [
+                    {
+                        "text": "avledning till adjektivet vilsen",
+                        "examples": []
+                    }
+                ],
+                "audio": null
+            }
+        ],
+        "base": null,
+        "url": "https://sv.wiktionary.org/wiki/vilset",
+        "cefr": "unknown"
+    },
+    "och": {
+        "success": true,
+        "options": [
+            {
+                "part_of_speech": "Konjunktion",
+                "definitions": [
+                    {
+                        "text": "samordnar språkliga enheter (ord, fraser, satsdelar och satser)",
+                        "examples": [
+                            "Huset var stort, mörkt och skräckinjagande.",
+                            "Pojken cyklar och flickan går."
+                        ]
+                    },
+                    {
+                        "text": "samordnar verb som inte är underordnade",
+                        "examples": [
+                            "Jag sitter och läser."
+                        ]
+                    },
+                    {
+                        "text": "kan inleda huvudsats som står i förbindelse med tidigare sats",
+                        "examples": [
+                            "Och det vart afton, och det vart morgon, den andra dagen."
+                        ]
+                    },
+                    {
+                        "text": "(vardagligt, med ett upprepat ord före och efter) uttrycker att det upprepade ordet kan uppfattas på olika sätt, och att man inte nödvändigtvis gör den normala tolkningen",
+                        "examples": [
+                            "1947: nr 345, s. 6. (Sydsvenskan):\n En londonbo [...] kommer fram till  Andrew [som räddat en skridskoåkande pojke från att drunkna] och berömmer honom för hans mod. –Mod och mod, säger Andrew, det var mina skridskor han hade på sig."
+                        ]
+                    },
+                    {
+                        "text": "(vardagligt, oegentligt)  syftar ibland i skrift på infinitivmärket å (att), som i obetonad form är homofont med och",
+                        "examples": [
+                            "Han tycker om och bada. (= Han tycker om att bada.)"
+                        ]
+                    }
+                ],
+                "audio": null
+            },
+            {
+                "part_of_speech": "Interjektion",
+                "definitions": [
+                    {
+                        "text": "än sen?",
+                        "examples": []
+                    }
+                ],
+                "audio": null
+            }
+        ],
+        "base": null,
+        "url": "https://sv.wiktionary.org/wiki/och",
+        "id": "87",
+        "raw": "2966316",
+        "wpm": 26019.68,
+        "cefr": 1,
+        "gf": "och",
+        "pos": "conj",
+        "example": null
+    },
+    "en": {
+        "success": true,
+        "options": [
+            {
+                "part_of_speech": "Räkneord",
+                "definitions": [
+                    {
+                        "text": "talet 1, bland annat vid räkning",
+                        "examples": [
+                            "En, två, tre...",
+                            "Jag har gjort fyra uppgifter, så nu återstår bara en."
+                        ]
+                    }
+                ],
+                "audio": null
+            },
+            {
+                "part_of_speech": "Adverb",
+                "definitions": [
+                    {
+                        "text": "ungefär; omkring",
+                        "examples": [
+                            "Jag kommer hem om en 20 minuter."
+                        ]
+                    }
+                ],
+                "audio": null
+            },
+            {
+                "part_of_speech": "Artikel",
+                "definitions": [
+                    {
+                        "text": "obestämd artikel singular utrum",
+                        "examples": [
+                            "En mus."
+                        ]
+                    }
+                ],
+                "audio": null
+            },
+            {
+                "part_of_speech": "Pronomen",
+                "definitions": [
+                    {
+                        "text": "objektsform av man",
+                        "examples": [
+                            "Det man inte vet skadar en inte."
+                        ]
+                    },
+                    {
+                        "text": "(vardagligt, dialektalt) man",
+                        "examples": [
+                            "Vad kan en göra åt det?",
+                            "1896: \"Fredlös\", ur \"Stänk och flikar\", Gustaf Fröding:\n [...] det kan en väl önska, men djävlar anamma, det gör väl detsamma, en föds och föröds, tills en dör.",
+                            "1963: Emil i Lönneberga (Rabén & Sjögren), Astrid Lindgren:\n ”Annars vet man inte att det är soppa”, sa Emil, det vill säga egentligen sa han så här: ”Anners vet en inte att dä ä söppe.”"
+                        ]
+                    },
+                    {
+                        "text": "(dialektalt) honom, 'an",
+                        "examples": [
+                            "Har'u sett'en idag?"
+                        ]
+                    },
+                    {
+                        "text": "syftar tillbaka på det tidigare nämnda substantivet",
+                        "examples": [
+                            "Jag ville ha en gul godis så vad är det här för någon röd en?",
+                            "Jag vill hellst ha en fin en."
+                        ]
+                    }
+                ],
+                "audio": null
+            },
+            {
+                "part_of_speech": "Substantiv",
+                "definitions": [
+                    {
+                        "text": "(träd)  en vintergrön barrväxt, en buske eller ett träd med tätt grenverk och vassa barr, av arten Juniperus communis inom släktet enar (Juniperus) och familjen cypressväxter (Cupressaceae)",
+                        "examples": [
+                            "Ibland hör man också talas om enen som nordens cypress"
+                        ]
+                    }
+                ],
+                "audio": null
+            }
+        ],
+        "base": null,
+        "url": "https://sv.wiktionary.org/wiki/en",
+        "id": "426",
+        "raw": "29676",
+        "wpm": 260.31,
+        "cefr": 1,
+        "gf": "en",
+        "pos": "pronoun",
+        "example": null
+    },
+    "enkelt": {
+        "success": true,
+        "options": [
+            {
+                "part_of_speech": "Adjektiv",
+                "definitions": [
+                    {
+                        "text": "böjningsform av enkel",
+                        "examples": []
+                    }
+                ],
+                "audio": null
+            },
+            {
+                "part_of_speech": "Adverb",
+                "definitions": [
+                    {
+                        "text": "avledning till adjektivet enkel",
+                        "examples": []
+                    }
+                ],
+                "audio": null
+            }
+        ],
+        "base": null,
+        "url": "https://sv.wiktionary.org/wiki/enkelt",
+        "id": "1431",
+        "raw": "7087",
+        "wpm": 62.17,
+        "cefr": 2,
+        "gf": "enkelt",
+        "pos": "adverb",
+        "example": null
+    },
+    "sunnanvind": {
+        "success": true,
+        "options": [
+            {
+                "part_of_speech": "Substantiv",
+                "definitions": [
+                    {
+                        "text": "vind som blåser från söder, sydlig vind",
+                        "examples": []
+                    }
+                ],
+                "audio": null
+            }
+        ],
+        "base": null,
+        "url": "https://sv.wiktionary.org/wiki/sunnanvind",
+        "cefr": "unknown"
+    },
+    "båda": {
+        "success": true,
+        "options": [
+            {
+                "part_of_speech": "Pronomen",
+                "definitions": [
+                    {
+                        "text": "varje av två",
+                        "examples": []
+                    }
+                ],
+                "audio": null
+            },
+            {
+                "part_of_speech": "Verb",
+                "definitions": [
+                    {
+                        "text": "ge indikationer på vad som kommer att ske i framtiden, speciellt huruvida detta är positivt eller negativt",
+                        "examples": []
+                    }
+                ],
+                "audio": null
+            },
+            {
+                "part_of_speech": "Substantiv",
+                "definitions": [
+                    {
+                        "text": "(mindre brukligt)  låg klippa i havsbandet",
+                        "examples": []
+                    }
+                ],
+                "audio": null
+            }
+        ],
+        "base": null,
+        "url": "https://sv.wiktionary.org/wiki/båda",
+        "id": "486",
+        "raw": "24739",
+        "wpm": 217.0,
+        "cefr": 1,
+        "gf": "båda",
+        "pos": "pronoun",
+        "example": null
+    },
+    "allting": {
+        "success": true,
+        "options": [
+            {
+                "part_of_speech": "Pronomen",
+                "definitions": [
+                    {
+                        "text": "allt som finns (i en given situation)",
+                        "examples": [
+                            "Allting gick bra för mig, i dag.",
+                            "Hanna ville ha allting i leksaksaffären."
+                        ]
+                    }
+                ],
+                "audio": null
+            },
+            {
+                "part_of_speech": "Substantiv",
+                "definitions": [
+                    {
+                        "text": "(politik) ting (rådsförsamling) för allt folk och hela riket",
+                        "examples": [
+                            "Vart fjärde år väljs 63 ledamöter till Alltinget av de isländska väljarna."
+                        ]
+                    }
+                ],
+                "audio": null
+            }
+        ],
+        "base": null,
+        "url": "https://sv.wiktionary.org/wiki/allting",
+        "id": "1732",
+        "raw": "5466",
+        "wpm": 47.95,
+        "cefr": 2,
+        "gf": "allting",
+        "pos": "pronoun",
+        "example": null
+    },
+    "solsken": {
+        "success": true,
+        "options": [
+            {
+                "part_of_speech": "Substantiv",
+                "definitions": [
+                    {
+                        "text": "ljuset och värmen från solen när den inte är skymd av moln",
+                        "examples": []
+                    },
+                    {
+                        "text": "fint väder; det att solen inte är skymd av moln",
+                        "examples": []
+                    }
+                ],
+                "audio": null
+            }
+        ],
+        "base": null,
+        "url": "https://sv.wiktionary.org/wiki/solsken",
+        "id": "7584",
+        "raw": null,
+        "wpm": 2.11,
+        "cefr": 6,
+        "gf": "solsken",
+        "pos": "noun-ett",
+        "example": null
+    },
+    "förstå": {
+        "success": true,
+        "options": [
+            {
+                "part_of_speech": "Verb",
+                "definitions": [
+                    {
+                        "text": "ha kunskap om hur något är uppbyggt eller fungerar",
+                        "examples": [
+                            "Förstår du hur en miniräknare fungerar?"
+                        ]
+                    },
+                    {
+                        "text": "inse hur något är möjligt eller varför något förhåller sig på ett visst sätt",
+                        "examples": [
+                            "Jag förstår att hon känner sig ledsen."
+                        ]
+                    },
+                    {
+                        "text": "uppfatta, så att man med uppgift förbinder en viss betydelse eller mening; begripa",
+                        "examples": [
+                            "Hunden förstod genast jägarens tecken.",
+                            "Jag förstår inte vad du säger."
+                        ]
+                    },
+                    {
+                        "text": "i sats med nekande eller frågande innehåll, med avseende på något som man finner besynnerligt eller klandervärt: begripa, förstå sig på, kunna förklara",
+                        "examples": [
+                            "Jag förstår inte hur du klarar av det.",
+                            "Kan du förstå hur han kan bära sig åt på det viset?"
+                        ]
+                    }
+                ],
+                "audio": null
+            }
+        ],
+        "base": null,
+        "url": "https://sv.wiktionary.org/wiki/förstå",
+        "id": "316",
+        "raw": "45957",
+        "wpm": 403.12,
+        "cefr": 1,
+        "gf": "förstå",
+        "pos": "verb",
+        "example": null
+    },
+    "drog": {
+        "success": true,
+        "options": [
+            {
+                "part_of_speech": "Substantiv",
+                "definitions": [
+                    {
+                        "text": "vara eller substans med uppiggande eller berusande och mer eller mindre beroendeframkallande effekt",
+                        "examples": []
+                    },
+                    {
+                        "text": "(farmakognosi) växt eller djurdel innehållande någon form av aktiv substans, som används för tillverkning av läkemedel",
+                        "examples": []
+                    },
+                    {
+                        "text": "(ålderdomligt) medicin, läkemedel",
+                        "examples": []
+                    }
+                ],
+                "audio": null
+            },
+            {
+                "part_of_speech": "Verb",
+                "definitions": [
+                    {
+                        "text": "böjningsform av dra",
+                        "examples": []
+                    },
+                    {
+                        "text": "böjningsform av draga",
+                        "examples": []
+                    }
+                ],
+                "audio": null
+            }
+        ],
+        "base": null,
+        "url": "https://sv.wiktionary.org/wiki/drog",
+        "id": "2494",
+        "raw": "3212",
+        "wpm": 28.17,
+        "cefr": 2,
+        "gf": "drog",
+        "pos": "noun-en",
+        "example": null
+    },
+    "sidenband": {
+        "success": true,
+        "options": [
+            {
+                "part_of_speech": "Substantiv",
+                "definitions": [
+                    {
+                        "text": "band tillverkat av silke",
+                        "examples": []
+                    }
+                ],
+                "audio": null
+            }
+        ],
+        "base": null,
+        "url": "https://sv.wiktionary.org/wiki/sidenband",
+        "cefr": "unknown"
+    },
+    "sa": {
+        "success": true,
+        "options": [
+            {
+                "part_of_speech": "Verb",
+                "definitions": [
+                    {
+                        "text": "(dialektalt) variant av ska",
+                        "examples": [
+                            "Den där vasen sa inte stå där!"
+                        ]
+                    },
+                    {
+                        "text": "böjningsform av säga",
+                        "examples": []
+                    },
+                    {
+                        "text": "böjningsform av säja",
+                        "examples": []
+                    }
+                ],
+                "audio": null
+            }
+        ],
+        "base": null,
+        "url": "https://sv.wiktionary.org/wiki/sa",
+        "cefr": "unknown"
+    },
+    "att": {
+        "success": true,
+        "options": [
+            {
+                "part_of_speech": "Infinitivmärke",
+                "definitions": [
+                    {
+                        "text": "infinitivmärke",
+                        "examples": [
+                            "Det kommer att gå åt pepparn.",
+                            "Min plan var att bli rik genom att råna en bank.",
+                            "\"att skjuta en fiende och rulla en cigarett\" (Erik Lindegren, Mannen utan väg)"
+                        ]
+                    }
+                ],
+                "audio": null
+            },
+            {
+                "part_of_speech": "Konjunktion",
+                "definitions": [
+                    {
+                        "text": "subjunktion, inledning av bisats som motsvarar substantiv, indirekt objekt eller liknande",
+                        "examples": [
+                            "Det är helt otänkbart att hon skulle vilja köpa en hund, eftersom hon är hundrädd."
+                        ]
+                    }
+                ],
+                "audio": null
+            },
+            {
+                "part_of_speech": "Förkortning",
+                "definitions": [
+                    {
+                        "text": "förkortning av attesteras.",
+                        "examples": []
+                    },
+                    {
+                        "text": "förkortning för attention",
+                        "examples": []
+                    }
+                ],
+                "audio": null
+            },
+            {
+                "part_of_speech": "Räkneord",
+                "definitions": [
+                    {
+                        "text": "(överkalixmål) åtta",
+                        "examples": []
+                    }
+                ],
+                "audio": null
+            }
+        ],
+        "base": null,
+        "url": "https://sv.wiktionary.org/wiki/att",
+        "id": "99",
+        "raw": "1284991",
+        "wpm": 11271.57,
+        "cefr": 1,
+        "gf": "att",
+        "pos": "subj",
+        "example": null
+    },
+    "akt": {
+        "success": true,
+        "options": [
+            {
+                "part_of_speech": "Substantiv",
+                "definitions": [
+                    {
+                        "text": "handling, gärning; numera mest använt i bestämda uttryck typ \"en akt av\" eller i sammansättningar av typen kärleksakt, skapelseakt, viljeakt",
+                        "examples": [
+                            "Nu först vågade han acceptera skrivandet som en akt av lustbetonad och riskfylld spontanitet."
+                        ]
+                    },
+                    {
+                        "text": "högtidlig förrättning, typ vigselakt, disputationsakt, dopakt, begravningsakt",
+                        "examples": [
+                            "Det var en högtidlig akt då han undfick dopet medelst Jordans vattens hällande på huvudet av Ärkebiskopen."
+                        ]
+                    },
+                    {
+                        "text": "dokument, urkund ofta av juridisk karaktär, typ aktstycke",
+                        "examples": [
+                            "En nitisk råtta till arkivarie lyckades leta upp en mapp med en akt där den här svensken faktiskt figurerade i samband med ett upplopp på ett café."
+                        ]
+                    },
+                    {
+                        "text": "en del av en pjäs eller föreställning, skild från resten med en paus; även i överförd betydelse",
+                        "examples": [
+                            "Detta var säkert bara första akten av ett drama vars slut och upplösning, vars femte akt med andra ord, man kunde ana men inte ännu se."
+                        ]
+                    },
+                    {
+                        "text": "en del i ett längre artistiskt uppträdande, en föreställnings delar",
+                        "examples": [
+                            "Hon blev korad till Cirkusprinsessan för sin styva akt i ett rep under cirkuskupolen."
+                        ]
+                    },
+                    {
+                        "text": "konstnärlig framställning av en naken människokropp; nakenstudie",
+                        "examples": [
+                            "Vi tillbringade många långa timmar på konstmuseet, där vi gjorde våra speciella reverenser för en akt av Cranach."
+                        ]
+                    },
+                    {
+                        "text": "uppmärksamhet, avsikt; ordet används i dag endast i vissa fraser (se fraser nedan)",
+                        "examples": [
+                            "Jag tog tillfället i akt att fråga honom om en del ting jag förgäves grubblat över.",
+                            "Giv akt!"
+                        ]
+                    },
+                    {
+                        "text": "(ålderdomligt) fredlöshet",
+                        "examples": []
+                    }
+                ],
+                "audio": null
+            }
+        ],
+        "base": null,
+        "url": "https://sv.wiktionary.org/wiki/akt",
+        "id": "434",
+        "raw": "28666",
+        "wpm": 251.45,
+        "cefr": 1,
+        "gf": "akt",
+        "pos": "noun-en",
+        "example": null
+    },
+    "kind": {
+        "success": true,
+        "options": [
+            {
+                "part_of_speech": "Substantiv",
+                "definitions": [
+                    {
+                        "text": "(anatomi)  delarna av ett ansikte som sitter under ögonen",
+                        "examples": []
+                    },
+                    {
+                        "text": "† barn",
+                        "examples": [
+                            "1881: Hittebarnet, folkvisa från Glimåkra (nedtecknad 1881):\n Jungfrun hon gångar sig i stenstugan in, der föder hon sig ett rosenrödt kind."
+                        ]
+                    }
+                ],
+                "audio": null
+            }
+        ],
+        "base": null,
+        "url": "https://sv.wiktionary.org/wiki/kind",
+        "id": "4115",
+        "raw": "1406",
+        "wpm": 12.33,
+        "cefr": 3,
+        "gf": "kind",
+        "pos": "noun-en",
+        "example": null
+    },
+    "tillbaka": {
+        "success": true,
+        "options": [
+            {
+                "part_of_speech": "Adverb",
+                "definitions": [
+                    {
+                        "text": "till en plats eller tidpunkt där man varit tidigare, eller till en omständighet (speciellt en ägo) som gällt tidigare; bakåt; igen; åter",
+                        "examples": [
+                            "Jag vill gå tillbaka till hotellet nu.",
+                            "Hon trodde att hon rest tillbaka i tiden, men det var naturligtvis enkom en dröm.",
+                            "Barnet ville ha tillbaka den försvunna nappflaskan."
+                        ]
+                    }
+                ],
+                "audio": "https://upload.wikimedia.org/wikipedia/commons/transcoded/4/45/Sv-tillbaka.ogg/Sv-tillbaka.ogg.mp3"
+            }
+        ],
+        "base": null,
+        "url": "https://sv.wiktionary.org/wiki/tillbaka",
+        "id": "881",
+        "raw": "12786",
+        "wpm": 112.16,
+        "cefr": 1,
+        "gf": "tillbaka",
+        "pos": "adverb",
+        "example": null
+    },
+    "när": {
+        "success": true,
+        "options": [
+            {
+                "part_of_speech": "Konjunktion",
+                "definitions": [
+                    {
+                        "text": "vid viss tid; vid visst tillfälle",
+                        "examples": [
+                            "Jag kommer när jag har tid."
+                        ]
+                    }
+                ],
+                "audio": null
+            },
+            {
+                "part_of_speech": "Adjektiv",
+                "definitions": [
+                    {
+                        "text": "(om avstånd i rummet) nära",
+                        "examples": []
+                    }
+                ],
+                "audio": null
+            },
+            {
+                "part_of_speech": "Adverb",
+                "definitions": [
+                    {
+                        "text": "(frågepronomen, som inleder frågor rörande)  vid vilken tid; vid vilket tillfälle",
+                        "examples": [
+                            "När kommer du?",
+                            "Vad anser du? När ska vi köpa industriaktierna?"
+                        ]
+                    },
+                    {
+                        "text": "(ålderdomligt, attributivt till prepositioner, om avstånd i rummet) nära",
+                        "examples": [
+                            "Husen ligger när omkring slottet."
+                        ]
+                    },
+                    {
+                        "text": "(mest i uttryck) nära",
+                        "examples": []
+                    }
+                ],
+                "audio": null
+            },
+            {
+                "part_of_speech": "Verb",
+                "definitions": [
+                    {
+                        "text": "böjningsform av nära",
+                        "examples": []
+                    }
+                ],
+                "audio": null
+            }
+        ],
+        "base": null,
+        "url": "https://sv.wiktionary.org/wiki/när",
+        "id": "138",
+        "raw": "272112",
+        "wpm": 2386.89,
+        "cefr": 1,
+        "gf": "när",
+        "pos": "adverb",
+        "example": null
+    },
+    "nu": {
+        "success": true,
+        "options": [
+            {
+                "part_of_speech": "Adverb",
+                "definitions": [
+                    {
+                        "text": "(tidsuttryck)  syftar på den tidpunkt då ordet nämns",
+                        "examples": [
+                            "Nu åker vi.",
+                            "Jag vill gå dit nu."
+                        ]
+                    },
+                    {
+                        "text": "syftar på någon tidpunkt inom en (relativt) snar framtid",
+                        "examples": [
+                            "Planet landar här nu snart.",
+                            "Kommer hon hit nu på torsdag?",
+                            "Vi börjar nu i höst."
+                        ]
+                    },
+                    {
+                        "text": "inledande artighetsmarkör",
+                        "examples": [
+                            "Nu tycker ju inte jag så, men det kan vi ta sen.",
+                            "Nu är det ju så att det händer mycket här och Stockholm växer, men Sverige är större än bara huvudstaden."
+                        ]
+                    }
+                ],
+                "audio": null
+            },
+            {
+                "part_of_speech": "Substantiv",
+                "definitions": [
+                    {
+                        "text": "(tidsuttryck)  stunden där vi befinner oss i tiden, ögonblicket mellan förfluten tid och framtiden",
+                        "examples": [
+                            "I detta nu befinner han sig i lingonmarkerna i Dalsland.",
+                            "Hon älskar att leva i nuet."
+                        ]
+                    }
+                ],
+                "audio": null
+            }
+        ],
+        "base": null,
+        "url": "https://sv.wiktionary.org/wiki/nu",
+        "id": "6046",
+        "raw": "716",
+        "wpm": 6.28,
+        "cefr": 5,
+        "gf": "nu",
+        "pos": "noun-ett",
+        "example": null
+    },
+    "ändå": {
+        "success": true,
+        "options": [
+            {
+                "part_of_speech": "Adverb",
+                "definitions": [
+                    {
+                        "text": "trots något som tidigare nämnts; i alla fall",
+                        "examples": [
+                            "Det hjälper inte att du tjatar, du får ändå inget godis innan maten."
+                        ]
+                    }
+                ],
+                "audio": null
+            },
+            {
+                "part_of_speech": "Konjunktion",
+                "definitions": [
+                    {
+                        "text": "trots det tidigare nämnda",
+                        "examples": [
+                            "Jag är svensk, ändå tror de att jag är norsk.",
+                            "Jag gillar dig inte, ändå ligger det något i det du säger."
+                        ]
+                    }
+                ],
+                "audio": null
+            }
+        ],
+        "base": null,
+        "url": "https://sv.wiktionary.org/wiki/ändå",
+        "id": "328",
+        "raw": "44018",
+        "wpm": 386.11,
+        "cefr": 1,
+        "gf": "ändå",
+        "pos": "adverb",
+        "example": null
+    },
+    "cava": {
+        "success": true,
+        "options": [
+            {
+                "part_of_speech": "Substantiv",
+                "definitions": [
+                    {
+                        "text": "mousserande vitt vin eller rosévin från olika vindistrikt i Katalonien",
+                        "examples": []
+                    }
+                ],
+                "audio": null
+            }
+        ],
+        "base": null,
+        "url": "https://sv.wiktionary.org/wiki/cava",
+        "cefr": "unknown"
+    },
+    "på": {
+        "success": true,
+        "options": [
+            {
+                "part_of_speech": "Adjektiv",
+                "definitions": [
+                    {
+                        "text": "verbpartikeln på i rollen som adjektiv, predikativt",
+                        "examples": [
+                            "Nu när kläderna är på på ungen, och teven inte är på, så kan vi åka till dagis."
+                        ]
+                    },
+                    {
+                        "text": "(vardagligt)  verbalt klängande, som är kring en och bombar en med frågor",
+                        "examples": [
+                            "Men snälla! Kan du sluta vara så jävla på för Guds skull!"
+                        ]
+                    },
+                    {
+                        "text": "(vardagligt)  som accepterar inbjudan",
+                        "examples": [
+                            "Hänger du med till stranden?\nSjälvklart! Jag är på!"
+                        ]
+                    }
+                ],
+                "audio": null
+            },
+            {
+                "part_of_speech": "Preposition",
+                "definitions": [
+                    {
+                        "text": "ovanpå, vidrörande ovansidan av annat föremål",
+                        "examples": [
+                            "Nej, men sitt inte på bordet!",
+                            "Kan du lägga kakorna på fatet?"
+                        ]
+                    },
+                    {
+                        "text": "anger läge inom vissa typer av geografiska områden såsom öar, sjöar, hav m.fl.",
+                        "examples": [
+                            "Jag har varit på Finlands fastland men aldrig på Åland.",
+                            "Det lugna livet på landsbygden."
+                        ]
+                    },
+                    {
+                        "text": "mot; betecknar något gentemot vilket något riktas eller används, även bildligt",
+                        "examples": [
+                            "Slå inte så hårt på dörren.",
+                            "Anderssons har massa saker på väggarna.",
+                            "Slå på trumman, bror."
+                        ]
+                    },
+                    {
+                        "text": "inom eller under en angiven tidsperiod",
+                        "examples": [
+                            "Gör du det på torsdag då?",
+                            "Han sover på dagarna och pluggar på nätterna.",
+                            "Klarar du verkligen av det på bara 3 timmar?"
+                        ]
+                    },
+                    {
+                        "text": "(ålderdomligt) uppi, som i á lopti, \"uppe i luften\", engelska aloft",
+                        "examples": []
+                    },
+                    {
+                        "text": "ombord på fartyg eller i större fordon (buss, flygplan, spårvagn, tåg) eller institutioner (bank, fängelse, företag, kontor, myndighet, skola, slott, station, verkstad)",
+                        "examples": [
+                            "Alla på båten delade åsikten.",
+                            "Vad har de för sig på banken efter klockan tre?",
+                            "Han sitter på Kumla."
+                        ]
+                    }
+                ],
+                "audio": null
+            },
+            {
+                "part_of_speech": "Verbpartikel",
+                "definitions": [
+                    {
+                        "text": "i riktning mot, i synnerhet så att målet berörs",
+                        "examples": [
+                            "Flickan sprang på dörren."
+                        ]
+                    },
+                    {
+                        "text": "aktivera, få att börja",
+                        "examples": [
+                            "Hur kunde du bara komma på något så dumt!",
+                            "Skulle du vilja vara snäll och sätta på teven."
+                        ]
+                    }
+                ],
+                "audio": null
+            }
+        ],
+        "base": null,
+        "url": "https://sv.wiktionary.org/wiki/på",
+        "id": "95",
+        "raw": "1435426",
+        "wpm": 12591.15,
+        "cefr": 1,
+        "gf": "på",
+        "pos": "prep",
+        "example": null
+    },
+    "i": {
+        "success": true,
+        "options": [
+            {
+                "part_of_speech": "Preposition",
+                "definitions": [
+                    {
+                        "text": "(om plats)  anger läge inuti något eller innanför någots gränser",
+                        "examples": [
+                            "Nyckeln hänger i skåpet.\nSynonymer: inuti (ungefär)"
+                        ]
+                    },
+                    {
+                        "text": "(om plats)  anger läge vid vissa slags platser (kontinenter, städer, många länder m.fl.)",
+                        "examples": [
+                            "Jag bor i Stockholm.",
+                            "Detta är sjätte gången jag är i Danmark."
+                        ]
+                    },
+                    {
+                        "text": "(om plats)  på en mjuk yta (på vissa möbler)",
+                        "examples": [
+                            "Jag ligger i sängen medan hunden ligger i soffan."
+                        ]
+                    },
+                    {
+                        "text": "(om plats)  uppe i något, sitta uppi något",
+                        "examples": [
+                            "Katten sitter i trädet."
+                        ]
+                    },
+                    {
+                        "text": "(om plats)  anger läge eller beskriver situation i vissa sammanhang där en dragkraft är inblandad",
+                        "examples": [
+                            "Mördaren hänger i galgen."
+                        ]
+                    },
+                    {
+                        "text": "(om tid) före (ett klockslag som markerar hel eller halv timme)",
+                        "examples": [
+                            "Klockan är fem i fyra.",
+                            "Klockan är fem i halv fyra.",
+                            "Klockan är kvart i tre."
+                        ]
+                    },
+                    {
+                        "text": "(om tid)  anger frekvens med vissa tidsenheter",
+                        "examples": []
+                    },
+                    {
+                        "text": "under ett tillstånd av",
+                        "examples": [
+                            "Det undslapp honom en svordom i glädje."
+                        ]
+                    },
+                    {
+                        "text": "anger motivering till betalningar eller dylikt",
+                        "examples": [
+                            "Jag har dömts till att betala 3'000 spänn i böter och ytterligare 5'000 spänn i skadestånd."
+                        ]
+                    }
+                ],
+                "audio": null
+            },
+            {
+                "part_of_speech": "Pronomen",
+                "definitions": [
+                    {
+                        "text": "(orsamål) jag",
+                        "examples": []
+                    },
+                    {
+                        "text": "(ålderdomligt, dialektalt)  ni eller Ni",
+                        "examples": []
+                    }
+                ],
+                "audio": "https://upload.wikimedia.org/wikipedia/commons/transcoded/3/35/Sv-i-ossmol.ogg/Sv-i-ossmol.ogg.mp3"
+            },
+            {
+                "part_of_speech": "Verbpartikel",
+                "definitions": [
+                    {
+                        "text": "markerar att handlingen sker med stor intensitet och under längre period",
+                        "examples": [
+                            "Han ligger verkligen i."
+                        ]
+                    }
+                ],
+                "audio": null
+            }
+        ],
+        "base": null,
+        "url": "https://sv.wiktionary.org/wiki/i",
+        "id": "89",
+        "raw": "2197163",
+        "wpm": 19272.89,
+        "cefr": 1,
+        "gf": "i",
+        "pos": "prep",
+        "example": null
+    },
+    "ur": {
+        "success": true,
+        "options": [
+            {
+                "part_of_speech": "Substantiv",
+                "definitions": [
+                    {
+                        "text": "mekanisk klocka; speciellt en bärbar",
+                        "examples": []
+                    },
+                    {
+                        "text": "(ålderdomligt) uroxe, ett utdött oxdjur som nuvarande tamboskap härstammar från",
+                        "examples": []
+                    }
+                ],
+                "audio": null
+            },
+            {
+                "part_of_speech": "Preposition",
+                "definitions": [
+                    {
+                        "text": "ut från ett avgränsat utrymme",
+                        "examples": [
+                            "Trollkarlen drog två kaniner ur hatten"
+                        ]
+                    }
+                ],
+                "audio": null
+            },
+            {
+                "part_of_speech": "Verbpartikel",
+                "definitions": [
+                    {
+                        "text": "så att något frigörs ur infästning eller liknande",
+                        "examples": [
+                            "Dra ur antennsladden är du snäll."
+                        ]
+                    },
+                    {
+                        "text": "så att något blir tomt",
+                        "examples": [
+                            "Kan du tömma ur badkaret?",
+                            "Kocken gröpte först ur två apelsinhalvor.",
+                            "Vrid ur disktrasan ordentligt!"
+                        ]
+                    }
+                ],
+                "audio": null
+            }
+        ],
+        "base": null,
+        "url": "https://sv.wiktionary.org/wiki/ur",
+        "id": "296",
+        "raw": "48679",
+        "wpm": 427.0,
+        "cefr": 1,
+        "gf": "ur",
+        "pos": "prep",
+        "example": null
+    },
+    "igenom": {
+        "success": true,
+        "options": [
+            {
+                "part_of_speech": "Adverb",
+                "definitions": [
+                    {
+                        "text": "från ena sidan till den andra sidan; genom",
+                        "examples": []
+                    }
+                ],
+                "audio": null
+            },
+            {
+                "part_of_speech": "Preposition",
+                "definitions": [
+                    {
+                        "text": "från ena sidan till den andra sidan; genom",
+                        "examples": [
+                            "Han körde igenom hela staden utan att stanna vid trafikljusen."
+                        ]
+                    }
+                ],
+                "audio": null
+            }
+        ],
+        "base": null,
+        "url": "https://sv.wiktionary.org/wiki/igenom",
+        "id": "657",
+        "raw": "17663",
+        "wpm": 154.93,
+        "cefr": 1,
+        "gf": "igenom",
+        "pos": "prep",
+        "example": null
+    },
+    "våra": {
+        "success": true,
+        "options": [
+            {
+                "part_of_speech": "Pronomen",
+                "definitions": [
+                    {
+                        "text": "possessivt pronomen som indikerar ägande av eller tillhörighet till de talande (vi) om de ägda eller tillhörande är i flertal; possessivt pronomen i första person plural med huvudordet i plural",
+                        "examples": []
+                    },
+                    {
+                        "text": "reflexivt possessivt pronomen som syftar tillbaka på och indikerar ägande av eller tillhörighet till subjektet om subjektet är i första person plural (vi) och om det ägda eller tillhörande är i flertal; reflexivt possessivt pronomen i första person plural med huvudordet i plural",
+                        "examples": []
+                    }
+                ],
+                "audio": null
+            }
+        ],
+        "base": null,
+        "url": "https://sv.wiktionary.org/wiki/våra",
+        "cefr": "unknown"
+    },
+    "bris": {
+        "success": true,
+        "options": [
+            {
+                "part_of_speech": "Substantiv",
+                "definitions": [
+                    {
+                        "text": "(meteorologi) svag vind",
+                        "examples": []
+                    }
+                ],
+                "audio": null
+            }
+        ],
+        "base": null,
+        "url": "https://sv.wiktionary.org/wiki/bris",
+        "cefr": "unknown"
+    },
+    "vi": {
+        "success": true,
+        "options": [
+            {
+                "part_of_speech": "Adverb",
+                "definitions": [
+                    {
+                        "text": "(ålderdomligt) varför",
+                        "examples": []
+                    }
+                ],
+                "audio": null
+            },
+            {
+                "part_of_speech": "Substantiv",
+                "definitions": [
+                    {
+                        "text": "gammalt ord för helgedom, kyrka, ofta inom hedendomen",
+                        "examples": [
+                            "1953: Finna sitt öde, Albert Olsson:\n Jag vill offra för god vind och färd, sade han och gick bortåt viet."
+                        ]
+                    }
+                ],
+                "audio": null
+            },
+            {
+                "part_of_speech": "Pronomen",
+                "definitions": [
+                    {
+                        "text": "personligt pronomen som syftar på de talande i subjektsform; personligt pronomen i första person plural nominativ",
+                        "examples": []
+                    }
+                ],
+                "audio": null
+            }
+        ],
+        "base": null,
+        "url": "https://sv.wiktionary.org/wiki/vi",
+        "id": "112",
+        "raw": "538500",
+        "wpm": 4723.57,
+        "cefr": 1,
+        "gf": "vi",
+        "pos": "pronoun",
+        "example": null
+    },
+    "du": {
+        "success": true,
+        "options": [
+            {
+                "part_of_speech": "Pronomen",
+                "definitions": [
+                    {
+                        "text": "personligt pronomen som syftar på den tilltalade i subjektsform; personligt pronomen i andra person singular nominativ",
+                        "examples": []
+                    }
+                ],
+                "audio": null
+            }
+        ],
+        "base": null,
+        "url": "https://sv.wiktionary.org/wiki/du",
+        "id": "134",
+        "raw": "294294",
+        "wpm": 2581.46,
+        "cefr": 1,
+        "gf": "du",
+        "pos": "pronoun",
+        "example": null
+    },
+    "koppar": {
+        "success": true,
+        "options": [
+            {
+                "part_of_speech": "Substantiv",
+                "definitions": [
+                    {
+                        "text": "(metallurgi)  ett grundämne med atomnummer 29, atommassa 63,5 och symbolen Cu",
+                        "examples": []
+                    },
+                    {
+                        "text": "böjningsform av kopp",
+                        "examples": []
+                    }
+                ],
+                "audio": "https://upload.wikimedia.org/wikipedia/commons/transcoded/f/f9/Sv-koppar.ogg/Sv-koppar.ogg.mp3"
+            }
+        ],
+        "base": null,
+        "url": "https://sv.wiktionary.org/wiki/koppar",
+        "cefr": "unknown"
+    },
+    "din": {
+        "success": true,
+        "options": [
+            {
+                "part_of_speech": "Pronomen",
+                "definitions": [
+                    {
+                        "text": "possessivt pronomen som indikerar ägande av eller tillhörighet till den tilltalade (du) om det ägda eller tillhörande är i ental och har n-genus; possessivt pronomen i andra person singular med huvudordet i singular utrum",
+                        "examples": []
+                    },
+                    {
+                        "text": "reflexivt possessivt pronomen som syftar tillbaka på och indikerar ägande av eller tillhörighet till subjektet om subjektet är i andra person singular (du) och om det ägda eller tillhörande är i ental och har n-genus; reflexivt possessivt pronomen i andra person singular med huvudordet i singular utrum",
+                        "examples": []
+                    }
+                ],
+                "audio": null
+            },
+            {
+                "part_of_speech": "Substantiv",
+                "definitions": [
+                    {
+                        "text": "böjningsform av di",
+                        "examples": []
+                    }
+                ],
+                "audio": null
+            }
+        ],
+        "base": null,
+        "url": "https://sv.wiktionary.org/wiki/din",
+        "id": "217",
+        "raw": "87967",
+        "wpm": 771.62,
+        "cefr": 1,
+        "gf": "din",
+        "pos": "pronoun",
+        "example": null
+    },
+    "var": {
+        "success": true,
+        "options": [
+            {
+                "part_of_speech": "Adverb",
+                "definitions": [
+                    {
+                        "text": "(interrogativt)  på vilken plats",
+                        "examples": []
+                    },
+                    {
+                        "text": "(talspråk) vart; mot eller till vilken plats",
+                        "examples": []
+                    }
+                ],
+                "audio": null
+            },
+            {
+                "part_of_speech": "Pronomen",
+                "definitions": [
+                    {
+                        "text": "varje, varenda",
+                        "examples": []
+                    },
+                    {
+                        "text": "angivande för vad varje part har eller får",
+                        "examples": [
+                            "Ni kan få ett äpple var."
+                        ]
+                    }
+                ],
+                "audio": null
+            },
+            {
+                "part_of_speech": "Substantiv",
+                "definitions": [
+                    {
+                        "text": "gulaktig kroppsvätska formad av utsöndring, bestående av vita blodceller, död hud, och mikroorganismer",
+                        "examples": [
+                            "Det kom mycket var ur såret."
+                        ]
+                    },
+                    {
+                        "text": "överdrag för kudde",
+                        "examples": []
+                    },
+                    {
+                        "text": "(individ av) fiskfamiljen varar (Bothidae) i ordningen plattfiskar",
+                        "examples": []
+                    }
+                ],
+                "audio": null
+            },
+            {
+                "part_of_speech": "Adjektiv",
+                "definitions": [
+                    {
+                        "text": "vaksam, försiktig, skygg",
+                        "examples": []
+                    }
+                ],
+                "audio": null
+            },
+            {
+                "part_of_speech": "Verb",
+                "definitions": [
+                    {
+                        "text": "böjningsform av vara",
+                        "examples": []
+                    }
+                ],
+                "audio": null
+            }
+        ],
+        "base": null,
+        "url": "https://sv.wiktionary.org/wiki/var",
+        "id": "1586",
+        "raw": "6173",
+        "wpm": 54.15,
+        "cefr": 2,
+        "gf": "var",
+        "pos": "pronoun",
+        "example": null
+    },
+    "ord": {
+        "success": true,
+        "options": [
+            {
+                "part_of_speech": "Substantiv",
+                "definitions": [
+                    {
+                        "text": "(lingvistik, lexikologi) (i talspråk) självständig språklig enhet (en del av en mening) bestående av språkljud (fonem) eller fixerad serie språkljud som uttalas i ett sammanhang (utan inre paus), och som följer språkets morfologiska regler, och som bär en fixerad, enhetlig betydelse (semantisk eller pragmatisk innebörd)), och som uppfyller en viss funktion i meningen",
+                        "examples": []
+                    },
+                    {
+                        "text": "(lingvistik, lexikologi) (i skriftspråk) en fixerad följd av symboler (grafem) som skrivs i ett sammanhang (utan inre mellanrum) och som föreställer ett talat ord",
+                        "examples": []
+                    },
+                    {
+                        "text": "(data)  den datamängd som ett RAM-minne eller dator hanterar i ett stycke",
+                        "examples": [
+                            "Den här datorn har ord som är 16 bitar stora."
+                        ]
+                    }
+                ],
+                "audio": null
+            }
+        ],
+        "base": null,
+        "url": "https://sv.wiktionary.org/wiki/ord",
+        "id": "312",
+        "raw": "46775",
+        "wpm": 410.3,
+        "cefr": 1,
+        "gf": "ord",
+        "pos": "noun-ett",
+        "example": null
+    },
+    "inte": {
+        "success": true,
+        "options": [
+            {
+                "part_of_speech": "Adverb",
+                "definitions": [
+                    {
+                        "text": "ord för negering av satsens påstående",
+                        "examples": [
+                            "Jag vill inte träffa representanten imorgon."
+                        ]
+                    },
+                    {
+                        "text": "nekande ord för ofullständiga meningar",
+                        "examples": [
+                            "Gör jag rätt? Nej, inte så!"
+                        ]
+                    }
+                ],
+                "audio": null
+            }
+        ],
+        "base": null,
+        "url": "https://sv.wiktionary.org/wiki/inte",
+        "id": "103",
+        "raw": "1034410",
+        "wpm": 9073.55,
+        "cefr": 1,
+        "gf": "inte",
+        "pos": "adverb",
+        "example": null
+    },
+    "dansa": {
+        "success": true,
+        "options": [
+            {
+                "part_of_speech": "Verb",
+                "definitions": [
+                    {
+                        "text": "röra kroppen rytmiskt på ett sätt som anses estetiskt tilltalande, ofta i par eller i grupp",
+                        "examples": [
+                            "Vill du dansa med mig, min vän?"
+                        ]
+                    }
+                ],
+                "audio": "https://upload.wikimedia.org/wikipedia/commons/transcoded/2/20/Sv-dansa.ogg/Sv-dansa.ogg.mp3"
+            }
+        ],
+        "base": null,
+        "url": "https://sv.wiktionary.org/wiki/dansa",
+        "id": "2673",
+        "raw": "2897",
+        "wpm": 25.41,
+        "cefr": 2,
+        "gf": "dansa",
+        "pos": "verb",
+        "example": null
+    },
+    "måne": {
+        "success": true,
+        "options": [
+            {
+                "part_of_speech": "Substantiv",
+                "definitions": [
+                    {
+                        "text": "(astronomi) himlakropp som kretsar kring en planet eller en asteroid i ett planetsystem; \"månen\" i bestämd form avser vanligtvis jordens måne Luna",
+                        "examples": [
+                            "Jorden har endast en måne."
+                        ]
+                    },
+                    {
+                        "text": "kal del av hjässan omsluten av områden med tätare hårväxt; vanlig hos (äldre) män",
+                        "examples": []
+                    }
+                ],
+                "audio": null
+            }
+        ],
+        "base": null,
+        "url": "https://sv.wiktionary.org/wiki/måne",
+        "id": "3000",
+        "raw": "2409",
+        "wpm": 21.13,
+        "cefr": 3,
+        "gf": "måne",
+        "pos": "noun-en",
+        "example": null
+    },
+    "ridå": {
+        "success": true,
+        "options": [
+            {
+                "part_of_speech": "Substantiv",
+                "definitions": [
+                    {
+                        "text": "förhänge, förlåt; stort tygstycke som döljer teaterscen för salongen",
+                        "examples": []
+                    },
+                    {
+                        "text": "(utvidgat)  döljande företeelse; vägg, mur",
+                        "examples": []
+                    },
+                    {
+                        "text": "(bildligt)  något som döljer något hemligt",
+                        "examples": []
+                    }
+                ],
+                "audio": null
+            }
+        ],
+        "base": null,
+        "url": "https://sv.wiktionary.org/wiki/ridå",
+        "id": "7571",
+        "raw": null,
+        "wpm": 2.16,
+        "cefr": 6,
+        "gf": "ridå",
+        "pos": "noun-en",
+        "example": null
+    },
+    "veta": {
+        "success": true,
+        "options": [
+            {
+                "part_of_speech": "Verb",
+                "definitions": [
+                    {
+                        "text": "känna till, vara medveten om, få kännedom om",
+                        "examples": [
+                            "Vet du vem som vann sista VM-slutspelet?",
+                            "Jag vet ett stort antal människor som lider av psykiskt ohälsa."
+                        ]
+                    },
+                    {
+                        "text": "ha (specifik) kunskap, visshet eller kännedom; kunna konsten",
+                        "examples": [
+                            "Vad vet du om skillnaden mellan orden \"då\" och \"ty\"?",
+                            "Han vet att uppföra sig exemplariskt när man skall."
+                        ]
+                    }
+                ],
+                "audio": null
+            }
+        ],
+        "base": null,
+        "url": "https://sv.wiktionary.org/wiki/veta",
+        "id": "201",
+        "raw": "101954",
+        "wpm": 894.31,
+        "cefr": 1,
+        "gf": "veta",
+        "pos": "verb",
+        "example": null
+    },
+    "bli": {
+        "success": true,
+        "options": [
+            {
+                "part_of_speech": "Verb",
+                "definitions": [
+                    {
+                        "text": "förbli, bevaras i samma tillstånd, bli kvar, dröja (kvar), stanna (kvar), behålla sin plats",
+                        "examples": [
+                            "Skomakare, bliv vid din läst!",
+                            "Hon dog, men han blev vid liv, ehuru med förlust av sin synkraft.",
+                            "Han blef där liggande hela natten och frös fötterna af sig."
+                        ]
+                    },
+                    {
+                        "text": "börja vara, genomgå förändring till nytt varande",
+                        "examples": [
+                            "Vad skall du bli när du blir stor?",
+                            "Jag blev trött efter några timmars väntande.",
+                            "Har hon blivit mamma?",
+                            "Allt som kom i hans väg blev till guld.",
+                            "Grannars träd och buskar kan bli till bekymmer."
+                        ]
+                    },
+                    {
+                        "text": "(hjälpverb)  använt före perfektparticip för att bilda dynamisk passiv",
+                        "examples": [
+                            "Affären blev nedlagd efter att den hade gått i konkurs."
+                        ]
+                    }
+                ],
+                "audio": "https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b1/Sv-bli.ogg/Sv-bli.ogg.mp3"
+            }
+        ],
+        "base": null,
+        "url": "https://sv.wiktionary.org/wiki/bli",
+        "id": "122",
+        "raw": "375451",
+        "wpm": 3293.35,
+        "cefr": 1,
+        "gf": "bli",
+        "pos": "verb",
+        "example": null
+    },
+    "dricka": {
+        "success": true,
+        "options": [
+            {
+                "part_of_speech": "Substantiv",
+                "definitions": [
+                    {
+                        "text": "dryck; vätska avsedd för att dricka",
+                        "examples": []
+                    },
+                    {
+                        "text": "(söderslang) vatten (allmänt, inte enbart för dryckesändamål)",
+                        "examples": []
+                    }
+                ],
+                "audio": null
+            },
+            {
+                "part_of_speech": "Verb",
+                "definitions": [
+                    {
+                        "text": "förtära vätska",
+                        "examples": [
+                            "1918: Samlen icke guld och ädelstenar, Edith Södergran:\n Stjälen rubiner ur änglarnas blick,dricken kallt vatten ur djävulens pöl."
+                        ]
+                    },
+                    {
+                        "text": "förtära alkoholhaltiga drycker",
+                        "examples": [
+                            "Han dricker för mycket."
+                        ]
+                    }
+                ],
+                "audio": null
+            }
+        ],
+        "base": null,
+        "url": "https://sv.wiktionary.org/wiki/dricka",
+        "id": "1280",
+        "raw": "8227",
+        "wpm": 72.16,
+        "cefr": 1,
+        "gf": "dricka",
+        "pos": "verb",
+        "example": null
+    },
+    "hår": {
+        "success": true,
+        "options": [
+            {
+                "part_of_speech": "Substantiv",
+                "definitions": [
+                    {
+                        "text": "(biologi, oräknebart) ansamling av fina strån (trådar) utgående från hud; även om hårstrån som fallit av",
+                        "examples": [
+                            "Hon borstade håret innan hon gick och lade sig."
+                        ]
+                    },
+                    {
+                        "text": "(biologi, räknebart)  enskild utväxt från sådan ansamling (1.)",
+                        "examples": []
+                    }
+                ],
+                "audio": null
+            }
+        ],
+        "base": null,
+        "url": "https://sv.wiktionary.org/wiki/hår",
+        "id": "1793",
+        "raw": "5228",
+        "wpm": 45.86,
+        "cefr": 2,
+        "gf": "hår",
+        "pos": "noun-ett",
+        "example": null
+    },
+    "se": {
+        "success": true,
+        "options": [
+            {
+                "part_of_speech": "Verb",
+                "definitions": [
+                    {
+                        "text": "(fysiologi, ibland reflexivt ex. se sig omkring)  uppfatta med hjälp av synen genom ett eller flera ögon",
+                        "examples": [
+                            "Det är för mörkt; jag kan inte se någonting.",
+                            "Fast pappan försökte dölja det så gott han kunde, så såg barnet var han gömde godiset.",
+                            "1897: Kameliadamen, Alexandre Dumas den yngre (översatt av Walborg Hedberg):\n Det föreföll honom, som om han såge sitt barns skugga skrida förbi"
+                        ]
+                    },
+                    {
+                        "text": "(vardagligt) uppfatta, förstå; inse",
+                        "examples": [
+                            "Du ser, han hade aldrig något med det att göra. Det var bara som han skröt.",
+                            "Ser du varför du inte kan dividera med noll?"
+                        ]
+                    },
+                    {
+                        "text": "(följt av som) uppfatta som, tänka sig att",
+                        "examples": [
+                            "Se fienden som din bäste vän för att lyckas.",
+                            "Se inte detta som ett nederlag, utan som en chans till förbättran."
+                        ]
+                    }
+                ],
+                "audio": null
+            }
+        ],
+        "base": null,
+        "url": "https://sv.wiktionary.org/wiki/se",
+        "id": "139",
+        "raw": "256885",
+        "wpm": 2253.32,
+        "cefr": 1,
+        "gf": "se",
+        "pos": "verb",
+        "example": "e.g. se efter/upp/ut, se sig om"
+    },
+    "ha": {
+        "success": true,
+        "options": [
+            {
+                "part_of_speech": "Verb",
+                "definitions": [
+                    {
+                        "text": "vara i besittning av, äga eller inneha (något konkret eller abstrakt)",
+                        "examples": [
+                            "Jag har inte tid med trams!",
+                            "(preteritum konjunktiv) Om jag hade alla pengar i världen vore jag glad.",
+                            "Mina föräldrar har en ny bil.",
+                            "Om en vecka har hon mens.",
+                            "Han hade inte med sig godis men vi hade kul ändå.",
+                            "Vi ska ha lunchrast om en kvart.",
+                            "Jag har mina kalsonger i en låda."
+                        ]
+                    },
+                    {
+                        "text": "(temporalt hjälpverb)  används tillsammans med supinumformen för att bilda perfekt och pluskvamperfekt",
+                        "examples": [
+                            "Jag har varit dum.",
+                            "Kalle har fattat tycke för Eva.",
+                            "Sedan mitten på 1900-talet har Sveriges skogar blivit rikare på virke, men fattigare på biologisk mångfald.",
+                            "Jag hade hunnit hem när hon ringde."
+                        ]
+                    },
+                    {
+                        "text": "(med adverb)  tycka att något är",
+                        "examples": [
+                            "Han hade inte med sig godis men vi hade kul ändå."
+                        ]
+                    },
+                    {
+                        "text": "(om kläder; i uttrycket: ha på sig) använda, ha på sin kropp",
+                        "examples": [
+                            "Hon hade på sig en vacker klänning.",
+                            "Han hade ingenting på sig, han var alldeles naken."
+                        ]
+                    },
+                    {
+                        "text": "(om små saker; i uttrycket: ha på sig)  ha i sin ficka eller väska, ha lätt och snabb tillgång till något",
+                        "examples": [
+                            "Har du en hundring på dig?"
+                        ]
+                    },
+                    {
+                        "text": "(i uttrycket: ha <tidsuttryck> på sig)  vara tvungen att bli klar med något inom den tid som anges",
+                        "examples": [
+                            "Vi har deadline till midsommar så vi har fyra månader på oss att bli klara med projektet.",
+                            "Internetanvändare har lärt sig att filtrera bort ointressant innehåll, så en webbsida har bara några sekunder på sig att övertyga användaren att stanna."
+                        ]
+                    }
+                ],
+                "audio": null
+            },
+            {
+                "part_of_speech": "Förkortning",
+                "definitions": [
+                    {
+                        "text": "förkortning för hektar",
+                        "examples": [
+                            "Betesmarken omfattade 5 ha och skogen 12 ha."
+                        ]
+                    }
+                ],
+                "audio": null
+            },
+            {
+                "part_of_speech": "Interjektion",
+                "definitions": [
+                    {
+                        "text": "kort skrattljud",
+                        "examples": [
+                            "Ha! Det går jag inte på!"
+                        ]
+                    },
+                    {
+                        "text": "(slang) va, vad sa?",
+                        "examples": []
+                    },
+                    {
+                        "text": "(vardagligt, dialektalt) ja",
+                        "examples": []
+                    }
+                ],
+                "audio": null
+            }
+        ],
+        "base": null,
+        "url": "https://sv.wiktionary.org/wiki/ha",
+        "id": "90",
+        "raw": "1822142",
+        "wpm": 15983.31,
+        "cefr": 1,
+        "gf": "ha",
+        "pos": "verb",
+        "example": null
+    },
+    "blåsa": {
+        "success": true,
+        "options": [
+            {
+                "part_of_speech": "Substantiv",
+                "definitions": [
+                    {
+                        "text": "liten rundad böld på huden som innehåller vätska, orsakad av retning eller infektion",
+                        "examples": [
+                            "De här skorna ger mig blåsor."
+                        ]
+                    },
+                    {
+                        "text": "(anatomi)  inre rundad bildning för vätska eller gas, som självständigt ord ofta om urinblåsan",
+                        "examples": [
+                            "Jag måste springa och tömma blåsan."
+                        ]
+                    },
+                    {
+                        "text": "(slang)  klänning",
+                        "examples": [
+                            "Hon har en fin festblåsa."
+                        ]
+                    }
+                ],
+                "audio": null
+            },
+            {
+                "part_of_speech": "Verb",
+                "definitions": [
+                    {
+                        "text": "(opersonligt, intransitivt, om vind)  naturligt strömma fram luft parallellt med jordytan",
+                        "examples": [
+                            "Det blåste så mycket att flera träd ramlade."
+                        ]
+                    },
+                    {
+                        "text": "(om person, generellt)  skicka ut en kraftig luftström genom munnen med hjälp av lungorna; andas ut kraftigt",
+                        "examples": [
+                            "Blås på soppan – den är varm.",
+                            "Det borde bli lika naturligt att rutinmässigt lämna ett salivprov för drogtest som det är att blåsa i en alkoholmätare."
+                        ]
+                    },
+                    {
+                        "text": "(om redskap)  skicka ut en kraftig luftström med hjälp av en fläkt eller kompressor eller dylikt",
+                        "examples": []
+                    },
+                    {
+                        "text": "(om person)  skicka utandningsluften i en alkoholmätare för att polisen kan avgöra om personen druckit alkohol och därmed begått rattfylleri",
+                        "examples": [
+                            "En gång fick jag blåsa hemma på parkeringen."
+                        ]
+                    },
+                    {
+                        "text": "(vardagligt) lura, lura av",
+                        "examples": [
+                            "Han blåste mig på en hel månadslön!"
+                        ]
+                    }
+                ],
+                "audio": null
+            }
+        ],
+        "base": null,
+        "url": "https://sv.wiktionary.org/wiki/blåsa",
+        "id": "2434",
+        "raw": "3329",
+        "wpm": 29.2,
+        "cefr": 2,
+        "gf": "blåsa",
+        "pos": "verb",
+        "example": "e.g. blåsa upp"
+    },
+    "lycklig": {
+        "success": true,
+        "options": [
+            {
+                "part_of_speech": "Adjektiv",
+                "definitions": [
+                    {
+                        "text": "som mår mycket bra pga gynnsamma omständigheter, ofta i form av rikedom/makt och hälsa; eller som upplever stort välbefinnande trots ogynnsamma yttre omständigheter; som känner lycka",
+                        "examples": [
+                            "Han verkar vara väldigt lycklig.",
+                            "Hon var ett mycket lyckligt barn."
+                        ]
+                    },
+                    {
+                        "text": "tursam, lyckosam, väl",
+                        "examples": [
+                            "Vilken lycklig resa!"
+                        ]
+                    },
+                    {
+                        "text": "(ålderdomligt) framgångsrik",
+                        "examples": [
+                            "1845: Svenskt konversationslexikon:\n Han var en utmärkt duglig och rättskaffens embetsman, särdeles angenäm i sällskap, en vän af vitterheten och lycklig dilettant deri."
+                        ]
+                    }
+                ],
+                "audio": null
+            }
+        ],
+        "base": null,
+        "url": "https://sv.wiktionary.org/wiki/lycklig",
+        "id": "1795",
+        "raw": "5218",
+        "wpm": 45.77,
+        "cefr": 2,
+        "gf": "lycklig",
+        "pos": "adjective",
+        "example": null
+    },
+    "förlåt": {
+        "success": true,
+        "options": [
+            {
+                "part_of_speech": "Interjektion",
+                "definitions": [
+                    {
+                        "text": "används för att be om förlåtelse",
+                        "examples": []
+                    }
+                ],
+                "audio": null
+            },
+            {
+                "part_of_speech": "Substantiv",
+                "definitions": [
+                    {
+                        "text": "ursäkt, uttalande av ordet förlåt",
+                        "examples": []
+                    },
+                    {
+                        "text": "förhänge, gardin, täckelse;  (förr)  väggbonad, möbelöverdrag;  (överfört)  något som döljer något annat",
+                        "examples": []
+                    }
+                ],
+                "audio": null
+            },
+            {
+                "part_of_speech": "Verb",
+                "definitions": [
+                    {
+                        "text": "böjningsform av förlåta",
+                        "examples": []
+                    }
+                ],
+                "audio": null
+            }
+        ],
+        "base": null,
+        "url": "https://sv.wiktionary.org/wiki/förlåt",
+        "id": "7196",
+        "raw": null,
+        "wpm": 2.99,
+        "cefr": 6,
+        "gf": "förlåt",
+        "pos": "interj",
+        "example": null
+    },
+    "vacker": {
+        "success": true,
+        "options": [
+            {
+                "part_of_speech": "Adjektiv",
+                "definitions": [
+                    {
+                        "text": "som en betraktare finner estetiskt tilltalande",
+                        "examples": [
+                            "Lisa tyckte att blomman var mycket vacker.",
+                            "En vacker eftermiddag gick de två genom parken.",
+                            "Så vackert väder vi har idag!",
+                            "Stolpe och in - vilket vackert mål!"
+                        ]
+                    }
+                ],
+                "audio": null
+            }
+        ],
+        "base": null,
+        "url": "https://sv.wiktionary.org/wiki/vacker",
+        "id": "776",
+        "raw": "14543",
+        "wpm": 127.57,
+        "cefr": 1,
+        "gf": "vacker",
+        "pos": "adjective",
+        "example": null
+    },
+    "le": {
+        "success": true,
+        "options": [
+            {
+                "part_of_speech": "Adjektiv",
+                "definitions": [
+                    {
+                        "text": "(vardagligt) variant av led",
+                        "examples": []
+                    },
+                    {
+                        "text": "(skånska) elak, ondsint",
+                        "examples": []
+                    }
+                ],
+                "audio": null
+            },
+            {
+                "part_of_speech": "Verb",
+                "definitions": [
+                    {
+                        "text": "dra mungiporna uppåt som ett tecken på glädje",
+                        "examples": [
+                            "Vissa personer hävdar att man blir gladare om man ofta ler.",
+                            "Hon log när hon tänkte tillbaka på de trivsamma dagarna på sommarlovet."
+                        ]
+                    }
+                ],
+                "audio": null
+            }
+        ],
+        "base": null,
+        "url": "https://sv.wiktionary.org/wiki/le",
+        "id": "2595",
+        "raw": "3026",
+        "wpm": 26.54,
+        "cefr": 2,
+        "gf": "le",
+        "pos": "verb",
+        "example": null
+    },
+    "vår": {
+        "success": true,
+        "options": [
+            {
+                "part_of_speech": "Pronomen",
+                "definitions": [
+                    {
+                        "text": "possessivt pronomen som indikerar ägande av eller tillhörighet till de talande (vi) om det ägda eller tillhörande är i ental och har n-genus; possessivt pronomen i första person plural med huvudordet i singular utrum",
+                        "examples": []
+                    },
+                    {
+                        "text": "ovanstående i determinativform",
+                        "examples": []
+                    },
+                    {
+                        "text": "reflexivt possessivt pronomen som syftar tillbaka på och indikerar ägande av eller tillhörighet till subjektet om subjektet är i första person plural (vi) och om det ägda eller tillhörande är i ental och har n-genus; reflexivt possessivt pronomen i första person plural med huvudordet i singular utrum",
+                        "examples": []
+                    },
+                    {
+                        "text": "ovanstående i determinativform",
+                        "examples": []
+                    }
+                ],
+                "audio": null
+            },
+            {
+                "part_of_speech": "Substantiv",
+                "definitions": [
+                    {
+                        "text": "den årstid som följer en kallare period (vintern) och kommer innan en varmare (sommaren)",
+                        "examples": []
+                    }
+                ],
+                "audio": null
+            }
+        ],
+        "base": null,
+        "url": "https://sv.wiktionary.org/wiki/vår",
+        "id": "1209",
+        "raw": "8808",
+        "wpm": 77.26,
+        "cefr": 1,
+        "gf": "vår",
+        "pos": "noun-en",
+        "example": "e.g. i våras"
+    },
+    "vara": {
+        "success": true,
+        "options": [
+            {
+                "part_of_speech": "Substantiv",
+                "definitions": [
+                    {
+                        "text": "(ekonomi, handel) ting som köps och säljs",
+                        "examples": [
+                            "Företaget köper in hundra varor varje måndag.",
+                            "Hon var starkt negativ till att vi importerar så många varor.",
+                            "Varornas andel i ekonomin minskar medan tjänsternas andel ökar."
+                        ]
+                    },
+                    {
+                        "text": "(filosofi)  tillstånd att existera; det som existerar",
+                        "examples": [
+                            "Det är inte människornas medvetande som bestämmer deras vara, utan tvärtom deras sociala vara som bestämmer deras medvetande.",
+                            "Filosofiskt brukar man tala om Gud som det eviga varat."
+                        ]
+                    },
+                    {
+                        "text": "(ålderdomligt, oböjligt, i vissa uttryck) vård, förvar",
+                        "examples": [
+                            "Det gäller att ta vara på den tid man har tillsammans.",
+                            "Ta vara på dig!"
+                        ]
+                    }
+                ],
+                "audio": null
+            },
+            {
+                "part_of_speech": "Verb",
+                "definitions": [
+                    {
+                        "text": "(kopula)  ett ord som tillskriver subjektet en identitet eller egenskap",
+                        "examples": [
+                            "Tre i kvadrat är nio.",
+                            "Karl den tolfte var kung av Sverige.",
+                            "Bollen är rund.",
+                            "Jag var försenad.",
+                            "Vore jag där skulle jag må bättre."
+                        ]
+                    },
+                    {
+                        "text": "(hjälpverb)  för att tillsammans med perfektparticip bilda passiv verbform",
+                        "examples": [
+                            "Jesus var född i Betlehem i Judeen."
+                        ]
+                    },
+                    {
+                        "text": "(intransitivt)  uppta plats i rummet eller tiden; befinna sig",
+                        "examples": [
+                            "Jag är hemma.",
+                            "Var är cykeln? - Den är i skjulet.",
+                            "Festen var ju i fredags kväll!"
+                        ]
+                    },
+                    {
+                        "text": "(intransitivt) existera, finnas",
+                        "examples": [
+                            "Fildelningens vara eller icke vara har debatterats länge.",
+                            "1819: översättning av Hamlet, Carl August Hagberg:\n Att vara eller inte vara, det är frågan."
+                        ]
+                    },
+                    {
+                        "text": "(intransitivt)  ha en speciell roll i en lek, t.ex. vara den som letar i kurragömma",
+                        "examples": [
+                            "Jag är, så göm er fort!"
+                        ]
+                    },
+                    {
+                        "text": "fortsätta verka, hålla i sig",
+                        "examples": [
+                            "Hur länge ska det här vara?! Jag tror jag får migrän!"
+                        ]
+                    },
+                    {
+                        "text": "utsöndra var",
+                        "examples": [
+                            "Såret varade."
+                        ]
+                    }
+                ],
+                "audio": null
+            }
+        ],
+        "base": null,
+        "url": "https://sv.wiktionary.org/wiki/vara",
+        "id": "1275",
+        "raw": "8273",
+        "wpm": 72.57,
+        "cefr": 1,
+        "gf": "vara",
+        "pos": "noun-en",
+        "example": null
+    },
+    "byta": {
+        "success": true,
+        "options": [
+            {
+                "part_of_speech": "Verb",
+                "definitions": [
+                    {
+                        "text": "ersätta något med något annat, till exempel om två personer där den ena personen ger den andra ett föremål, och samtidigt erhåller ett annat föremål från den andra personen",
+                        "examples": [
+                            "Har du bytt glödlampan än?",
+                            "Kan inte du byta din skärm mot min dator?",
+                            "Hur ofta byter du tröja?"
+                        ]
+                    },
+                    {
+                        "text": "(särskilt om ord)  ömsesidigt ge eller göra något",
+                        "examples": [
+                            "De bytte några ord med varandra.",
+                            "Pojkarna bytte menande blickar."
+                        ]
+                    },
+                    {
+                        "text": "växla färdmedel",
+                        "examples": [
+                            "Vi måste byta tåg tre gånger."
+                        ]
+                    }
+                ],
+                "audio": null
+            }
+        ],
+        "base": null,
+        "url": "https://sv.wiktionary.org/wiki/byta",
+        "id": "832",
+        "raw": "13599",
+        "wpm": 119.29,
+        "cefr": 1,
+        "gf": "byta",
+        "pos": "verb",
+        "example": "e.g. bryta ut"
+    },
+    "varenda": {
+        "success": true,
+        "options": [
+            {
+                "part_of_speech": "Pronomen",
+                "definitions": [
+                    {
+                        "text": "varje, var, alla, 100 % av",
+                        "examples": []
+                    }
+                ],
+                "audio": null
+            }
+        ],
+        "base": null,
+        "url": "https://sv.wiktionary.org/wiki/varenda",
+        "id": "388",
+        "raw": "33219",
+        "wpm": 291.39,
+        "cefr": 1,
+        "gf": "varenda",
+        "pos": "det",
+        "example": null
+    },
+    "gråt": {
+        "success": true,
+        "options": [
+            {
+                "part_of_speech": "Substantiv",
+                "definitions": [
+                    {
+                        "text": "(aktiviteter)  handlingen att gråta, ibland även om klagan eller jämmer",
+                        "examples": []
+                    }
+                ],
+                "audio": null
+            },
+            {
+                "part_of_speech": "Verb",
+                "definitions": [
+                    {
+                        "text": "böjningsform av gråta",
+                        "examples": []
+                    }
+                ],
+                "audio": null
+            }
+        ],
+        "base": null,
+        "url": "https://sv.wiktionary.org/wiki/gråt",
+        "id": "6523",
+        "raw": null,
+        "wpm": 4.9,
+        "cefr": 5,
+        "gf": "gråt",
+        "pos": "noun-en",
+        "example": null
+    }
+}

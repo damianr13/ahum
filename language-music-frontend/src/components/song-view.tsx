@@ -83,7 +83,7 @@ const SongView = () => {
           {!selectedLanguage && <WelcomePage />}
           {song && song.processed_lyrics && (
             <>
-              <div className="flex flex-row justify-center font-roboto-mono bg-gray-700 text-white p-6 items-center">
+              <div className="flex flex-row justify-center bg-gray-700 text-white p-6 items-center">
                 <KaraokeLyrics
                   song={song}
                   currentTime={currentTime}
