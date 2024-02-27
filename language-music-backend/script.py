@@ -4,9 +4,11 @@ import re
 from typing import Optional, List
 
 import spacy
+import torch
 import typer
 from structlog import get_logger
 from tqdm import tqdm
+from transformers import AutoModel, AutoTokenizer
 from typing_extensions import Annotated
 
 from src import firestore
@@ -329,13 +331,95 @@ def analyze_with_spacy(youtube_id: str):
     doc = nlp(lyrics)
 
     words = [
-        token.text.lower()
+        (token.text.lower(), token.pos_)
         for token in doc
         if token.pos_ not in ["PUNCT", "SPACE", "PROPN"]
     ]
     words_unique = list(set(words))
+    print("Unique words", len(words_unique))
+    print("Total words", len(words))
+    print(words_unique)
 
-    __build_vocabulary(words_unique, song_dir=os.path.join("data", "songs", youtube_id))
+    # __build_vocabulary(words_unique, song_dir=os.path.join("data", "songs", youtube_id))
+
+
+@app.command()
+def analyze_with_transformers(youtube_id: str):
+    lyrics = __get_clean_lyrics(youtube_id)
+    # Use a pipeline as a high-level helper
+    from transformers import pipeline
+
+    pipe = pipeline("token-classification", model="KBLab/bert-base-swedish-cased-pos")
+
+    bert_output = pipe(lyrics)
+
+    print(bert_output)
+
+
+@app.command()
+def extract_definition_with_context(word: str, context: str):
+    """
+    TODO: this doesn't account for word splitting yet
+    :param word:
+    :param context:
+    :return:
+    """
+    wiktionary_scraper = WiktionaryScraper()
+    wiktionary_dict = wiktionary_scraper.scrape(word)
+
+    model = AutoModel.from_pretrained("KBLab/bert-base-swedish-cased")
+    tokenizer = AutoTokenizer.from_pretrained("KBLab/bert-base-swedish-cased")
+
+    context_token_ids = tokenizer.encode(context)
+    print(context_token_ids)
+
+    context_tokens = tokenizer.convert_ids_to_tokens(context_token_ids)
+
+    print(context_tokens)
+
+    token_index = context_tokens.index(word)
+    print(token_index)
+
+    context_output = model(torch.tensor([context_token_ids]))
+
+    for token_index in range(0, len(context_tokens)):
+        print(token_index, context_tokens[token_index])
+
+        contextualized_word_output = context_output.last_hidden_state[0, token_index]
+
+        definition_embeddings = []
+        cos = torch.nn.CosineSimilarity(dim=0)
+
+        sentence_model = AutoModel.from_pretrained("KBLab/bert-base-swedish-cased")
+        sentence_tokenizer = AutoTokenizer.from_pretrained(
+            "KBLab/bert-base-swedish-cased"
+        )
+
+        possible_definitions = [
+            definition["text"]
+            for definition in wiktionary_dict["options"][0]["definitions"]
+        ] + [
+            "dryckeskärl, ofta av porslin, avsett att dricka (varmare vätskor) ur",
+            "kopp",
+            "koppar",
+        ]
+
+        for definition in possible_definitions:
+            definition_tokens = sentence_tokenizer.encode(definition)
+            definition_output = sentence_model(torch.tensor([definition_tokens]))
+            definition_embeddings.append(definition_output.pooler_output[0])
+
+            print(
+                definition,
+                ": ",
+                cos(contextualized_word_output, definition_output.pooler_output[0]),
+                torch.cdist(
+                    contextualized_word_output.view(1, 768),
+                    definition_output.pooler_output[0].view(1, 768),
+                ),
+            )
+
+    # print(definition_embeddings)
 
 
 if __name__ == "__main__":

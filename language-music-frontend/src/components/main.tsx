@@ -3,6 +3,7 @@ import TopBar from "@/components/top-bar";
 import SongView from "@/components/song-view";
 import { Tabs } from "@/components/tabs";
 import VocabularyView from "@/components/vocabulary-view/";
+import ChatView from "@/components/chat-view";
 
 const MainComponent = () => {
   return (
@@ -11,7 +12,7 @@ const MainComponent = () => {
       <Tabs>
         <SongView />
         <VocabularyView />
-        <VocabularyView />
+        <ChatView />
       </Tabs>
     </div>
   );
